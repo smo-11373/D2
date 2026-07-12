@@ -9,6 +9,7 @@ lives in the top-level `workspace/`). Carried across phases; Phase 7 keeps using
 - `capabilities.md` — Capabilities (`C-`), derived from actions
 - `action-capability-map.md` — the Action ↔ Capability join table
 - `designer-queries.md` — Designer query examples (`Q-`)
+- `rules.md` — design rules (`RU-`), each derived from a role or principle
 - `glossary.md` — D2 / D1 / D0 term definitions
 
 ## Relational conventions
@@ -26,6 +27,7 @@ format for JSON merely because it's easier to implement).
   | Action | `A-` | `A-001` |
   | Capability | `C-` | `C-01` |
   | Query | `Q-` | `Q-001` |
+  | Rule | `RU-` | `RU-01` |
   | Glossary term | term-slug | `design-node` |
 
   Glossary is the one exception: a definition is referenced by its term, so the slug is its key.

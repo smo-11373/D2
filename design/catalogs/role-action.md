@@ -18,6 +18,8 @@
 
 *D1 wraps D0: D0 is the core distributable; the thin D1 wrapper adds monitoring, upgrade smoke-tests, and upgrade records ("half a level above D0"). See glossary: `d0`, `d1`, `half-level`.*
 
+*Roles can **derive rules** ("position existence creates design consequences," Phase 5). E.g. **R-04 D1 Technical Manager** derives **RU-01** (no hard-coded numbers) — see `rules.md`.*
+
 **Candidate roles (referenced but not yet confirmed):**
 
 - **D1 system operator** — monitors D0 health from the D1 wrapper (~half a level above D0). Not among Phase 5's positions; likely folded into the D1 Technical Manager (R-04) or omitted.
