@@ -6,7 +6,7 @@ lives in the top-level `workspace/`). Carried across phases; Phase 7 keeps using
 ## Files
 
 - `role-action.md` — Roles (`R-`) and the Actions (`A-`) each performs
-- `capabilities.md` — Capabilities (`C-`), derived from actions
+- `capabilities.md` — Capabilities (`C-`), tagged by layer (D2 / D1-product / D0-product)
 - `action-capability-map.md` — the Action ↔ Capability join table
 - `designer-queries.md` — Designer query examples (`Q-`)
 - `rules.md` — design rules (`RU-`), each derived from a role or principle
