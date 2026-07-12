@@ -1,0 +1,17 @@
+# You chose to track EVERYTHING (vault content + PDFs), so nothing in
+# artifact/ is ignored here. See the note in CLAUDE.md about .obsidian/workspace.json
+# — it changes on every device and is the most likely source of sync conflicts.
+# If phone<->desktop conflicts get annoying, uncomment the two lines below:
+# **/.obsidian/workspace.json
+# **/.obsidian/workspace-mobile.json
+
+# --- Claude Code machine-local settings (per-machine, not project content) ---
+.claude/settings.local.json
+
+# --- OS / editor cruft ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~
+*.tmp
+*.swp
