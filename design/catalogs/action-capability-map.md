@@ -15,12 +15,11 @@
 |--------|------------|-------|
 | A-001 | C-06 | Accept the operating framework/plan |
 | A-002 | C-06 | Modify the framework/plan |
-| A-003 | C-14 | Request investigation (overlaps A-008) |
-| A-004 | C-14 | Discuss a concern |
+| A-004 | C-20 | Discuss a concern (Designer-initiated) |
 | A-005 | C-15 | Review a node (a Review Stop) |
 | A-006 | C-17 | Reserve/assign revision authority |
 | A-007 | C-20 | Inquiry / inspection |
-| A-008 | C-20 | Investigation / concern |
+| A-008 | C-20 | Investigation / concern (absorbs former A-003) |
 | A-009 | C-20 | Directive |
 | A-012 | C-23 | Review operating contract (part of intake) |
 | A-013 | C-23 | Provide initial design input |

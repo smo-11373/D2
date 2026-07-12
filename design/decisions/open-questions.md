@@ -2,14 +2,20 @@
 
 *Living. Unresolved design questions awaiting resolution, each with enough context to pick up later.*
 
-- **Action overlap: A-003 vs A-008.** "Request investigation" (Phase 4 §Item 1, during framework review) and "Investigation / concern" (Phase 4 §Item 3, active intervention) may be the same underlying action expressed in two contexts. Decide whether to consolidate during the Action–Capability coverage review. *(Raised while seeding Phase 4.)*
+*(None currently open.)*
 
 ---
 
 ### Resolved
 
-- **Designer role layering** *(resolved 2026-07-12)* — **D2 Designer** (R-00) builds the D2 product (the current human developer); **D1 Designer** (R-01) is D2's primary & only user and builds the D1 product (= Phase 1's "Designer"). Bare "Designer" in the baseline = the D1 Designer; Design Node Builder / D1 Programmer are internal to D2. Captured in glossary (`d2-designer`, `d1-designer`, `designer`, `user`).
+- **Action overlap: A-003 vs A-008** *(resolved 2026-07-12, coverage/dedup pass)* — genuine duplicate. **A-003 (Request investigation) merged into A-008**, which now reads "request D2 critically examine a matter or suspected problem and recommend action." A-003 retired; id not reused.
 
-- **D0 User** *(resolved 2026-07-12)* — folded into **D0 Operator** (R-05); Phase 6 Item 1's "D0 users" are the D0 Operator (and D0-facing roles). Reopen if a distinct D0 end-user emerges as separate from the operator.
+- **A-012 vs A-016** *(resolved 2026-07-12, coverage/dedup pass)* — *not* duplicates. A-012 confirms the **operating-contract terms** (one item within the setup package); A-016 reviews the **full setup package**. Boundary recorded in both rows.
 
-- **D1 / D0 product boundary** *(resolved 2026-07-12)* — **D0** is the core distributable (deployed and run in production). **D1** is a *thin wrapper around D0* — usually thin, sometimes unnecessary, kept by default — holding "half a level above D0" operational concerns: health/performance monitoring (e.g. D0-crash detection), an upgrade smoke-test suite, and upgrade records. On handover, an IT manager may deploy only D0 to production while retaining D1 to manage/upgrade it. Captured in glossary (`d0`, `d1`, `half-level`); role descriptions updated (R-04 operates the wrapper; R-05/R-06 face D0).
+- **Capability boundary clarifications** *(2026-07-12, coverage/dedup pass)* — C-14 (D2-initiated) vs C-20 (Designer-initiated); C-01 posture vs C-22 tuning knob; C-05 setup-item authority vs C-17 design-result authority; C-23 establishes the contract that C-02 carries. A-004 remapped C-14 → C-20.
+
+- **Designer role layering** *(resolved 2026-07-12)* — **D2 Designer** (R-00) builds D2; **D1 Designer** (R-01) is D2's primary & only user and builds the D1 product (= Phase 1's "Designer"). Captured in glossary.
+
+- **D0 User** *(resolved 2026-07-12)* — folded into **D0 Operator** (R-05). Reopen if a distinct D0 end-user emerges.
+
+- **D1 / D0 product boundary** *(resolved 2026-07-12)* — **D0** is the core distributable; **D1** is a thin wrapper (monitoring, upgrade smoke-tests, upgrade records — "half a level above D0"). Captured in glossary.

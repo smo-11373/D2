@@ -23,7 +23,7 @@ Let the Designer inspect, summarize, compare, explain, or revise the setup befor
 Materialize the confirmed setup into the appropriate contexts without losing traceability. **Source:** Phase 6 Item 1 §5.
 
 ### C-05 — Authority-aware setup governance & later revision · *D2 · Serves R-01*
-Preserve distinct authorities (authority follows meaning); support governed later revision with impact analysis and history. **Source:** Phase 6 Item 1 §6–8.
+Preserve distinct authorities (authority follows meaning); support governed later revision with impact analysis and history. **Source:** Phase 6 Item 1 §6–8. *Boundary:* governs **setup-item** authority & setup revision; cf. **C-17** for **design-result** revision authority.
 
 ### C-06 — Provisional D1 design plan & operating framework · *D2 · Serves R-01*
 Maintain a plan (current defined, later provisional) and the D1 Design Operating Framework; advance as higher-level design settles. **Source:** Phase 6 Item 2 §1; Phase 4 Item 1.
@@ -50,7 +50,7 @@ Treat submission and acceptance as distinct; support outcomes (accept / return /
 Concise Designer-oriented reports after major accepted work, with deeper material on demand. **Source:** Phase 6 Item 2 §10.
 
 ### C-14 — Passive Designer intervention (consolidated clarifications) · *D2 · Serves R-01*
-Investigate first, then batch high-leverage questions into a consolidated Clarification Request (distinct from a Review Stop). **Source:** Phase 6 Item 2 §11.
+Investigate first, then batch high-leverage questions into a consolidated Clarification Request (distinct from a Review Stop). **Source:** Phase 6 Item 2 §11. *Boundary:* **D2-initiated** (D2 asks the Designer); cf. **C-20** (Designer-initiated).
 
 ### C-15 — Review-stop provisioning · *D2 · Serves R-01*
 Offer a review opportunity at appropriate points before continuation; tendency scales with level/posture. **Source:** Phase 6 Item 2 §12.
@@ -68,16 +68,16 @@ Preserve enough history to explain what is effective, where it came from, what g
 Establish, at setup, the eight functional data classes; preserve their distinctions. Observation-data class underpins Designer monitoring. **Source:** Phase 6 Item 3.
 
 ### C-20 — Unified Designer inspection & intervention · *D2 · Serves R-01*
-Answer natural-language Designer queries about design/process state and route inspection, investigation, and directives through one interaction point. **Source:** Phase 2 P3; Phase 4 Item 3. *(Audit F3 gap-fill.)*
+Answer natural-language Designer queries about design/process state and route inspection, investigation, and directives through one interaction point. **Source:** Phase 2 P3; Phase 4 Item 3. *(Audit F3 gap-fill.)* *Boundary:* **Designer-initiated**; cf. **C-14** (D2-initiated).
 
 ### C-21 — D2 process self-audit · *D2 · Serves R-01*
 After completion, evaluate process cost, time, and Designer Attention Cost; propose D2 improvements (governed, not silent). **Source:** Phase 3 Item 5. *(Audit F3 gap-fill.)*
 
 ### C-22 — Tunable resolution depth & intervention posture · *D2 · Serves R-01*
-A Designer-controlled balance among investigation, inference, intervention, and deferral. **Source:** Phase 2 §2.6; Phase 6 Item 1 §2. *(Audit F3 gap-fill.)*
+A Designer-controlled balance among investigation, inference, intervention, and deferral. **Source:** Phase 2 §2.6; Phase 6 Item 1 §2. *(Audit F3 gap-fill.)* *Boundary:* the fine tuning knob a design posture (C-01) presets.
 
 ### C-23 — Design-input intake & operating contract · *D2 · Serves R-01*
-Establish the initial design input (Predecessor D1 package + intended change) and the Designer–D2 Operating Contract; help form a sufficient upgrade direction. **Source:** Phase 3 Item 1–2. *(Audit F3 gap-fill.)*
+Establish the initial design input (Predecessor D1 package + intended change) and the Designer–D2 Operating Contract; help form a sufficient upgrade direction. **Source:** Phase 3 Item 1–2. *(Audit F3 gap-fill.)* *Boundary:* establishes the operating contract, which the setup package (**C-02**) then carries.
 
 ---
 

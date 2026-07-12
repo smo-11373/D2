@@ -32,6 +32,8 @@
 
 *Grouped by role. Each action keeps a stable `A-` id (referenced by `action-capability-map.md` and `designer-queries.md`). Baseline-derived unless the Source says otherwise; Designer-stated actions are tagged with a date. Actions marked **position-derived** are elaborated from the role's job function under Human Position First (Phase 5), at Designer direction (2026-07-12), to cover the role's work — especially the D0 Operator.*
 
+*Retired: **A-003** (Request investigation) — merged into **A-008** on 2026-07-12; id not reused.*
+
 ### R-00 — D2 Designer
 
 | ID | Action | Source | Notes |
@@ -43,7 +45,7 @@
 
 | ID | Action | Source | Notes |
 |-------|--------|--------|-------|
-| A-012 | Review & confirm the Designer–D2 Operating Contract | Phase 3 §Item 1 | Accept defaults or adjust; may be subsumed by A-016 |
+| A-012 | Confirm the Designer–D2 Operating Contract (relationship terms) | Phase 3 §Item 1 | Accept defaults or adjust; the contract is one item within the full setup package (A-016) |
 | A-013 | Provide the initial design input (Predecessor D1 package + intended change) | Phase 3 §Item 2 | Any useful initial form; need not be complete |
 | A-014 | Review the initial design understanding & direction | Phase 3 §Item 3 | A Review Stop |
 | A-015 | Select a design posture (Standard / High Harness / Lean) | Phase 6 Item 1 §2 | One choice → many detailed settings |
@@ -51,12 +53,11 @@
 | A-017 | Revise setup material later (governed) | Phase 6 Item 1 §8 | With impact analysis; history preserved |
 | A-001 | Accept the proposed D1 Design Operating Framework | Phase 4 §Item 1 | Low-cost default response |
 | A-002 | Modify selected parts of the framework | Phase 4 §Item 1 | |
-| A-003 | Request investigation | Phase 4 §Item 1 | Possible overlap with A-008 — see `../decisions/open-questions.md` |
-| A-004 | Discuss a material concern | Phase 4 §Item 1 | |
+| A-004 | Discuss a material concern | Phase 4 §Item 1 | Designer-initiated (→ C-20) |
 | A-005 | Review a Design Node (e.g. approve / "continue") | Phase 4 §Item 2 | An event, distinct from revision authority |
 | A-006 | Reserve or assign revision authority over a design object | Phase 4 §Item 2 | A continuing governance property |
 | A-007 | Inquiry / inspection (explain, report, trace, show, compare design or process state) | Phase 4 §Item 3 | |
-| A-008 | Investigation / concern (critically examine a suspected problem; recommend action) | Phase 4 §Item 3 | |
+| A-008 | Investigation / concern (request D2 critically examine a matter or suspected problem and recommend action) | Phase 4 §Item 1, §Item 3 | Absorbs former A-003 (request investigation) |
 | A-009 | Designer directive (impose, revise, reserve, suspend, or exercise authority) | Phase 4 §Item 3 | e.g. stop a branch, reserve approval |
 | A-018 | Answer a Clarification Request | Phase 3/4; Phase 6 Item 2 §11 | Distinct from a Review Stop |
 | A-019 | Tune resolution depth / intervention posture | Phase 2 §2.6 | Adjusts investigation depth vs attention cost |
