@@ -28,16 +28,78 @@
 
 ## Actions
 
-*All seeded actions are performed by R-01 (the D1 Designer) — Phase 4's "Designer" is the primary user of D2 — from the frozen Phase 4 baseline.*
+*Grouped by role. Each action keeps a stable `A-` id (referenced by `action-capability-map.md` and `designer-queries.md`). Baseline-derived unless the Source says otherwise; Designer-stated actions are tagged with a date.*
 
-| ID | Action | Role(s) | Source | Notes |
-|-------|--------|---------|--------|-------|
-| A-001 | Accept the proposed D1 Design Operating Framework | R-01 | Phase 4 §Item 1 | Low-cost default response |
-| A-002 | Modify selected parts of the framework | R-01 | Phase 4 §Item 1 | |
-| A-003 | Request investigation | R-01 | Phase 4 §Item 1 | Possible overlap with A-008 — see `../decisions/open-questions.md` |
-| A-004 | Discuss a material concern | R-01 | Phase 4 §Item 1 | |
-| A-005 | Review a Design Node (e.g. approve / "continue") | R-01 | Phase 4 §Item 2 | An event, distinct from revision authority |
-| A-006 | Reserve or assign revision authority over a design object | R-01 | Phase 4 §Item 2 | A continuing governance property |
-| A-007 | Inquiry / inspection (explain, report, trace, show, compare design or process state) | R-01 | Phase 4 §Item 3 | |
-| A-008 | Investigation / concern (critically examine a suspected problem; recommend action) | R-01 | Phase 4 §Item 3 | |
-| A-009 | Designer directive (impose, revise, reserve, suspend, or exercise authority) | R-01 | Phase 4 §Item 3 | e.g. stop a branch, reserve approval |
+### R-00 — D2 Designer
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-010 | Complete / clarify / expand D2's living working sets (glossary, query catalog, philosophy) | Phase 5 §Item 2 | Low-hurdle Designer-originated completion |
+| A-011 | Revise D2's persistent working sets through the explicit D2 design process | Phase 3–5 | Working sets change only via explicit revision |
+
+### R-01 — D1 Designer
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-012 | Review & confirm the Designer–D2 Operating Contract | Phase 3 §Item 1 | Accept defaults or adjust; may be subsumed by A-016 |
+| A-013 | Provide the initial design input (Predecessor D1 package + intended change) | Phase 3 §Item 2 | Any useful initial form; need not be complete |
+| A-014 | Review the initial design understanding & direction | Phase 3 §Item 3 | A Review Stop |
+| A-015 | Select a design posture (Standard / High Harness / Lean) | Phase 6 Item 1 §2 | One choice → many detailed settings |
+| A-016 | Review / revise the Selected Setup Configuration Package | Phase 6 Item 1 §4 | Progressive disclosure; accept, compare, or revise |
+| A-017 | Revise setup material later (governed) | Phase 6 Item 1 §8 | With impact analysis; history preserved |
+| A-001 | Accept the proposed D1 Design Operating Framework | Phase 4 §Item 1 | Low-cost default response |
+| A-002 | Modify selected parts of the framework | Phase 4 §Item 1 | |
+| A-003 | Request investigation | Phase 4 §Item 1 | Possible overlap with A-008 — see `../decisions/open-questions.md` |
+| A-004 | Discuss a material concern | Phase 4 §Item 1 | |
+| A-005 | Review a Design Node (e.g. approve / "continue") | Phase 4 §Item 2 | An event, distinct from revision authority |
+| A-006 | Reserve or assign revision authority over a design object | Phase 4 §Item 2 | A continuing governance property |
+| A-007 | Inquiry / inspection (explain, report, trace, show, compare design or process state) | Phase 4 §Item 3 | |
+| A-008 | Investigation / concern (critically examine a suspected problem; recommend action) | Phase 4 §Item 3 | |
+| A-009 | Designer directive (impose, revise, reserve, suspend, or exercise authority) | Phase 4 §Item 3 | e.g. stop a branch, reserve approval |
+| A-018 | Answer a Clarification Request | Phase 3/4; Phase 6 Item 2 §11 | Distinct from a Review Stop |
+| A-019 | Tune resolution depth / intervention posture | Phase 2 §2.6 | Adjusts investigation depth vs attention cost |
+| A-020 | Request / review an optional D2 audit after completion | Phase 3 §Item 5 | "Did D2 design D1 well?" |
+
+### R-02 — Design Node Builder
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-021 | Investigate relevant predecessor & reference material | Phase 6 Item 2 §4 | Enters via the Predecessor Reference Roadmap |
+| A-022 | Develop, compare, and critique candidate design choices | Phase 6 Item 2 §5 | Bounded local autonomy under the harness |
+| A-023 | Produce the Node Design Specification / design result | Phase 4 §Item 2; Phase 6 Item 2 §5 | |
+| A-024 | Internally evaluate the result before submission | Phase 6 Item 2 §6 | "Submission is not the first evaluation" |
+| A-025 | Submit the design result for acceptance | Phase 6 Item 2 §7 | Submission ≠ acceptance |
+| A-026 | Propose a spawning strategy (descendant responsibilities) | Phase 4 §Item 2; Phase 6 Item 2 §14 | Spawning ≠ advancement |
+| A-027 | Propose upward revision of governing design | Phase 4 §Item 2 | Routed by the affected node's revision authority |
+
+### R-03 — D1 Programmer
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-028 | Implement product (D0) code from the implementation specification | Phase 5 §Item 3 | Should not need to reconstruct the design |
+
+### R-04 — D1 Technical Manager
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-029 | Adjust a governed product parameter without changing code | Phase 5 §Item 3 | Derives **RU-01** (`rules.md`) |
+| A-030 | Run the upgrade validation / regression (smoke-test) harness | Phase 5 §Item 3 | "No code change ≠ no harness"; D1-wrapper suite |
+| A-031 | Update release state, repackage, and distribute the product | Phase 5 §Item 3 | |
+| A-032 | Deploy D0 into production (optionally retaining D1) | Designer 2026-07-12 | Designer-stated, not baseline |
+| A-033 | Monitor D0 health & performance via the D1 wrapper | Designer 2026-07-12 | ~half a level above D0 |
+
+### R-05 — D0 Operator
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-034 | Perform routine operation of D0 | Phase 5 §Item 3 | Normally low technical understanding |
+| A-035 | Perform routine user-level monitoring | Phase 5 §Item 3 | |
+| A-036 | Set operator-level controls (spending limits, scheduling, collection scope, approved operating choices) | Phase 5 §Item 3 | Position-oriented configuration |
+
+### R-06 — D0 Technical Manager
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-037 | Install a D0 deployment | Phase 5 §Item 3 | |
+| A-038 | Technically maintain a D0 deployment (deployment paths, storage endpoints, service config, resource limits, credentials, health settings) | Phase 5 §Item 3 | Position-oriented configuration |
+| A-039 | Provide front-line technical support | Phase 5 §Item 3; Designer 2026-07-12 | |
