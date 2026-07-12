@@ -1,0 +1,12 @@
+# Treat design PDFs (and common binaries) as binary — never do line-ending
+# conversion on them. Critical for phone(Linux) <-> desktop(Windows) sync.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.zip   binary
+
+# Markdown / text: normalize to LF in the repo, check out native on each OS.
+*.md    text eol=lf
+*.json  text eol=lf
