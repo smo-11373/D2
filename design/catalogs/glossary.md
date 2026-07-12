@@ -2,14 +2,22 @@
 
 *Living. Definitions of D2 / D1 / D0 terms used across the design. Keyed by term-slug. Carried forward from Phase 5; open to Designer-originated completion. See `README.md` for ID conventions.*
 
-### `designer-naming-convention` — Designer naming convention
-
-A `Dn Designer` operates `Dn` to design `D(n-1)`. So the **D2 Designer** operates D2 to design D1; the **D1 Designer** operates D1 to design D0. Bare "Designer" is layer-ambiguous — prefer the layer-qualified name. — related: `d2-designer`, `d1-designer`
-
 ### `d2-designer` — D2 Designer
 
-The primary user of D2 (this is Phase 1's "Designer"). Operates D2 to direct the evolution of an existing D1 system into an upgraded successor, and retains effective design authority over D1. Same entity Phase 5 references as "the D2 Designer" (who completes D2's living working sets). Catalog role **R-01**. — related: `d1-designer`, `designer-naming-convention`
+Builds the **D2** product (currently the human developing D2). **Not** a user of D2. Holds Designer-originated completion/clarification authority over D2's living working sets (this is Phase 5's "the D2 Designer"). Catalog role **R-00** (meta / builder). — related: `d1-designer`, `designer`
 
 ### `d1-designer` — D1 Designer
 
-A D1-layer position (Phase 5, Human Position First): operates D1 to change what the product (D0) is designed to be. Distinct from, and one layer below, the D2 Designer. Catalog role **R-02**. — related: `d2-designer`, `designer-naming-convention`
+The **primary and only user of the D2 product**. Uses D2's tools (setup defaults, design tree, design node modules) to build a **D1 product** (which wraps D0). This is Phase 1's "Designer" — the "primary user of D2." Catalog role **R-01**. — related: `d2-designer`, `designer`
+
+### `designer` — "Designer" (bare term in the baseline)
+
+Unqualified **"Designer"** in Phases 1–4 and most of 5–6 means the **D1 Designer** (D2's primary user). The one exception is Phase 5's "**the D2 Designer**" and "**Designer-originated completion**" of D2's own living sets, which mean the **D2 Designer** (the builder). Prefer the layer-qualified names. — related: `d2-designer`, `d1-designer`
+
+### `user` — "user" (which layer)
+
+"Primary **user** of D2" = the **D1 Designer**. "**D0 user(s)** / user priorities / user skill level / user-level monitoring" (Phase 5; Phase 6 Item 1) = the **D0 Operator** and other D0-facing roles. — related: `d1-designer`
+
+### `designer-attention-cost` — Designer Attention Cost
+
+The D1 Designer's scarce time and cognitive effort (Phase 1 §2.3). D2 aims to reduce the *total cognitive burden* of Designer participation, not merely the number of interactions. — related: `d1-designer`
