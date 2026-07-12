@@ -10,6 +10,10 @@ Per the handoff, Phase 6 was **rewritten** from a "list of functionality" (the t
 
 Phase 6 establishes **what D2 must be capable of** — not how it is built. Architecture is deferred to Phase 7.
 
+## The substance vs. the bookkeeping
+
+The Phase 6 **design document** — [`phase-6-role-action-and-capability-model.md`](phase-6-role-action-and-capability-model.md) — carries the *substance* (the model, reasoning, and decisions). The catalogs below are the **bookkeeping registries** (IDs, foreign keys, status) that index and keep it traceable — they do not replace the document.
+
 ## Artifacts produced (`design/catalogs/`)
 
 | Artifact | Contents |
