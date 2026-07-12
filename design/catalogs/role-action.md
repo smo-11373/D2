@@ -13,10 +13,12 @@
 | R-02 | Design Node Builder | internal to D2 | Builds a Design Node (a bounded design responsibility) under the D1 Designer's direction; a worker with a relatively narrow relevant skill set. Occupied by a D2 agent. | Phase 5 §Item 3 |
 | R-03 | D1 Programmer | implements code | Changes product code according to implementation specifications (produces the D0 code inside the D1 product). | Phase 5 §Item 3 |
 | R-04 | D1 Technical Manager | operates the D1 wrapper | Technical admin / IT manager of the delivered D1 product. Runs the D1 wrapper — deploys and upgrades D0 (running the smoke-test suite, keeping upgrade records), monitors D0 health, and changes governed tuning parameters — without changing product code. May deploy D0 into production while retaining D1. | Phase 5 §Item 3 |
-| R-05 | D0 Operator | operates D0 | Runs the deployed D0 in production; routine operation and user-level monitoring; normally low understanding of technical norms. (Phase 6 Item 1's "D0 user.") | Phase 5 §Item 3 |
+| R-05 | D0 Operator | operates D0 | **D1's primary beneficiary** — D1 is built for the D0 Operator's convenience first and foremost. Runs the deployed D0 in production; routine operation and user-level monitoring; normally low understanding of technical norms. (Phase 6 Item 1's "D0 user.") | Phase 5 §Item 3; Designer 2026-07-12 |
 | R-06 | D0 Technical Manager | supports D0 | Front-line technical support for a D0 deployment; installs and technically maintains it. | Phase 5 §Item 3 |
 
 *D1 wraps D0: D0 is the core distributable; the thin D1 wrapper adds monitoring, upgrade smoke-tests, and upgrade records ("half a level above D0"). See glossary: `d0`, `d1`, `half-level`.*
+
+*__Primary-user principle__ (self-similar): each layer's product exists primarily for its primary user — D2 for the D1 Designer (Phase 1); D1/D0 for the **D0 Operator** (Designer 2026-07-12). The D0 Operator's job functions are therefore covered thoroughly below.*
 
 *Roles can **derive rules** ("position existence creates design consequences," Phase 5). E.g. **R-04 D1 Technical Manager** derives **RU-01** (no hard-coded numbers) — see `rules.md`.*
 
@@ -28,7 +30,7 @@
 
 ## Actions
 
-*Grouped by role. Each action keeps a stable `A-` id (referenced by `action-capability-map.md` and `designer-queries.md`). Baseline-derived unless the Source says otherwise; Designer-stated actions are tagged with a date.*
+*Grouped by role. Each action keeps a stable `A-` id (referenced by `action-capability-map.md` and `designer-queries.md`). Baseline-derived unless the Source says otherwise; Designer-stated actions are tagged with a date. Actions marked **position-derived** are elaborated from the role's job function under Human Position First (Phase 5), at Designer direction (2026-07-12), to cover the role's work — especially the D0 Operator.*
 
 ### R-00 — D2 Designer
 
@@ -77,6 +79,8 @@
 | ID | Action | Source | Notes |
 |-------|--------|--------|-------|
 | A-028 | Implement product (D0) code from the implementation specification | Phase 5 §Item 3 | Should not need to reconstruct the design |
+| A-040 | Write and run implementation-level tests against the code | position-derived | |
+| A-041 | Diagnose and fix implementation defects (code changes within the spec) | position-derived | |
 
 ### R-04 — D1 Technical Manager
 
@@ -87,14 +91,21 @@
 | A-031 | Update release state, repackage, and distribute the product | Phase 5 §Item 3 | |
 | A-032 | Deploy D0 into production (optionally retaining D1) | Designer 2026-07-12 | Designer-stated, not baseline |
 | A-033 | Monitor D0 health & performance via the D1 wrapper | Designer 2026-07-12 | ~half a level above D0 |
+| A-042 | Roll back to a previous release on a failed upgrade | position-derived | Uses the D1-wrapper upgrade record |
+| A-043 | Review upgrade records / release history | position-derived | D1-wrapper |
 
 ### R-05 — D0 Operator
 
 | ID | Action | Source | Notes |
 |-------|--------|--------|-------|
-| A-034 | Perform routine operation of D0 | Phase 5 §Item 3 | Normally low technical understanding |
-| A-035 | Perform routine user-level monitoring | Phase 5 §Item 3 | |
+| A-034 | Perform routine operation — start, run, stop, schedule, pause/resume, or cancel D0 jobs | Phase 5 §Item 3 | Normally low technical understanding |
+| A-035 | Perform routine user-level monitoring — observe whether D0 is working and healthy | Phase 5 §Item 3 | |
 | A-036 | Set operator-level controls (spending limits, scheduling, collection scope, approved operating choices) | Phase 5 §Item 3 | Position-oriented configuration |
+| A-044 | View D0 results, outputs, and reports | position-derived | The point of running D0 |
+| A-045 | Acknowledge and respond to notifications, prompts, or routine approvals from D0 | position-derived | Simple, non-technical decisions |
+| A-046 | Handle routine, non-technical error conditions (retry / restart within competence) | position-derived | Escalates beyond competence via A-048 |
+| A-047 | View routine activity, usage, and cost-to-date (operator-level status) | Phase 5 §Item 3; Phase 6 Item 3 | Uses observation data |
+| A-048 | Request front-line technical support / escalate a problem to the D0 Technical Manager (R-06) | position-derived | Low-technical operator's escape hatch |
 
 ### R-06 — D0 Technical Manager
 
@@ -102,4 +113,7 @@
 |-------|--------|--------|-------|
 | A-037 | Install a D0 deployment | Phase 5 §Item 3 | |
 | A-038 | Technically maintain a D0 deployment (deployment paths, storage endpoints, service config, resource limits, credentials, health settings) | Phase 5 §Item 3 | Position-oriented configuration |
-| A-039 | Provide front-line technical support | Phase 5 §Item 3; Designer 2026-07-12 | |
+| A-039 | Provide front-line technical support | Phase 5 §Item 3; Designer 2026-07-12 | Serves the D0 Operator (A-048) |
+| A-049 | Diagnose a D0 deployment issue | position-derived | |
+| A-050 | Apply a fix, patch, or configuration change to a deployment | position-derived | Within established design; no product redesign |
+| A-051 | Escalate to the D1 Technical Manager (R-04) when a problem exceeds front-line support | position-derived | |
