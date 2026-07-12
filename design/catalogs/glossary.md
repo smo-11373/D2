@@ -1,3 +1,9 @@
 # D2 Glossary
 
-*Living. Definitions of D2 / D1 / D0 terms used across the design. Carried forward from Phase 5; open to Designer-originated completion.*
+*Living. Definitions of D2 / D1 / D0 terms used across the design. Keyed by term-slug. Carried forward from Phase 5; open to Designer-originated completion. See `README.md` for ID conventions.*
+
+## Template
+
+### `term-slug` — Term Name
+
+*(definition)* — related: `other-slug`
