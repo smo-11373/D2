@@ -28,7 +28,7 @@ This project produces a **D2 product**: the design system the D1 Designer will u
 10. **Being asked only when it's worth it** [P] — when D2 needs his judgment it gathers its questions and asks once; when work is done it reports in his terms, not machine records. *(Phase 2.)*
 11. **Checking how well D2 served him** [A] — afterward, D2 shows him what the process cost him — his time, his attention, where it went — and where it could serve better next time. *(Phase 3, Item 5.)*
 
-*Sections 7–11 are to be written in the same style as Sections 2–6 below.*
+*Sections 8–11 are to be written in the same style as Sections 2–7 below.*
 
 ---
 
@@ -119,3 +119,19 @@ He is not handed this as a to-do list. D2 presents it at a **Review Stop** — *
 What he commits to at this step is a *direction*, not a finished design — and only if he chooses to engage at all. If the picture is wrong or the direction off, this is the cheap moment to say so, before work is built on it.
 
 **Why D2 works this way.** The constitution consolidates "initial understanding" and "initial direction" into *one* normal passive-intervention round and tells D2 to "converge internally before approaching the Designer" (Phase 3, Item 3) — so his attention meets a finished thought, not D2's working-out. It also draws a firm line between three interaction classes — Completion Report, Review Stop, and Clarification Request — insisting that "every item is observable; only some items require Designer attention" (Phase 3, Phase-Wide Interaction Rule). Offering an *optional* review here rather than demanding sign-off is that principle in action: everything is open to him, but nothing is forced on him.
+
+---
+
+## 7. Setting the design in motion
+
+With the direction agreed, the Designer settles one more thing before work proceeds: **how D2 will actually conduct the design.** D2 prepares this as a single package that says, in effect, *"here is how I propose to run this D1 design"* — and, as with every setup-shaped step, his normal action is simply to accept it, with adjusting or pushing back kept cheap.
+
+The proposed **operating framework** gathers three things:
+
+- **A design skeleton** — a provisional high-level plan of the work. What comes first is firm enough to start on; later subjects are named but left provisional. D2 might, for instance, propose that the first piece of work establish the D1 Constitution and merely *flag* likely later subjects, rather than committing up front to a fixed sequence of phases.
+- **The design rules and inherited constraints** — D2 inspects the predecessor's own rule material and proposes what to **inherit, revise, reject, or leave unresolved**, and it names any D1-specific rules that follow from D2's standing principles. He sees what will govern the work before the work starts.
+- **His control points** — the operating relationship settled earlier carries over by default; here D2 flags only the *material exceptions* — the specific places in this design that warrant extra visibility, a Review Stop, or D2 pausing for his judgment.
+
+He is meant to move through this quickly: accept the framework as proposed, change selected parts, ask D2 to investigate something first, or raise a concern to discuss. Nothing here demands a heavy sit-down; the point is that the *shape and rules of the work are visible and his to shape* before momentum builds.
+
+**Why D2 works this way.** The constitution has D2 "prepare a proposed D1 Design Operating Framework for low-cost Designer review and confirmation" — one consolidated package, not a scattering of decisions — and keeps his normal action to "accept the proposed framework, modify selected parts, request investigation, or discuss a material concern" (Phase 4, Item 1). Deciding *how* the design will run is exactly the high-leverage, low-frequency choice his attention is for: settle the frame once, cheaply, then let D2 carry it out (Phase 2).
