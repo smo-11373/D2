@@ -2,7 +2,9 @@
 
 *Living. Unresolved design questions awaiting resolution, each with enough context to pick up later.*
 
-*(None currently open.)*
+### D2-internal working-agent taxonomy
+
+*(opened 2026-07-13)* — D2 performs the design work through **internal agents**. **R-02 Design Node Builder** is only *one kind*; there will likely be others (e.g. a standard-enforcing agent, an integration agent) alongside **R-03 D1 Programmer**. Unresolved: **how many agents, how many types, and how (if at all) the Designer specifies them.** Deliberately left open at this stage rather than fixing a taxonomy prematurely (*Top-to-Bottom*). These are D2's own design-time labor, not positions the Designer configures. Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §2.
 
 ---
 

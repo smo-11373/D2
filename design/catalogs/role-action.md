@@ -15,6 +15,7 @@
 | R-04 | D1 Technical Manager | operates the D1 wrapper | Technical admin / IT manager of the delivered D1 product. Runs the D1 wrapper — deploys and upgrades D0 (running the smoke-test suite, keeping upgrade records), monitors D0 health, and changes governed tuning parameters — without changing product code. May deploy D0 into production while retaining D1. | Phase 5 §Item 3 |
 | R-05 | D0 Operator | operates D0 | **D1's primary beneficiary** — D1 is built for the D0 Operator's convenience first and foremost. Runs the deployed D0 in production; routine operation and user-level monitoring; normally low understanding of technical norms. (Phase 6 Item 1's "D0 user.") | Phase 5 §Item 3; Designer 2026-07-12 |
 | R-06 | D0 Technical Manager | supports D0 | Front-line technical support for a D0 deployment; installs and technically maintains it. | Phase 5 §Item 3 |
+| R-07 | D2 Assistant | fronts D2 for the Designer | Non-human, LLM-based position: the **D1 Designer's single point of contact** with the entire D2 system (the unified D2 interaction point). Conducts the design on his behalf and answers his queries; he never addresses a Design Node, governing authority, or service directly. Intrinsic to the D2 ecosystem — not a Designer-configurable default. | Phase 4 §Item 3; Designer 2026-07-13 |
 
 *D1 wraps D0: D0 is the core distributable; the thin D1 wrapper adds monitoring, upgrade smoke-tests, and upgrade records ("half a level above D0"). See glossary: `d0`, `d1`, `half-level`.*
 
