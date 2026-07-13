@@ -32,17 +32,17 @@
 2. **The entry point — deciding whether to use D2** [P] — his first decision; D2 backs it by orienting him with the concepts it needs.
 3. **Building the initial setup — the roles table and the posture** [P] — establish the cast of roles (each intrinsic or a Designer-changeable default) and the run's default design choices, in one setup step.
 
-Beyond setup the coverage stays **fluid** — a list of likely topics, not yet fixed to sections or order:
+4. **From input to the D1 foundational documents (the D1 Constitution)** [P] — combine the setup skeleton, the predecessor V1, and the intended change into the D1 project's own constitution and foundational set, confirmed at a strongly-encouraged key Review Stop.
 
-- giving D2 the starting point — the predecessor plus an informal intended change [P]
-- understanding the proposed direction before committing [P]
+Beyond that the coverage stays **fluid** — a list of likely topics, not yet fixed to sections or order:
+
 - setting the design in motion — the operating framework [P]
 - overseeing the work without drowning in it [P]
 - **inspecting, monitoring, and intervening** — active involvement [A] *(drafted ahead as the register reference)*
 - being asked only when it's worth it [P]
 - checking how well D2 served him [A]
 
-*Revival in progress: §1–§3 and the active-interaction reference (§9) are in this register. §4–§6 (giving the starting point, understanding the direction, setting in motion) are pre-revival drafts awaiting rework; later coverage stays fluid.*
+*Revival in progress: §1–§4 and the active-interaction reference (§9) are in this register. §5 (setting the design in motion) is a pre-revival draft awaiting rework; later coverage stays fluid.*
 
 ---
 
@@ -118,44 +118,36 @@ Both parts land in one **Selected Setup Configuration Package** — a centralize
 
 ---
 
-## 4. Giving D2 the starting point
+## 4. From input to the D1 foundational documents (the D1 Constitution)  [P]
 
-With the run set up, the Designer gives D2 what it needs to begin: **the existing system, and — however roughly — what he wants changed.** This is the one moment he must supply something of his own, so D2's whole job here is to make that as light as possible: to take incomplete, informal input and do the work of making sense of it, so he never has to write a full specification.
+*Derived from Phase 3 Items 2–3 (initial input, understanding & direction); Phase 4 Item 1 (the first work establishes the D1 Constitution).*
 
-He hands over two things, neither required to be complete:
+Setup left the Designer with a lean skeleton — a few default choices. Now he adds the substance of his project: the **predecessor V1 system** and, in whatever rough form, the **changes and additions he has in mind**. This section covers the arc from that input to D2's first major output — and that output is a big one.
 
-- **The predecessor system** — whatever exists and can be studied: the running system, source, documentation, tests, environments, datasets, usage examples. He points D2 at the material; he does not curate or explain it.
-- **His intended change** — in any form that is useful *to him*: a revision note, rough jottings, a bug list, user complaints, desired features, a prior discussion, a prototype idea, examples of behavior he dislikes, or just a general direction.
+**The Designer actions.**
 
-From there D2 does the making-sense. It **investigates the predecessor deeply** and biases toward resolving ambiguity on its own, returning to him for clarification only where investigation genuinely cannot settle a material point — and then batching that into a few worthwhile questions rather than a stream of small ones. The existing system is not merely a starting point but an **unusually strong source of harness** (Phase 5, Item 1): D2 mines it for representative behavior, expected input–output pairs, and constraints the successor should keep. What this step produces is a *sufficient initial direction* to begin governed design — not a finished specification, and explicit open questions may remain.
+- **Provide the input** — hand over the V1 predecessor and his intended changes and additions, in any incomplete, informal form (a revision note, a bug list, user complaints, desired features, a prototype idea, or just a direction). He points D2 at the material; he does not curate or specify it. → **A-013**.
+- **Answer passive clarifications** — as D2 converges, respond to the batched, high-leverage questions it cannot settle by investigation alone. → **A-018**.
+- **Review and confirm the D1 foundational documents** at a key Review Stop. → new action **A-057**.
 
-Because his intended change so often speaks *for the D0 users* — their complaints, the features they want, the behavior that fails them — this is also where the **D0-user considerations of Section 1 first enter the design**, carried in his own words rather than a form.
+**The common element — every D1 project needs its own constitution.** Whatever the project, the natural first thing to produce by combining the setup skeleton, the predecessor, and the intended change is the **D1 project's own foundational documents**: a D1-level analogue of the very Phases 1–5 that govern this D2 work — a **D1 Constitution** and the foundational set around it (scope, principles, invariants, and initial direction). This is deeply self-similar: D2 is itself governed by a constitution, and its first act for a D1 project is to give that project a constitution of its own. That his input so often speaks *for the D0 users* — their complaints, the features they want, the behaviour that fails them — is why the D0-user considerations of Section 1 first enter the design here, in his own words rather than a form.
 
-**Why D2 works this way.** The constitution forbids demanding a complete spec up front: "D2 shall not require the intended change to be fully specified" and "should actively assist the Designer in developing a sufficiently clear initial upgrade direction" (Phase 3, Item 2). His scarce resource is attention (Phase 1), so D2 investigates first and asks second — spending its own effort to spare his — and accepts his input in whatever form costs him least. Early discussion is welcome precisely when it prevents far larger downstream Designer Attention Cost (Phase 3, Item 2).
+**The D2 support.**
 
----
+- Take in the input and help shape a sufficient direction — never demanding a complete specification. → **C-23**.
+- Investigate the predecessor deeply (an unusually strong source of harness), converge internally, and batch only the material questions it cannot resolve. → **C-09**, **C-14**.
+- **Produce the D1 foundational documents** — combine skeleton + predecessor + intent into the D1 Constitution and its foundational set, surfacing understanding, what to preserve / change / add, likely invariants, and residual uncertainties. → new capability **C-39**.
+- Present them for confirmation at a key Review Stop, and carry the Constitution as a **Designer-governed** object (his approval required for material change). → **C-13**, **C-15**, **C-17**.
 
-## 5. Understanding the proposed direction before he commits
+**A strongly-encouraged confirmation.** Most Review Stops are optional courtesies. This one is different: because the D1 foundational documents govern everything the design will build beneath them, D2 **strongly encourages the Designer to review and confirm them** — the highest-leverage attention he will spend on the whole project. He may still delegate or defer, but the default here leans hard toward his explicit confirmation.
 
-Before the real design work begins, the Designer gets to see what D2 made of his input — and to react to it. This is his first substantial **passive** step: D2 has done the studying, and now hands him back a clear picture and a proposed way forward to accept, adjust, or redirect — not a pile of open questions to resolve.
+**Why this shape.** The constitution has D2 converge internally before approaching him and consolidate understanding-and-direction into one passive round (Phase 3, Items 2–3); it names the first Design Node's job as establishing the D1 Constitution (Phase 4, Item 1); and it holds that Designer attention should rise with node height, the Constitution being the canonical Designer-governed node (Phase 4, Item 2). Producing his project's foundations early and asking him to bless them puts his scarce attention exactly where it governs the most.
 
-D2 reaches this point by **converging on its own first**. It studies the predecessor, his intended change, and the reference material, resolves as much uncertainty as it practically can through investigation, and only then consolidates everything into a single, Designer-oriented account that normally covers:
-
-- **its understanding of the existing system** — just the major characteristics that bear on the intended upgrade;
-- **what it reads as to-be-preserved, changed, corrected, added, or reconsidered**;
-- **likely invariants, protected areas, and places needing special caution**;
-- **the material uncertainties or contradictions it could not reasonably resolve** — surfaced honestly, not hidden;
-- **its recommended initial design direction.**
-
-He is not handed this as a to-do list. D2 presents it at a **Review Stop** — *"understanding and direction are documented; I've stopped so you can review — review now, or continue?"* The stop is a *courtesy and a control boundary*, not a claim that D2 is stuck: he may read deeply and steer, skim, or simply wave it on. That differs from a **Clarification Request**, which D2 raises only when it genuinely needs his judgment on something investigation could not settle. Here the default is the gentler Review Stop; the residual uncertainties above are reported for his awareness, not dumped on him as questions.
-
-What he commits to at this step is a *direction*, not a finished design — and only if he chooses to engage at all. If the picture is wrong or the direction off, this is the cheap moment to say so, before work is built on it.
-
-**Why D2 works this way.** The constitution consolidates "initial understanding" and "initial direction" into *one* normal passive-intervention round and tells D2 to "converge internally before approaching the Designer" (Phase 3, Item 3) — so his attention meets a finished thought, not D2's working-out. It also draws a firm line between three interaction classes — Completion Report, Review Stop, and Clarification Request — insisting that "every item is observable; only some items require Designer attention" (Phase 3, Phase-Wide Interaction Rule). Offering an *optional* review here rather than demanding sign-off is that principle in action: everything is open to him, but nothing is forced on him.
+**The open edge.** What belongs in a given project's foundational set — how thick the constitution, which invariants matter, how much direction to fix now — varies with the project; D2 produces the common core and lets the specific contents follow.
 
 ---
 
-## 6. Setting the design in motion
+## 5. Setting the design in motion
 
 With the direction agreed, the Designer settles one more thing before work proceeds: **how D2 will actually conduct the design.** D2 prepares this as a single package that says, in effect, *"here is how I propose to run this D1 design"* — and, as with every setup-shaped step, his normal action is simply to accept it, with adjusting or pushing back kept cheap.
 

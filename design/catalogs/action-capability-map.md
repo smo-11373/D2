@@ -35,6 +35,7 @@
 | A-054 | C-36 | Monitor design-process health & anomalies |
 | A-055 | C-37 | Decide whether to adopt D2 (orientation-backed) |
 | A-056 | C-38 | Review/adjust the roles table |
+| A-057 | C-15, C-39 | Confirm the D1 foundational documents (key Review Stop) |
 
 ## R-02 — Design Node Builder  *(served by D2 capabilities)*
 

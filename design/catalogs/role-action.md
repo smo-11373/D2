@@ -68,6 +68,7 @@
 | A-054 | Monitor design-process health & anomalies (abnormal behavior, rejection loops, high-impact open issues) | Phase 4 §Item 3 | Active/standing; investigation escalates via A-008 |
 | A-055 | Evaluate D2 and decide whether to adopt it for this design (adopt / decline / defer) | Phase 1; Phase 2 | Entry-point decision; the choice is the Designer's, D2 supports it by orientation |
 | A-056 | Review and adjust the roles table (the cast of roles for this project) | Phase 5 §Item 3; Phase 6 setup | Accept defaults or tailor; intrinsic roles fixed, default (product-side) roles changeable |
+| A-057 | Review and confirm the D1 foundational documents (the D1 Constitution) | Phase 3 §Item 3; Phase 4 §Item 1 | A key, strongly-encouraged Review Stop; the Constitution is Designer-governed (C-17) |
 
 ### R-02 — Design Node Builder
 
