@@ -28,7 +28,7 @@ This project produces a **D2 product**: the design system the D1 Designer will u
 10. **Being asked only when it's worth it** [P] — when D2 needs his judgment it gathers its questions and asks once; when work is done it reports in his terms, not machine records. *(Phase 2.)*
 11. **Checking how well D2 served him** [A] — afterward, D2 shows him what the process cost him — his time, his attention, where it went — and where it could serve better next time. *(Phase 3, Item 5.)*
 
-*Sections 6–11 are to be written in the same style as Sections 2–5 below.*
+*Sections 7–11 are to be written in the same style as Sections 2–6 below.*
 
 ---
 
@@ -99,3 +99,23 @@ From there D2 does the making-sense. It **investigates the predecessor deeply** 
 Because his intended change so often speaks *for the D0 users* — their complaints, the features they want, the behavior that fails them — this is also where the **D0-user considerations of Section 1 first enter the design**, carried in his own words rather than a form.
 
 **Why D2 works this way.** The constitution forbids demanding a complete spec up front: "D2 shall not require the intended change to be fully specified" and "should actively assist the Designer in developing a sufficiently clear initial upgrade direction" (Phase 3, Item 2). His scarce resource is attention (Phase 1), so D2 investigates first and asks second — spending its own effort to spare his — and accepts his input in whatever form costs him least. Early discussion is welcome precisely when it prevents far larger downstream Designer Attention Cost (Phase 3, Item 2).
+
+---
+
+## 6. Understanding the proposed direction before he commits
+
+Before the real design work begins, the Designer gets to see what D2 made of his input — and to react to it. This is his first substantial **passive** step: D2 has done the studying, and now hands him back a clear picture and a proposed way forward to accept, adjust, or redirect — not a pile of open questions to resolve.
+
+D2 reaches this point by **converging on its own first**. It studies the predecessor, his intended change, and the reference material, resolves as much uncertainty as it practically can through investigation, and only then consolidates everything into a single, Designer-oriented account that normally covers:
+
+- **its understanding of the existing system** — just the major characteristics that bear on the intended upgrade;
+- **what it reads as to-be-preserved, changed, corrected, added, or reconsidered**;
+- **likely invariants, protected areas, and places needing special caution**;
+- **the material uncertainties or contradictions it could not reasonably resolve** — surfaced honestly, not hidden;
+- **its recommended initial design direction.**
+
+He is not handed this as a to-do list. D2 presents it at a **Review Stop** — *"understanding and direction are documented; I've stopped so you can review — review now, or continue?"* The stop is a *courtesy and a control boundary*, not a claim that D2 is stuck: he may read deeply and steer, skim, or simply wave it on. That differs from a **Clarification Request**, which D2 raises only when it genuinely needs his judgment on something investigation could not settle. Here the default is the gentler Review Stop; the residual uncertainties above are reported for his awareness, not dumped on him as questions.
+
+What he commits to at this step is a *direction*, not a finished design — and only if he chooses to engage at all. If the picture is wrong or the direction off, this is the cheap moment to say so, before work is built on it.
+
+**Why D2 works this way.** The constitution consolidates "initial understanding" and "initial direction" into *one* normal passive-intervention round and tells D2 to "converge internally before approaching the Designer" (Phase 3, Item 3) — so his attention meets a finished thought, not D2's working-out. It also draws a firm line between three interaction classes — Completion Report, Review Stop, and Clarification Request — insisting that "every item is observable; only some items require Designer attention" (Phase 3, Phase-Wide Interaction Rule). Offering an *optional* review here rather than demanding sign-off is that principle in action: everything is open to him, but nothing is forced on him.
