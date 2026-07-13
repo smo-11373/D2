@@ -33,6 +33,7 @@
 | A-052 | C-34 | Monitor design progress |
 | A-053 | C-35 | Monitor resource & cost spend |
 | A-054 | C-36 | Monitor design-process health & anomalies |
+| A-055 | C-37 | Decide whether to adopt D2 (orientation-backed) |
 
 ## R-02 — Design Node Builder  *(served by D2 capabilities)*
 

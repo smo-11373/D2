@@ -66,6 +66,7 @@
 | A-052 | Monitor design progress (advancement, changes since last review, revision counts) | Phase 4 §Item 3 | Active/standing monitoring subject; abstracted from the Item 3 query set |
 | A-053 | Monitor resource & cost spend (time and cost, cumulative & per node) | Phase 4 §Item 3 | Active/standing monitoring subject |
 | A-054 | Monitor design-process health & anomalies (abnormal behavior, rejection loops, high-impact open issues) | Phase 4 §Item 3 | Active/standing; investigation escalates via A-008 |
+| A-055 | Evaluate D2 and decide whether to adopt it for this design (adopt / decline / defer) | Phase 1; Phase 2 | Entry-point decision; the choice is the Designer's, D2 supports it by orientation |
 
 ### R-02 — Design Node Builder
 

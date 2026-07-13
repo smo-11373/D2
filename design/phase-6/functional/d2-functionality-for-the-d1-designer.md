@@ -30,34 +30,42 @@
 **What the rest of this document covers.** The sections follow his work in order, each tagged by the class of action it primarily serves — **[P]** passive, **[A]** active.
 
 2. **The entry point — deciding whether to use D2** [P] — his first decision; D2 backs it by orienting him with the concepts it needs.
-3. **Setting up the run — the roles table** [P] — establish the cast of roles, each marked intrinsic vs. Designer-changeable default.
-4. **Setting up the run — default design choices** [P] — one high-level posture settles the run's many low-level knobs.
-5. **Giving D2 the starting point** [P] — he hands over the predecessor and an informal intended change; D2 makes sense of incomplete input.
-6. **Understanding the proposed direction before he commits** [P] — D2 converges internally, then hands back understanding + direction at a Review Stop.
-7. **Setting the design in motion** [P] — D2 proposes the operating framework (skeleton, rules, control points) as one low-cost package.
-8. **Overseeing the work without drowning in it** [P] — D2 builds node by node; his attention is spent by leverage, not volume.
-9. **Inspecting, monitoring, and intervening** [A] — through one channel he watches progress / spend / health, inspects, investigates, and directs.
-10. **Being asked only when it's worth it** [P] — D2 batches its questions and reports in his terms, not machine records.
-11. **Checking how well D2 served him** [A] — afterward, D2 shows what the process cost him and where it could serve better.
+3. **Building the initial setup — the roles table and the posture** [P] — establish the cast of roles (each intrinsic or a Designer-changeable default) and the run's default design choices, in one setup step.
 
-*Revival in progress: §1 and §9 are in this register; §2–§8, §10–§11 are being revived to match.*
+Beyond setup the coverage stays **fluid** — a list of likely topics, not yet fixed to sections or order:
+
+- giving D2 the starting point — the predecessor plus an informal intended change [P]
+- understanding the proposed direction before committing [P]
+- setting the design in motion — the operating framework [P]
+- overseeing the work without drowning in it [P]
+- **inspecting, monitoring, and intervening** — active involvement [A] *(drafted ahead as the register reference)*
+- being asked only when it's worth it [P]
+- checking how well D2 served him [A]
+
+*Revival in progress: §1, §2, and the active-interaction reference are in this register; §3 (setup) is next, and later coverage stays fluid.*
 
 ---
 
-## 2. The entry point — deciding whether to use D2
+## 2. The entry point — deciding whether to use D2  [P]
 
-Before any run, the D1 Designer faces one prior decision: **shall I use the D2 product at all to carry out this design?** Nothing else happens until he says yes, so this is where his journey with D2 begins.
+*Derived from Phase 1 (Designer authority & attention); Phase 2 (progressive disclosure).*
 
-That decision needs backing — so D2's first job is not to configure anything but to **orient him**, giving him just enough to decide well:
+Before any run, the Designer stands at a gate that has nothing to do with his particular project: **should I use the D2 product to carry out this design at all?** It is the first thing he does, and until he decides yes, nothing else happens. It is also the most anticipable step in the whole document — every Designer faces the same question and needs the same *kinds* of information to answer it, whatever he is building.
 
-- **what D2 is** — a meta-design system he drives, and what using it will (and won't) ask of him;
-- **the layer model** — that the D2 product helps him build a **D1** system which produces the distributable **D0** product, and where his own authority sits in that chain;
-- **the roles in play** — the cast the design will recognize (the roles table, §3), so he can see whom D2 works on behalf of and whom the product ultimately serves;
-- **what D2 will do for him** — the shape of the work ahead (the rest of this document, in brief).
+**The Designer action.** One action, with a decision at its centre: **evaluate D2 and decide whether to adopt it** for this design — adopt, decline, or defer. → Designer action **A-055**.
 
-He is never handed a manual to study; D2 surfaces only what this decision needs, in his terms, and he can ask for more on any point. Only once he decides to proceed does setup begin.
+**The common element — what he needs in order to decide.** The decision is his, but he cannot make it blind, and what he needs is the same across projects. Four things:
 
-**Why D2 works this way.** The decision to adopt D2 is the Designer's alone — his authority and his limited attention are the top priorities (Phase 1) — so D2 owes him an honest, compact basis for the choice rather than presuming adoption. Orienting *before* configuring also follows progressive disclosure: show what the current decision needs and no more (Phase 2), keeping his first encounter with D2 a single clear judgment, not a study exercise.
+- **What D2 is** — a meta-design system he drives, and what using it will and won't ask of him.
+- **The layer model** — that D2 helps him build a **D1** system which produces the distributable **D0** product, and where his own authority sits in that chain.
+- **The roles in play** — the cast the design will recognize (the roles table, §3), so he sees whom D2 works on behalf of and whom the product ultimately serves.
+- **What D2 will do for him** — the shape of the work ahead, in brief (the rest of this document).
+
+**The D2 support.** D2 provides an **orientation**: it surfaces exactly those four things, in the Designer's own terms and at the depth he asks for — a short, honest basis for the decision, never a manual to study. He can probe any point and get more; nothing that matters is hidden, nothing is forced. Only once he decides to proceed does setup begin. → new capability **C-37** (adoption orientation), an application of progressive disclosure.
+
+**Why this shape.** The decision to adopt D2 is the Designer's alone — his authority and his limited attention are the top priorities (Phase 1) — so D2 owes him a compact, honest basis rather than presuming adoption. Orienting *before* configuring is progressive disclosure in its first application: show what this decision needs, and no more (Phase 2).
+
+**The open edge.** What finally moves a given Designer to adopt — his risk tolerance, his existing tools, his deadline — D2 cannot know or support; it supplies the common orientation every such decision needs and leaves the judgement itself to him.
 
 ---
 
