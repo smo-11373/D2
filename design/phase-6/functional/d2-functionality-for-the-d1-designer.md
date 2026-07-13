@@ -42,7 +42,7 @@ Beyond that the coverage stays **fluid** — a list of likely topics, not yet fi
 - being asked only when it's worth it [P]
 - checking how well D2 served him [A]
 
-*Revival in progress: §1–§4 and the active-interaction reference (§9) are in this register. §5 (setting the design in motion) is a pre-revival draft awaiting rework; later coverage stays fluid.*
+*Revival in progress: §1–§5 and the active-interaction reference (§9) are in this register; later coverage (overseeing, being asked, checking) stays fluid.*
 
 ---
 
@@ -147,25 +147,36 @@ Setup left the Designer with a lean skeleton — a few default choices. Now he a
 
 ---
 
-## 5. Setting the design in motion
+## 5. Setting the design in motion (the operating framework)  [P]
 
-With the direction agreed, the Designer settles one more thing before work proceeds: **how D2 will actually conduct the design.** D2 prepares this as a single package that says, in effect, *"here is how I propose to run this D1 design"* — and, as with every setup-shaped step, his normal action is simply to accept it, with adjusting or pushing back kept cheap.
+*Derived from Phase 4 Item 1 (the D1 Design Operating Framework).*
 
-The proposed **operating framework** gathers three things:
+With the foundations confirmed (§4), the design is ready to proceed — but first D2 shows the Designer *how* it means to conduct it. Where §4 fixed **what** the D1 project is (its constitution), this step fixes **how the work will be carried out**, and — like setup — it is one low-cost package he mostly just accepts.
 
-- **A design skeleton** — a provisional high-level plan of the work. What comes first is firm enough to start on; later subjects are named but left provisional. D2 might, for instance, propose that the first piece of work establish the D1 Constitution and merely *flag* likely later subjects, rather than committing up front to a fixed sequence of phases.
-- **The design rules and inherited constraints** — D2 inspects the predecessor's own rule material and proposes what to **inherit, revise, reject, or leave unresolved**, and it names any D1-specific rules that follow from D2's standing principles. He sees what will govern the work before the work starts.
-- **His control points** — the operating relationship settled earlier carries over by default; here D2 flags only the *material exceptions* — the specific places in this design that warrant extra visibility, a Review Stop, or D2 pausing for his judgment.
+**The Designer actions.**
 
-He is meant to move through this quickly: accept the framework as proposed, change selected parts, ask D2 to investigate something first, or raise a concern to discuss. Nothing here demands a heavy sit-down; the point is that the *shape and rules of the work are visible and his to shape* before momentum builds.
+- **Accept the proposed operating framework** — the low-cost default response. → **A-001**.
+- **Modify selected parts**, or **request investigation / raise a material concern** on any piece. → **A-002**, **A-004** (investigation via **A-008**).
 
-**Why D2 works this way.** The constitution has D2 "prepare a proposed D1 Design Operating Framework for low-cost Designer review and confirmation" — one consolidated package, not a scattering of decisions — and keeps his normal action to "accept the proposed framework, modify selected parts, request investigation, or discuss a material concern" (Phase 4, Item 1). Deciding *how* the design will run is exactly the high-leverage, low-frequency choice his attention is for: settle the frame once, cheaply, then let D2 carry it out (Phase 2).
+**The common element.** Every project's design work, whatever its content, needs the same three things settled before momentum builds: a *plan of the work*, the *rules the work will follow*, and the *points where the Designer stays in control*. These are **process** concerns — how D2 designs — distinct from the constitution's product concerns, and they recur across projects.
+
+**The D2 support — one proposed framework.** D2 assembles a single package that says, in effect, *"here is how I propose to run this D1 design,"* in three parts:
+
+- **A design skeleton** — a provisional high-level plan: what to do first is firm enough to start on; later subjects are named but left provisional, with no fixed phase count committed up front.
+- **The design rules and inherited constraints** — what D2 will **inherit, revise, reject, or leave open** from the predecessor's own rules, plus any D1-specific rules that follow from D2's standing principles.
+- **His control points** — the operating relationship from setup carries over by default; D2 flags only the *material exceptions* — the places in this design that warrant extra visibility, a Review Stop, or D2 pausing for his judgment.
+
+→ **C-06** (provisional D1 design plan & operating framework); discussion routed through **C-20**.
+
+**Why this shape.** The constitution has D2 "prepare a proposed D1 Design Operating Framework for low-cost Designer review and confirmation" — one consolidated package, not a scattering of decisions — and keeps his normal action to "accept … modify selected parts, request investigation, or discuss a material concern" (Phase 4, Item 1). Deciding *how* the design will run is a high-leverage, low-frequency choice: settle the frame once, cheaply, then let D2 carry it out.
+
+**The open edge.** The three parts are the common frame; a project may need a rule or control point the defaults don't anticipate, and D2 lets him add or adjust — the framework is a proposal, not a fixture.
 
 ---
 
 ## 9. Inspecting, monitoring, and intervening  [A]
 
-*Active involvement — derived from Phase 4 Item 3; the single interaction point is Phase 2, Principle 3. **This section is written in the target register; §1–§8 will be revived to match.***
+*Active involvement — derived from Phase 4 Item 3; the single interaction point is Phase 2, Principle 3. **Written in the target register; the journey sections above are being revived to match.***
 
 Everything before this is **passive**: the Designer reacting to what D2 brings him. This is the **active** counterpart — what he does on his own initiative, unprompted, whenever he wants. It is the harder side to pin down. Passive involvement takes a few static, near-universal forms (a review, a clarification); active involvement is fluid and varies with the project, so we cannot pre-enumerate it. What we *can* do — and what the foundation's own query examples let us do — is abstract the **common likely elements** and support those, accepting that the list stays open.
 
