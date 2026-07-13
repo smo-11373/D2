@@ -50,7 +50,7 @@ Treat submission and acceptance as distinct; support outcomes (accept / return /
 Concise Designer-oriented reports after major accepted work, with deeper material on demand. **Source:** Phase 6 Item 2 §10.
 
 ### C-14 — Passive Designer intervention (consolidated clarifications) · *D2 · Serves R-01*
-Investigate first, then batch high-leverage questions into a consolidated Clarification Request (distinct from a Review Stop). **Source:** Phase 6 Item 2 §11. *Boundary:* **D2-initiated** (D2 asks the Designer); cf. **C-20** (Designer-initiated).
+Investigate first, then batch high-leverage questions into a consolidated Clarification Request (distinct from a Review Stop). **Principle: minimal Designer attention** — multiple rounds are permitted but *not encouraged*, and each round is normally separated by deep D2 investigation, so the Designer is approached only when investigation genuinely cannot settle the point. **Source:** Phase 6 Item 2 §11; Phase 3 Item 3 & Phase 4 Item 2 (multiple rounds permitted when genuinely necessary). *Boundary:* **D2-initiated** (D2 asks the Designer); cf. **C-20** (Designer-initiated).
 
 ### C-15 — Review-stop provisioning · *D2 · Serves R-01*
 Offer a review opportunity at appropriate points before continuation; tendency scales with level/posture. **Source:** Phase 6 Item 2 §12.
