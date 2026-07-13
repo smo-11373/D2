@@ -6,6 +6,10 @@
 
 *(opened 2026-07-13)* — D2 performs the design work through **internal agents**. **R-02 Design Node Builder** is only *one kind*; there will likely be others (e.g. a standard-enforcing agent, an integration agent) alongside **R-03 D1 Programmer**. Unresolved: **how many agents, how many types, and how (if at all) the Designer specifies them.** Deliberately left open at this stage rather than fixing a taxonomy prematurely (*Top-to-Bottom*). These are D2's own design-time labor, not positions the Designer configures. Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §2.
 
+### Degree of setup changeability (roles table & posture)
+
+*(opened 2026-07-13)* — How much may the D1 Designer **revise or add to** the roles table and the posture *at setup*? A D2 design question; the intent is to **start simple and relatively rigid** and widen later as warranted. Independent of the degree chosen, the **minimum guaranteed floor is inspectability**: he can always look inside — each role's definition and intrinsic/default status, and each posture knob's definition and consequence (a next-level view). Distinct from the *mid-run* mutability question below (which concerns changing setup after work is underway). Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §3.
+
 ### Mid-run mutability of the setup (roles table + posture)
 
 *(opened 2026-07-13)* — Can the Designer's **setup choices** — the roles table (§3) and the posture / default design choices it resolves (§4) — be **changed partway through a design run**, after work is already underway? Direction not yet chosen. This is not a cosmetic question: allowing mid-run changes carries **significant architectural implications** (how in-flight design work reconciles with an altered setup, whether already-produced results must be re-evaluated or versioned, how a changed posture propagates) that will surface in **Phase 7 architecture**. Left open deliberately until then. Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §3–§4.

@@ -11,7 +11,7 @@
 ## D2 capabilities
 
 ### C-01 — Provide default design choices · *D2 · Serves R-01*
-Offer a Template Library + a few high-level postures (Standard / High Harness / Lean); one choice resolves into many settings. **Source:** Phase 6 Item 1 §1–2.
+Offer a Template Library + a few high-level postures (Standard / High Harness / Lean); one choice resolves into many settings. Each posture is **expandable to the settings it resolves, with each setting's definition and consequence viewable** — the inspectability floor, guaranteed regardless of how much change is allowed (cf. **C-03**). **Source:** Phase 6 Item 1 §1–2.
 
 ### C-02 — Produce the Selected Setup Configuration Package · *D2 · Serves R-01*
 A centralized, versioned, traceable, reviewable record of the run's setup — the source of truth, distinct from the Library. **Source:** Phase 6 Item 1 §3.
