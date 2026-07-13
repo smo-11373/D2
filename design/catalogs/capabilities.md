@@ -88,8 +88,8 @@ Present the time and cost the D1 design process has consumed — cumulative and 
 ### C-36 — Design-process health & anomaly monitoring · *D2 · Serves R-01*
 Surface abnormal process behavior, rejection loops, high-impact unresolved issues, and a consolidated design-health report. **Source:** Phase 4 Item 3 (active-interaction pass); rests on observation data (**C-19**). *Boundary:* health/risk signalling; a Designer concern escalates to investigation via **C-20** (A-008).
 
-### C-37 — Adoption orientation · *D2 · Serves R-01*
-Before adoption, surface what D2 is, the layer model (D2 → D1 → D0) and where the Designer's authority sits, the roles in play, and the shape of the work — in the Designer's terms, at the depth he asks for, as a compact honest basis for the adopt / decline / defer decision. Progressive disclosure; never a manual. **Source:** Phase 1 (Designer authority & attention); Phase 2 (progressive disclosure). *(Phase 6 entry-point pass.)* *Boundary:* pre-adoption orientation; cf. **C-23** (post-adoption design-input intake).
+### C-37 — Adoption orientation (orientation summary) · *D2 · Serves R-01*
+Before adoption, provide an **orientation summary** — a short top-level document that, *in summary not detail*, presents what D2 is, the layer model (D2 → D1 → D0) and where the Designer's authority sits, **who is responsible for what** (the roles and their boundaries), what using D2 will ask of him, and what he gets out — a compact honest basis for the adopt / decline / defer decision. Progressive disclosure; a summary to act on, not a manual. **Key elements identified; full document content deferred to D2's later design (open list).** **Source:** Phase 1 (Designer authority & attention); Phase 2 (progressive disclosure). *(Phase 6 entry-point pass.)* *Boundary:* pre-adoption orientation; cf. **C-23** (post-adoption design-input intake).
 
 ---
 

@@ -54,18 +54,21 @@ Before any run, the Designer stands at a gate that has nothing to do with his pa
 
 **The Designer action.** One action, with a decision at its centre: **evaluate D2 and decide whether to adopt it** for this design — adopt, decline, or defer. → Designer action **A-055**.
 
-**The common element — what he needs in order to decide.** The decision is his, but he cannot make it blind, and what he needs is the same across projects. Four things:
+**The common element.** This gate is the same in every project: whatever he is building, the Designer needs the same *kinds* of information to decide, so D2 can prepare them once, generically.
 
-- **What D2 is** — a meta-design system he drives, and what using it will and won't ask of him.
-- **The layer model** — that D2 helps him build a **D1** system which produces the distributable **D0** product, and where his own authority sits in that chain.
-- **The roles in play** — the cast the design will recognize (the roles table, §3), so he sees whom D2 works on behalf of and whom the product ultimately serves.
-- **What D2 will do for him** — the shape of the work ahead, in brief (the rest of this document).
+**The D2 support — an orientation summary.** What D2 provides at this gate is a single **orientation summary**: a short, top-level document that answers, *in summary and not in detail*, the questions behind the decision, and in doing so makes each role's responsibility plain. We cannot write that document fully here — its final content depends on D2's later design — but we can already fix the **key elements it must contain**:
 
-**The D2 support.** D2 provides an **orientation**: it surfaces exactly those four things, in the Designer's own terms and at the depth he asks for — a short, honest basis for the decision, never a manual to study. He can probe any point and get more; nothing that matters is hidden, nothing is forced. Only once he decides to proceed does setup begin. → new capability **C-37** (adoption orientation), an application of progressive disclosure.
+- **What D2 is and does** — the meta-design system, and what it offers him.
+- **The layer model and his place in it** — D2 → D1 → D0, with the Designer as the top authority the whole ecosystem serves.
+- **Who is responsible for what** — the roles and their responsibility boundaries: he holds design authority; the D2 Assistant is his single point of contact and conducts the design; internal agents do the work; downstream, the IT Manager deploys and the D0 Operator runs the product. (The full cast is §3.)
+- **What using D2 will ask of him** — the shape of his involvement (a few review and clarification points; inspection whenever he wants) and what it will and won't cost his attention.
+- **What he gets out** — a delivered D1 product wrapping D0, built for the D0 users.
+
+It is a summary he can act on, not a manual he must study; he can probe any element for more, and nothing that matters is hidden. Only once he decides to proceed does setup begin. → new capability **C-37** (adoption orientation), an application of progressive disclosure.
 
 **Why this shape.** The decision to adopt D2 is the Designer's alone — his authority and his limited attention are the top priorities (Phase 1) — so D2 owes him a compact, honest basis rather than presuming adoption. Orienting *before* configuring is progressive disclosure in its first application: show what this decision needs, and no more (Phase 2).
 
-**The open edge.** What finally moves a given Designer to adopt — his risk tolerance, his existing tools, his deadline — D2 cannot know or support; it supplies the common orientation every such decision needs and leaves the judgement itself to him.
+**The open edge.** What finally moves a given Designer to adopt — his risk tolerance, his existing tools, his deadline — D2 cannot know or support; it supplies the common orientation every such decision needs and leaves the judgement itself to him. The element list above is itself open: these are the anticipable pieces of the summary, not its finished content.
 
 ---
 
