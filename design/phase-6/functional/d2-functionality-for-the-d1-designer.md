@@ -1,34 +1,46 @@
 # Phase 6 — What D2 Does for the D1 Designer
 
-*Phase 6 describes the functionality of the **D2 product**, organized by **what the D1 Designer does** with it. Section 1 sets out the method; the sections that follow walk his work step by step.*
+*Phase 6 translates the constitution (Phases 1–5) into something actionable — for each thing the **D1 Designer** does, the **D2 support** he needs to do it. Section 1 sets out the method; the sections that follow apply it to his work, step by step.*
 
 ---
 
 ## 1. Methodology
 
-This project produces a **D2 product**: the design system the D1 Designer will use. He uses the D2 product to design his **D1** system, which in turn produces the distributable **D0** product (**D2 → D1 → D0**). Phase 6 describes that product's functionality by matching it to **what the D1 Designer does** with it. We take his work step by step; at each step we state the functionality D2 gives him to make that step easy, and we justify it from the constitution (Phases 1–5). One test governs throughout: **write only what the D1 Designer cares about.** How anything is stored or built is out of scope — it matters only insofar as it lets him do his work.
+**What this phase is for.** Phases 1–5 are the constitution — they establish, with argument, what the D2 ecosystem is and the principles it must honour. Phase 6 does something different: it **translates that constitution into something actionable**. Its product is a link, built step by step, between **what the D1 Designer needs to do** and **what the D2 product must provide** so he can do it. This document is that translation — it does not re-narrate the constitution, it puts it to work.
 
-**Two classes of Designer action.** Everything the D1 Designer does is one of two kinds, and the constitution already treats them separately (Phase 4):
+**The subject.** This project produces a **D2 product**: the design system the D1 Designer uses to build his **D1** system, which in turn produces the distributable **D0** product (**D2 → D1 → D0**). We describe that product by walking **what the D1 Designer does** with it. One test governs throughout: **write only what the D1 Designer cares about** — how anything is stored or built stays out of scope until it earns its place.
 
-- **Passive actions — he responds to D2.** D2, driving the design as his assistant, brings him something: a proposed direction, a decision that needs his judgment, a finished report. He reacts — accepts, adjusts, or redirects. D2's job here is to bring him the *right* thing at the *right* moment, already worked through, so his response is cheap. *(Phase 4, Item 2 — passive intervention.)*
-- **Active actions — he acts on his own initiative.** Unprompted, he reaches into the project: monitor the progress of the design, monitor the system being designed, inspect any part, drill down, or lay down a rule. D2's job here is to keep the whole project open to him — to let him look wherever he wants and act whenever he wants, through one place, without needing to know how D2 is organized inside. *(Phase 4, Item 3 — active inspection and intervention.)*
+**The method, at each step.** For every step of his work we do three things:
 
-**The D0 user is always in view.** Cutting across both classes is the D1 Designer's own purpose: he designs the D1 system in order to **serve the D0 users** — the operators and users of the distributable product that D1 produces. So he designs with **D0-user optimization in mind**: the product should be as convenient and well-optimized for the D0 roles as it can be. This gives him a standing set of **key considerations for the D1 design** — what he weighs when deciding what the D1 system must do for its users. D2's functionality, in turn, exists to let him hold those considerations and act on them; the sections below surface them where each step of his work brings them into play. *(Phase 5, Item 3 — Human Position First.)*
+1. **Identify the actions** — what the Designer is required or wants to do, and, where the work is D2's own, the internal *agent* actions that carry it out.
+2. **Abstract the common element** — from the unbounded space of possible projects, extract the recurring *form* of that action and argue it from the foundations. We cannot know the content of a Designer's project; the *shape* of his involvement recurs, and that shape is what D2 can support.
+3. **Define the D2 support** — the capability the product must provide to satisfy the action.
 
-**What the rest of this document covers.** The sections follow his work in order. Each is tagged by the class of action it primarily serves — **[P]** passive, **[A]** active.
+**This is an open list.** We do not know what project the Designer will bring, so no catalogue of actions or capabilities is ever complete. We aim not for 100% coverage of every project but for the **common, anticipable elements** most projects share — the skeleton the foundations already give us — and let D2 interpret the remainder rather than pretend to pre-enumerate it.
 
-2. **The entry point — deciding whether to use D2** [P] — his first decision (adopt the D2 product for this design?); D2 backs it by orienting him with the concepts the decision needs. *(Phase 1; Phase 2.)*
-3. **Setting up the run — the roles table** [P] — D2 establishes the cast of roles the design recognizes, each marked by provenance (intrinsic to the ecosystem vs. a Designer-changeable default). *(Phase 5, Item 3.)*
-4. **Setting up the run — default design choices** [P] — D2 offers a high-level **posture** (e.g. Standard / High Harness / Lean); one choice settles the run's many low-level knobs, and he can inspect, compare, or override any of it. *(Phase 3, Item 1.)*
-5. **Giving D2 the starting point** [P] — he hands over the existing system and says, however roughly, what he wants changed; D2 makes sense of incomplete, informal input so he never writes a full specification. *(Phase 1 §4; Phase 3, Item 2.)*
-6. **Understanding the proposed direction before he commits** [P] — D2 studies the system and his intent, resolves what it can, and hands back a clear understanding and a proposed direction to react to — not a pile of open questions. *(Phase 3, Item 3.)*
-7. **Setting the design in motion** [P] — D2 proposes how it means to conduct the design — the shape of the work and the rules it will follow — as one thing he can accept, adjust, or push back on. *(Phase 4, Item 1.)*
-8. **Overseeing the work without drowning in it** [P] — D2 carries the design forward and brings him only the high-leverage decisions, stopping for review where it matters and proceeding on its own where it doesn't. *(Phase 2; Phase 4, Item 2.)*
-9. **Inspecting, monitoring, and intervening** [A] — on his own initiative he watches progress and the emerging system's health, asks in plain terms, drills down, redirects, or lays down a rule — all through one place. *(Phase 4, Item 3; Phase 5, Item 1.)*
-10. **Being asked only when it's worth it** [P] — when D2 needs his judgment it gathers its questions and asks once; when work is done it reports in his terms, not machine records. *(Phase 2.)*
-11. **Checking how well D2 served him** [A] — afterward, D2 shows him what the process cost him — his time, his attention, where it went — and where it could serve better next time. *(Phase 3, Item 5.)*
+**Two classes of action — and why one is harder.** Everything the Designer does is either **passive** or **active**, and the two differ not only in who initiates but in how anticipable they are:
 
-*Registers differ mid-revision. **§9 below is the reference** for the register the whole document is moving to — Designer actions → abstracted common element → D2 support, catalog-linked, open-list. §1–§7 are in an earlier prose register and will be **revived** to match; §8, §10, §11 are written in that same pass.*
+- **Passive** [P] — he responds to something D2 brings him (a proposed result, a decision, a report). These take a few *static, near-universal forms* — the review / stopping point, the clarification point — so they abstract cleanly and recur in nearly every project. *(Phase 4, Item 2.)*
+- **Active** [A] — he acts on his own initiative (monitor progress, monitor spend, inspect, redirect, lay down a rule). These are *fluid and project-dependent*, so they resist anticipation — which makes the abstraction **more** important, not less: the job is to find the common likely elements of active involvement and support those, knowing the list stays open. *(Phase 4, Item 3.)*
+
+**The D0 user is always in view.** Cutting across both classes is the Designer's own purpose: he designs D1 to **serve the D0 users** — the operators and users of the distributable product. So he designs with **D0-user optimization in mind**, a standing consideration that shapes what the D1 system must do; D2's functionality exists to let him hold it and act on it. *(Phase 5, Item 3 — Human Position First.)*
+
+**The bookkeeping.** The abstractions this writing produces are recorded in the living **catalogs** — the role table, the role–action table, the capability catalog, the action↔capability map, and the query catalog. Those catalogs are not the substance; they are the **ledger**. Their value is that they can be *matched* — a relational coverage check that every Designer action has a supporting capability, that no capability is orphaned, that nothing is silently missed. The substance lives in this writing; the catalogs keep it honest.
+
+**What the rest of this document covers.** The sections follow his work in order, each tagged by the class of action it primarily serves — **[P]** passive, **[A]** active.
+
+2. **The entry point — deciding whether to use D2** [P] — his first decision; D2 backs it by orienting him with the concepts it needs.
+3. **Setting up the run — the roles table** [P] — establish the cast of roles, each marked intrinsic vs. Designer-changeable default.
+4. **Setting up the run — default design choices** [P] — one high-level posture settles the run's many low-level knobs.
+5. **Giving D2 the starting point** [P] — he hands over the predecessor and an informal intended change; D2 makes sense of incomplete input.
+6. **Understanding the proposed direction before he commits** [P] — D2 converges internally, then hands back understanding + direction at a Review Stop.
+7. **Setting the design in motion** [P] — D2 proposes the operating framework (skeleton, rules, control points) as one low-cost package.
+8. **Overseeing the work without drowning in it** [P] — D2 builds node by node; his attention is spent by leverage, not volume.
+9. **Inspecting, monitoring, and intervening** [A] — through one channel he watches progress / spend / health, inspects, investigates, and directs.
+10. **Being asked only when it's worth it** [P] — D2 batches its questions and reports in his terms, not machine records.
+11. **Checking how well D2 served him** [A] — afterward, D2 shows what the process cost him and where it could serve better.
+
+*Revival in progress: §1 and §9 are in this register; §2–§8, §10–§11 are being revived to match.*
 
 ---
 
