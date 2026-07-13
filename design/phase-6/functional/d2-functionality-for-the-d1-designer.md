@@ -28,7 +28,7 @@ This project produces a **D2 product**: the design system the D1 Designer will u
 10. **Being asked only when it's worth it** [P] — when D2 needs his judgment it gathers its questions and asks once; when work is done it reports in his terms, not machine records. *(Phase 2.)*
 11. **Checking how well D2 served him** [A] — afterward, D2 shows him what the process cost him — his time, his attention, where it went — and where it could serve better next time. *(Phase 3, Item 5.)*
 
-*Sections 5–11 are to be written in the same style as Sections 2–4 below.*
+*Sections 6–11 are to be written in the same style as Sections 2–5 below.*
 
 ---
 
@@ -82,3 +82,20 @@ So D2 offers him **default design choices**. It presents a small number of high-
 The choice stays compact and human-oriented — a short selection, not a settings file. He is never forced to look deeper, but nothing that matters is hidden from him: if he wants, he can see what a posture entails, compare it against another, ask why a particular setting came out the way it did, or change any part before continuing. And because he may want to revisit how the run was set up, D2 keeps his setup as one thing he can return to, review, and revise — with his own changes plain to see.
 
 **Why D2 works this way.** His time and attention are the scarce resource (Phase 1 §2.3), and his attention belongs on high-level design, not low-level configuration (Phase 1 §2.5). So D2 supplies the defaults and asks him only for a high-level choice — "the normal action should often be to accept the defaults" (Phase 3, Item 1) — resolving the rest itself (Phase 2, Principle 1). Making setup a single easy choice is D2 serving him exactly as the constitution requires.
+
+---
+
+## 5. Giving D2 the starting point
+
+With the run set up, the Designer gives D2 what it needs to begin: **the existing system, and — however roughly — what he wants changed.** This is the one moment he must supply something of his own, so D2's whole job here is to make that as light as possible: to take incomplete, informal input and do the work of making sense of it, so he never has to write a full specification.
+
+He hands over two things, neither required to be complete:
+
+- **The predecessor system** — whatever exists and can be studied: the running system, source, documentation, tests, environments, datasets, usage examples. He points D2 at the material; he does not curate or explain it.
+- **His intended change** — in any form that is useful *to him*: a revision note, rough jottings, a bug list, user complaints, desired features, a prior discussion, a prototype idea, examples of behavior he dislikes, or just a general direction.
+
+From there D2 does the making-sense. It **investigates the predecessor deeply** and biases toward resolving ambiguity on its own, returning to him for clarification only where investigation genuinely cannot settle a material point — and then batching that into a few worthwhile questions rather than a stream of small ones. The existing system is not merely a starting point but an **unusually strong source of harness** (Phase 5, Item 1): D2 mines it for representative behavior, expected input–output pairs, and constraints the successor should keep. What this step produces is a *sufficient initial direction* to begin governed design — not a finished specification, and explicit open questions may remain.
+
+Because his intended change so often speaks *for the D0 users* — their complaints, the features they want, the behavior that fails them — this is also where the **D0-user considerations of Section 1 first enter the design**, carried in his own words rather than a form.
+
+**Why D2 works this way.** The constitution forbids demanding a complete spec up front: "D2 shall not require the intended change to be fully specified" and "should actively assist the Designer in developing a sufficiently clear initial upgrade direction" (Phase 3, Item 2). His scarce resource is attention (Phase 1), so D2 investigates first and asks second — spending its own effort to spare his — and accepts his input in whatever form costs him least. Early discussion is welcome precisely when it prevents far larger downstream Designer Attention Cost (Phase 3, Item 2).
