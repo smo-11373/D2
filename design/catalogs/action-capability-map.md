@@ -14,7 +14,7 @@
 | Action | Capability | Notes |
 |--------|------------|-------|
 | A-001 | C-06 | Accept the operating framework/plan |
-| A-002 | C-06 | Modify the framework/plan |
+| A-002 | C-06, C-40 | Modify the framework/plan; may refine rules |
 | A-004 | C-20 | Discuss a concern (Designer-initiated) |
 | A-005 | C-15 | Review a node (a Review Stop) |
 | A-006 | C-17 | Reserve/assign revision authority |
@@ -35,7 +35,7 @@
 | A-054 | C-36 | Monitor design-process health & anomalies |
 | A-055 | C-37 | Decide whether to adopt D2 (orientation-backed) |
 | A-056 | C-38 | Review/adjust the roles table |
-| A-057 | C-15, C-39 | Confirm the D1 foundational documents (key Review Stop) |
+| A-057 | C-15, C-39, C-40 | Confirm the D1 foundational documents incl. rules (key Review Stop) |
 
 ## R-02 — Design Node Builder  *(served by D2 capabilities)*
 

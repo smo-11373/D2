@@ -4,7 +4,7 @@
 
 > **Layers.** **D2** = capabilities of the D2 product (serve the D1 Designer R-01 and D2-internal work R-02). **D1-product** = the thin D1 wrapper (serve the D1 Technical Manager R-04, produced via R-03). **D0-product** = the deployed product (serve the D0 Operator R-05 and D0 Technical Manager R-06).
 >
-> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First); C-34–C-36 abstract the active-monitoring subjects (progress, spend, health) implied by the Phase 4 Item 3 query set; C-37 abstracts pre-adoption orientation, C-38 the default roles table, and C-39 the D1 foundational documents (Phase 6 entry-point / setup / direction passes). Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
+> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First); C-34–C-36 abstract the active-monitoring subjects (progress, spend, health) implied by the Phase 4 Item 3 query set; C-37 abstracts pre-adoption orientation, C-38 the default roles table, C-39 the D1 foundational documents, and C-40 the D1 rules and standards (Phase 6 entry-point / setup / direction passes). Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
 
 ---
 
@@ -96,6 +96,9 @@ Before adoption, provide an **orientation summary** — a short top-level docume
 
 ### C-39 — Establish the D1 foundational documents (D1 Constitution) · *D2 · Serves R-01*
 Combine the setup skeleton, the predecessor V1, and the intended change into the D1 project's foundational set — a D1-level analogue of Phases 1–5, centered on a **D1 Constitution** (scope, principles, invariants, initial direction) — surfacing understanding, what to preserve / change / add, and residual uncertainties, for a strongly-encouraged confirmation (A-057). **Source:** Phase 3 Item 3; Phase 4 Item 1 (first node establishes the D1 Constitution). *(Phase 6 direction pass.)* *Boundary:* the initial foundational set; ongoing design builds beneath it, and the Constitution's revision authority is Designer-governed (**C-17**).
+
+### C-40 — Establish and govern the D1 rules and standards · *D2 · Serves R-01, R-02*
+Create the D1 project's **rules and standards** as an active, versioned governing document within the foundational set — **most established up front (§4), since the design work cannot proceed without them** — and support governed updates and additions later (the operating framework, §5, may refine them; Designer rules require Designer permission; a central versioned registry). **Source:** Phase 4 Item 1 (inherited / derived rules), Phase 4 Item 2 (rule & sandbox model, versioned registry); `rules.md` (RU-). *Boundary:* the D1 rules & standards artifact — created in §4, refinable in §5; individual rules are catalogued as `RU-` in `rules.md`.
 
 ---
 
