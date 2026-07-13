@@ -42,7 +42,7 @@ Beyond setup the coverage stays **fluid** — a list of likely topics, not yet f
 - being asked only when it's worth it [P]
 - checking how well D2 served him [A]
 
-*Revival in progress: §1, §2, and the active-interaction reference are in this register; §3 (setup) is next, and later coverage stays fluid.*
+*Revival in progress: §1–§3 and the active-interaction reference (§9) are in this register. §4–§6 (giving the starting point, understanding the direction, setting in motion) are pre-revival drafts awaiting rework; later coverage stays fluid.*
 
 ---
 
@@ -72,43 +72,51 @@ It is a summary he can act on, not a manual he must study; he can probe any elem
 
 ---
 
-## 3. Setting up the run — the roles table
+## 3. Building the initial setup — the roles table and the posture  [P]
 
-With D2 adopted, the Designer's first setup step is to establish *who is in the ecosystem*: the set of **roles** the design recognizes. D2 sets this up as a **roles table** he can read at a glance and adjust — everything downstream (what gets designed, what controls the product exposes, who is asked what) follows from it.
+*Derived from Phase 5 Item 3 (Human Position First); Phase 3 Item 1 & Phase 6 Item 1 (setup package, postures).*
 
-**The D1 product wraps the D0 product.** What the run ultimately produces is a *distributable D1 package*: the **D0 product** — the actual application — wrapped in a thin **D1** layer that adds health/crash monitoring, an upgrade smoke-test suite, and upgrade records ("half a level above D0"). Delivery is a **human decision**: the package is handed to the **IT Manager** (D1 Technical Manager, R-04), who unpacks it, extracts the D0 within, and deploys D0 into production — keeping the D1 wrapper to monitor and upgrade it. From there the **D0 Operator** (R-05) runs it day to day. This chain is why Section 1's throughline holds: the Designer designs the D1 system, but its *primary beneficiary is the D0 Operator* at the far end.
+With D2 adopted, the Designer builds the run's **initial setup**. It has two parts — *who is in the ecosystem* (the roles) and *how the run will be conducted* (the posture) — and they share one shape: D2 supplies a good default and keeps his action to a light review. Both land in a single reviewable **setup package** he can inspect, revise, and return to later.
 
-**The D2 Assistant is a role in its own right.** The design is conducted for the Designer by the **D2 Assistant** (R-07) — a non-human, LLM-based role that is his *single point of contact* with the entire D2 system. He never addresses a Design Node, an authority, or a service directly; he speaks to the D2 Assistant in plain design terms, and it reaches whatever is needed on his behalf. *(Phase 4 — the unified D2 interaction point.)*
+### 3a — The roles table
 
-**The roles.** Each is marked by provenance — intrinsic to the ecosystem, or a D2-provided default the Designer can change:
+**The Designer action.** Review and adjust the cast of **roles** the design will recognize — accept the defaults or tailor them. → new action **A-056**.
+
+**The common element.** Every project recognizes the same *kinds* of role, differing only in the product-side cast: the ecosystem's core roles are fixed, while the downstream, product-facing roles are project-dependent but seedable with sensible defaults. The role set matters because — *Human Position First* — controls, monitoring, and behaviour are all shaped by which role they serve, so it frames everything the design will do.
+
+**The D2 support.** D2 provides a **default roles table**, each role marked **intrinsic** (fixed) or a **Designer-changeable default**, which he accepts or tailors. → new capability **C-38**.
 
 | Role | What it is | Provenance |
 |---|---|---|
 | **D1 Designer** (R-01) | The human the ecosystem serves; sole design authority | **Intrinsic** — fixed |
-| **D2 Assistant** (R-07) | Non-human LLM; the Designer's single point of contact; conducts the design on his behalf | **Intrinsic** — fixed |
-| **IT Manager / D1 Technical Manager** (R-04) | **A human** who receives the delivered D1 package, unpacks it, extracts D0, deploys it to production, and runs the wrapper (monitoring, upgrades) | **Default** — Designer-changeable |
+| **D2 Assistant** (R-07) | Non-human LLM; his single point of contact; conducts the design on his behalf | **Intrinsic** — fixed |
+| **IT Manager / D1 Technical Manager** (R-04) | A human who receives the delivered D1 package, extracts D0, deploys it, and runs the wrapper | **Default** — Designer-changeable |
 | **D0 Operator** (R-05) | Runs the deployed D0 in production; D1's primary beneficiary | **Default** — Designer-changeable |
 | **D0 Technical Manager** (R-06) | Front-line install and technical support of a D0 deployment | **Default** — Designer-changeable |
 
-**D2-internal working agents — an open area.** Separately from those roles, D2 does the design work through **internal agents**. The **Design Node Builder** (R-02) that builds one bounded design node is really just *one kind of agent*; there will likely be **others** — an agent that enforces a standard, an agent that does integration, and so on — alongside the **D1 Programmer** (R-03) that writes the D0 code. How many agents, how many *types*, and how the Designer would even specify them, is **left deliberately open at this stage** — we keep an open mind rather than fix a taxonomy before it is justified (*Top-to-Bottom*). These are D2's own labor, not roles the Designer configures.
+*The product boundary this encodes:* what the run produces is a distributable **D1 package** wrapping the **D0 product**; delivery is a human decision — the IT Manager (R-04) unpacks it, extracts D0, and deploys it, while the D0 Operator (R-05) runs it. That chain is why Section 1's throughline holds — the Designer designs D1, but its primary beneficiary is the D0 Operator at the far end.
 
-**Why D2 works this way.** The constitution designs by **human role first** (Phase 5, Item 3 — "Human Position First"): controls, monitoring, and behavior are all shaped by which role they serve — so the role set is the natural first thing to set up, the frame the rest of the design hangs on. Marking provenance keeps intent legible (the provenance principle): the Designer always sees what the ecosystem fixed versus what D2 merely seeded and he can change.
+*Not roles he configures:* D2 does the design work through **internal agents** — the Design Node Builder (R-02), the D1 Programmer (R-03), and likely others (a standard-enforcer, an integrator). How many, and of what types, is deliberately **left open** (*Top-to-Bottom*) and recorded as an open question; these are D2's own labour, not part of the roles table he sets.
+
+### 3b — The posture (default design choices)
+
+**The Designer action.** Select a **posture** — *Standard*, *High Harness*, or *Lean* — or accept the one D2 recommends; optionally tune it. → action **A-015** (tuning **A-019**).
+
+**The common element.** A run has many low-level knobs — how much harness and monitoring, how deeply to investigate, how much to report, when to stop for review, how much resource to spend — and across projects they **co-vary** into a few coherent stances. So one high-level choice can settle them all.
+
+**The D2 support.** D2 offers **default design choices**: a few postures, one choice resolving into many settings, each inspectable, comparable, and overridable. → **C-01** (default design choices), **C-22** (tunable resolution depth & posture).
+
+### The setup package
+
+Both parts land in one **Selected Setup Configuration Package** — a centralized, versioned, reviewable record he can inspect, compare, revise, and return to later, with his own changes visible. → **A-016** / **C-02**, **C-03**; later governed revision **A-017** / **C-05**.
+
+**Why this shape.** Human Position First (Phase 5, Item 3) makes the role set the natural first thing to fix — it frames the design. And the Designer's attention belongs on high-level choices, not low-level configuration (Phase 1): *"the normal action should often be to accept the defaults"* (Phase 3, Item 1). So both parts of setup reduce to a good default plus a light review.
+
+**The open edge.** Default roles and postures cover the common shape; a project may need a role the defaults don't name or a setting no posture captures — D2 lets him add or override. The defaults are a starting point, not a ceiling. *(Whether he may change the setup mid-run is itself an open question — see the decisions log.)*
 
 ---
 
-## 4. Setting up the run — default design choices (the posture)
-
-With the roles settled, the Designer's next setup step is to choose *how the run will be conducted*. He wants this to be easy: to get going from a good default, not to fill in a configuration document.
-
-So D2 offers him **default design choices**. It presents a small number of high-level **postures** — for example *Standard*, *High Harness*, or *Lean* — and he picks one, or simply accepts the one D2 recommends. That single choice settles the many things a run would otherwise make him configure: how he and D2 will work together, how much harness and monitoring to expect, how deeply to investigate and evaluate, how much to report, when to stop for his review, how much resource to spend. He chooses the posture; D2 works out the detailed consequences.
-
-The choice stays compact and human-oriented — a short selection, not a settings file. He is never forced to look deeper, but nothing that matters is hidden from him: if he wants, he can see what a posture entails, compare it against another, ask why a particular setting came out the way it did, or change any part before continuing. And because he may want to revisit how the run was set up, D2 keeps his setup as one thing he can return to, review, and revise — with his own changes plain to see.
-
-**Why D2 works this way.** His time and attention are the scarce resource (Phase 1 §2.3), and his attention belongs on high-level design, not low-level configuration (Phase 1 §2.5). So D2 supplies the defaults and asks him only for a high-level choice — "the normal action should often be to accept the defaults" (Phase 3, Item 1) — resolving the rest itself (Phase 2, Principle 1). Making setup a single easy choice is D2 serving him exactly as the constitution requires.
-
----
-
-## 5. Giving D2 the starting point
+## 4. Giving D2 the starting point
 
 With the run set up, the Designer gives D2 what it needs to begin: **the existing system, and — however roughly — what he wants changed.** This is the one moment he must supply something of his own, so D2's whole job here is to make that as light as possible: to take incomplete, informal input and do the work of making sense of it, so he never has to write a full specification.
 
@@ -125,7 +133,7 @@ Because his intended change so often speaks *for the D0 users* — their complai
 
 ---
 
-## 6. Understanding the proposed direction before he commits
+## 5. Understanding the proposed direction before he commits
 
 Before the real design work begins, the Designer gets to see what D2 made of his input — and to react to it. This is his first substantial **passive** step: D2 has done the studying, and now hands him back a clear picture and a proposed way forward to accept, adjust, or redirect — not a pile of open questions to resolve.
 
@@ -145,7 +153,7 @@ What he commits to at this step is a *direction*, not a finished design — and 
 
 ---
 
-## 7. Setting the design in motion
+## 6. Setting the design in motion
 
 With the direction agreed, the Designer settles one more thing before work proceeds: **how D2 will actually conduct the design.** D2 prepares this as a single package that says, in effect, *"here is how I propose to run this D1 design"* — and, as with every setup-shaped step, his normal action is simply to accept it, with adjusting or pushing back kept cheap.
 

@@ -4,7 +4,7 @@
 
 > **Layers.** **D2** = capabilities of the D2 product (serve the D1 Designer R-01 and D2-internal work R-02). **D1-product** = the thin D1 wrapper (serve the D1 Technical Manager R-04, produced via R-03). **D0-product** = the deployed product (serve the D0 Operator R-05 and D0 Technical Manager R-06).
 >
-> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First); C-34–C-36 abstract the active-monitoring subjects (progress, spend, health) implied by the Phase 4 Item 3 query set; C-37 abstracts pre-adoption orientation (Phase 6 entry-point pass). Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
+> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First); C-34–C-36 abstract the active-monitoring subjects (progress, spend, health) implied by the Phase 4 Item 3 query set; C-37 abstracts pre-adoption orientation and C-38 the default roles table (Phase 6 entry-point & setup passes). Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
 
 ---
 
@@ -87,6 +87,9 @@ Present the time and cost the D1 design process has consumed — cumulative and 
 
 ### C-36 — Design-process health & anomaly monitoring · *D2 · Serves R-01*
 Surface abnormal process behavior, rejection loops, high-impact unresolved issues, and a consolidated design-health report. **Source:** Phase 4 Item 3 (active-interaction pass); rests on observation data (**C-19**). *Boundary:* health/risk signalling; a Designer concern escalates to investigation via **C-20** (A-008).
+
+### C-38 — Provide the default roles table · *D2 · Serves R-01*
+Seed the ecosystem's roles for the run, each marked **intrinsic** (fixed: the Designer, the D2 Assistant, the internal agents) or a **Designer-changeable default** (the product-side / downstream roles), and let the Designer accept or tailor the default set. The role set frames what the design will do (Human Position First). **Source:** Phase 5 Item 3; Phase 6 (setup pass). *Boundary:* the role set as a setup item, carried in the setup package (**C-02**); cf. **C-01** (posture / design-choice defaults).
 
 ### C-37 — Adoption orientation (orientation summary) · *D2 · Serves R-01*
 Before adoption, provide an **orientation summary** — a short top-level document that, *in summary not detail*, presents what D2 is, the layer model (D2 → D1 → D0) and where the Designer's authority sits, **who is responsible for what** (the roles and their boundaries), what using D2 will ask of him, and what he gets out — a compact honest basis for the adopt / decline / defer decision. Progressive disclosure; a summary to act on, not a manual. **Key elements identified; full document content deferred to D2's later design (open list).** **Source:** Phase 1 (Designer authority & attention); Phase 2 (progressive disclosure). *(Phase 6 entry-point pass.)* *Boundary:* pre-adoption orientation; cf. **C-23** (post-adoption design-input intake).
