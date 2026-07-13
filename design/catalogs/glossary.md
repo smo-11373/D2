@@ -34,6 +34,10 @@ Unqualified **"Designer"** in Phases 1–4 and most of 5–6 means the **D1 Desi
 
 "Primary **user** of D2" = the **D1 Designer**. "**D0 user(s)** / user priorities / user skill level / user-level monitoring" (Phase 5; Phase 6 Item 1) = the **D0 Operator** and other D0-facing roles. — related: `d1-designer`
 
+### `role` — role (= Phase 5's "position")
+
+A conceptual responsibility boundary in the D2 / D1 / D0 ecosystem. The living design standardizes on **"role"** (matching the catalog `role-action.md` and the `R-…` keys); the frozen Phase 1–5 baseline calls the same idea a **"position"** (e.g. Phase 5's "Human Position First") — read the two as synonyms. Each role is either **intrinsic** to the ecosystem (fixed) or a D2-provided **default** the D1 Designer can change. — related: `d1-designer`, `d0`, `user`
+
 ### `designer-attention-cost` — Designer Attention Cost
 
 The D1 Designer's scarce time and cognitive effort (Phase 1 §2.3). D2 aims to reduce the *total cognitive burden* of Designer participation, not merely the number of interactions. — related: `d1-designer`
