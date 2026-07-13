@@ -4,7 +4,7 @@
 
 > **Layers.** **D2** = capabilities of the D2 product (serve the D1 Designer R-01 and D2-internal work R-02). **D1-product** = the thin D1 wrapper (serve the D1 Technical Manager R-04, produced via R-03). **D0-product** = the deployed product (serve the D0 Operator R-05 and D0 Technical Manager R-06).
 >
-> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First). Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
+> **Provenance.** C-01–C-19 were derived from the prior Phase 6 items; C-20–C-23 fill the D2 gaps the audit found (implied by Phases 2–4); C-24–C-33 are the D1/D0-product capabilities implied by the downstream roles' actions (Phase 5 Human Position First); C-34–C-36 abstract the active-monitoring subjects (progress, spend, health) implied by the Phase 4 Item 3 query set. Some D2 capabilities are **autonomous** — D2 performs them to *serve* a role, with no 1:1 role action (audit finding F2).
 
 ---
 
@@ -78,6 +78,15 @@ A Designer-controlled balance among investigation, inference, intervention, and 
 
 ### C-23 — Design-input intake & operating contract · *D2 · Serves R-01*
 Establish the initial design input (Predecessor D1 package + intended change) and the Designer–D2 Operating Contract; help form a sufficient upgrade direction. **Source:** Phase 3 Item 1–2. *(Audit F3 gap-fill.)* *Boundary:* establishes the operating contract, which the setup package (**C-02**) then carries.
+
+### C-34 — Design-progress monitoring · *D2 · Serves R-01*
+Present how far the design has advanced — completed vs pending work, changes since the Designer's last review, per-node revision counts — on demand or as a standing view. **Source:** Phase 4 Item 3 (active-interaction pass); rests on observation data (**C-19**). *Boundary:* progress/advancement; cf. **C-35** (spend), **C-36** (health).
+
+### C-35 — Resource & cost monitoring · *D2 · Serves R-01*
+Present the time and cost the D1 design process has consumed — cumulative and per node. **Source:** Phase 4 Item 3 (active-interaction pass); rests on observation data (**C-19**). *Boundary:* resource/spend; cf. **C-34** (progress).
+
+### C-36 — Design-process health & anomaly monitoring · *D2 · Serves R-01*
+Surface abnormal process behavior, rejection loops, high-impact unresolved issues, and a consolidated design-health report. **Source:** Phase 4 Item 3 (active-interaction pass); rests on observation data (**C-19**). *Boundary:* health/risk signalling; a Designer concern escalates to investigation via **C-20** (A-008).
 
 ---
 

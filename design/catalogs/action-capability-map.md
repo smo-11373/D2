@@ -30,6 +30,9 @@
 | A-018 | C-14 | Answer a Clarification Request |
 | A-019 | C-22 | Tune resolution depth / posture |
 | A-020 | C-21 | Request/review a D2 audit |
+| A-052 | C-34 | Monitor design progress |
+| A-053 | C-35 | Monitor resource & cost spend |
+| A-054 | C-36 | Monitor design-process health & anomalies |
 
 ## R-02 — Design Node Builder  *(served by D2 capabilities)*
 

@@ -28,7 +28,7 @@ This project produces a **D2 product**: the design system the D1 Designer will u
 10. **Being asked only when it's worth it** [P] — when D2 needs his judgment it gathers its questions and asks once; when work is done it reports in his terms, not machine records. *(Phase 2.)*
 11. **Checking how well D2 served him** [A] — afterward, D2 shows him what the process cost him — his time, his attention, where it went — and where it could serve better next time. *(Phase 3, Item 5.)*
 
-*Sections 8–11 are to be written in the same style as Sections 2–7 below.*
+*Registers differ mid-revision. **§9 below is the reference** for the register the whole document is moving to — Designer actions → abstracted common element → D2 support, catalog-linked, open-list. §1–§7 are in an earlier prose register and will be **revived** to match; §8, §10, §11 are written in that same pass.*
 
 ---
 
@@ -135,3 +135,32 @@ The proposed **operating framework** gathers three things:
 He is meant to move through this quickly: accept the framework as proposed, change selected parts, ask D2 to investigate something first, or raise a concern to discuss. Nothing here demands a heavy sit-down; the point is that the *shape and rules of the work are visible and his to shape* before momentum builds.
 
 **Why D2 works this way.** The constitution has D2 "prepare a proposed D1 Design Operating Framework for low-cost Designer review and confirmation" — one consolidated package, not a scattering of decisions — and keeps his normal action to "accept the proposed framework, modify selected parts, request investigation, or discuss a material concern" (Phase 4, Item 1). Deciding *how* the design will run is exactly the high-leverage, low-frequency choice his attention is for: settle the frame once, cheaply, then let D2 carry it out (Phase 2).
+
+---
+
+## 9. Inspecting, monitoring, and intervening  [A]
+
+*Active involvement — derived from Phase 4 Item 3; the single interaction point is Phase 2, Principle 3. **This section is written in the target register; §1–§8 will be revived to match.***
+
+Everything before this is **passive**: the Designer reacting to what D2 brings him. This is the **active** counterpart — what he does on his own initiative, unprompted, whenever he wants. It is the harder side to pin down. Passive involvement takes a few static, near-universal forms (a review, a clarification); active involvement is fluid and varies with the project, so we cannot pre-enumerate it. What we *can* do — and what the foundation's own query examples let us do — is abstract the **common likely elements** and support those, accepting that the list stays open.
+
+**The invariant — one channel.** However he reaches in, the model is fixed: *ask, inspect, drill down, intervene*, in natural language through the single D2 interaction point (the D2 Assistant, R-07). He never names the Design Node, authority, data location, or service behind his question; D2 carries the burden of locating the relevant state, interpreting the request, and routing any resulting action through governance. This channel is the static, always-present part of the active side. → Designer action **A-007**, D2 support **C-20**.
+
+**What he watches — the monitoring subjects.** The foundation's illustrative queries, though explicitly "not a command vocabulary," cluster into a small set of recurring subjects — and the clustering *is* the abstraction. Across projects he will want to watch:
+
+- **The design itself** — the emerging D0 design and the D1 structure: *"show me the proposed D0 directory structure," "explain Algorithm A and how it differs from V1," "show me the Design Tree."* Ordinary inspection, already carried by the channel. → A-007 / C-20.
+- **Progress** — how far the work has advanced and how it is moving: *"how far has the work advanced," "which nodes required the most revisions," "what changed since my last review."* → new **A-052** / **C-34**.
+- **Resource and cost spend** — *"how much time has design consumed so far," "how much has it cost," "which nodes have consumed the most time or cost."* → new **A-053** / **C-35**.
+- **Health and risk** — *"are any parts of the process behaving abnormally," "why has this branch been rejected so many times," "which unresolved issues are most likely to affect major parts."* → new **A-054** / **C-36**.
+
+Progress, spend, and health are exactly the active elements the coverage check found *unabstracted* — real, recurring, named in the foundation, yet previously folded into generic inspection. They rest on the observation-data D2 provisions at setup (**C-19**). Naming them as first-class subjects is the substance of this section.
+
+**What he does about it — the intervention modes.** Having looked, he may act, in one of three forms the foundation names:
+
+- **Inquiry / inspection** — explain, report, trace, show, compare. → A-007.
+- **Investigation / concern** — have D2 critically examine a suspected problem and recommend action: *"investigate whether the D0 directory structure is becoming unnecessarily complicated."* → A-008.
+- **Directive** — exercise authority: *"do not allow Algorithm A to change without my approval," "stop the implementation branches until I review the verification design."* → A-009.
+
+One rule governs D2's handling: an intervention **normally initiates investigation rather than directly mutating the design** — D2 interprets the concern, finds the affected objects and their authority, investigates, then either acts on its own or prepares a decision for him. Explicit authority directives (stop a branch, reserve approval) are recognized as authority actions and applied promptly. All of this flows through the one channel, **C-20**.
+
+**The open edge.** This is deliberately an open list. The specific things a Designer asks are unbounded and project-dependent; D2 supports the recurring *subjects* (design, progress, spend, health) and *modes* (inquire, investigate, direct) the foundation lets us anticipate, and interprets any novel natural-language request against them. It does not pretend to pre-enumerate every project's active concern — which is exactly why the channel is natural-language and D2, not the Designer, carries the interpretive burden.

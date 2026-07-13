@@ -63,6 +63,9 @@
 | A-018 | Answer a Clarification Request | Phase 3/4; Phase 6 Item 2 §11 | Distinct from a Review Stop |
 | A-019 | Tune resolution depth / intervention posture | Phase 2 §2.6 | Adjusts investigation depth vs attention cost |
 | A-020 | Request / review an optional D2 audit after completion | Phase 3 §Item 5 | "Did D2 design D1 well?" |
+| A-052 | Monitor design progress (advancement, changes since last review, revision counts) | Phase 4 §Item 3 | Active/standing monitoring subject; abstracted from the Item 3 query set |
+| A-053 | Monitor resource & cost spend (time and cost, cumulative & per node) | Phase 4 §Item 3 | Active/standing monitoring subject |
+| A-054 | Monitor design-process health & anomalies (abnormal behavior, rejection loops, high-impact open issues) | Phase 4 §Item 3 | Active/standing; investigation escalates via A-008 |
 
 ### R-02 — Design Node Builder
 
