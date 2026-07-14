@@ -57,3 +57,32 @@ our quad or refine it.
 **Recommended next step.** Derive an initial `C-` capability list from Item 2 (richest source),
 then Items 1 and 3; wire each to its supporting role(s)/action(s) via `action-capability-map.md`;
 log the open questions above in `../decisions/`.
+
+## D2 ↔ D1 self-similarity — what carries forward, what differs
+
+*(Recorded 2026-07-13, Designer direction, while reviving §4–§5 of the functional doc.)*
+
+**Stable core.** Phases 1–5 read as largely **fixed across the layers** — the same governing
+constitution is expected to hold for D2 and D1, and possibly D0, with only modest layer-specific
+adaptation. As we revive later sections, keep testing whether the Phase-1–5 frame keeps carrying
+forward.
+
+**The similarity — shared structural concepts.** Both D2 and D1 designs should be built on the
+same two concepts: the **design graph** (the Design Tree / design-graph structure) and the
+**design node** (a bounded design responsibility). These are common elements worth abstracting.
+The *implementation* of each may differ by layer — D1's is expected to be **significantly more
+sophisticated**, D2's **relatively simple** — but the concepts are shared.
+
+**The primary difference — the existing-system harness.** D1, by necessity, **upgrades an
+existing (V1) system**, and that system is a huge factor in D1 design. In particular it is a
+**strong harness**: one of the strongest motivations for upgrading rather than building from
+scratch is that the predecessor supplies behavioural examples, expected input–output pairs, and
+constraints (Phase 5, Item 1 — Harness First). D1 design steps should **exploit it to the
+maximum** — constructing test examples and so on — and this shapes those steps. **At the D2 level
+there is no such predecessor**, so this harness is absent. This is the **primary difference
+between D2 and D1 design steps.**
+
+**Forward intent.** To the extent possible, arrange **D2's own design** on the same design-graph /
+design-node concepts — deferred to **later, likely after this phase** (Phase 7 architecture
+territory). Note the Design-Tree-vs-graph relationship model is itself still open (Phase 4,
+Item 2).
