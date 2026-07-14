@@ -5,6 +5,7 @@ lives in the top-level `workspace/`). Carried across phases; Phase 7 keeps using
 
 ## Files
 
+- `registry.md` — **the table of tables**: author/owner and read/write authority for each catalog table
 - `role-action.md` — Roles (`R-`) and the Actions (`A-`) each performs
 - `capabilities.md` — Capabilities (`C-`), tagged by layer (D2 / D1-product / D0-product)
 - `action-capability-map.md` — the Action ↔ Capability join table
