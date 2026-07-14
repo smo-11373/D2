@@ -68,7 +68,7 @@ adaptation. As we revive later sections, keep testing whether the Phase-1–5 fr
 forward.
 
 **The similarity — shared structural concepts.** Both D2 and D1 designs should be built on the
-same two concepts: the **design graph** (the Design Tree / design-graph structure) and the
+same two concepts: the **design tree** (the Design Tree structure) and the
 **design node** (a bounded design responsibility). These are common elements worth abstracting.
 The *implementation* of each may differ by layer — D1's is expected to be **significantly more
 sophisticated**, D2's **relatively simple** — but the concepts are shared.
@@ -82,7 +82,7 @@ maximum** — constructing test examples and so on — and this shapes those ste
 there is no such predecessor**, so this harness is absent. This is the **primary difference
 between D2 and D1 design steps.**
 
-**Forward intent.** To the extent possible, arrange **D2's own design** on the same design-graph /
+**Forward intent.** To the extent possible, arrange **D2's own design** on the same design-tree /
 design-node concepts — deferred to **later, likely after this phase** (Phase 7 architecture
-territory). Note the Design-Tree-vs-graph relationship model is itself still open (Phase 4,
-Item 2).
+territory). Note the exact Design Tree relationship model (single- vs multi-parent) is itself
+still open (Phase 4, Item 2).
