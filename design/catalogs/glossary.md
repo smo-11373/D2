@@ -42,6 +42,10 @@ A conceptual responsibility boundary in the D2 / D1 / D0 ecosystem. The living d
 
 A **self-contained unit of design responsibility**, the building block of the design tree. Best thought of, at the top level, as a single **agent** — human-like in being self-contained and working with local autonomy, though its authority sits **below the human Designer's** (whose authority and attention remain the top priority). A design node may internally consist of **multiple agents** (e.g. a builder, a standard-enforcer, an integrator), but is treated as **one agent at its boundary**. Design nodes are the common unit both D2 and D1 designs are built from; how they relate in the tree (single- vs multi-parent) is still open (Phase 4 Item 2). — related: `role`, `d2-designer`
 
+### `submission-package` — Submission Package
+
+The bundle a design node submits **upward for acceptance** when its design result is ready. It carries the result **together with the node's own justification** — justifying the result is the (child) node's responsibility. The **parent node, as enforcer, reviews and approves or rejects** it; **submission is not acceptance** (see `RU-02` in `rules.md`). — related: `design-node`
+
 ### `designer-attention-cost` — Designer Attention Cost
 
 The D1 Designer's scarce time and cognitive effort (Phase 1 §2.3). D2 aims to reduce the *total cognitive burden* of Designer participation, not merely the number of interactions. — related: `d1-designer`

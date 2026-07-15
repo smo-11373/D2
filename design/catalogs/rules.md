@@ -10,3 +10,11 @@
 - **Scope:** D1 / D0 design.
 - **Source:** Phase 5 §Item 3 (Human Position First); §Item 4 (Quality over Expediency — "avoid hard-coded adjustable values").
 - **Status:** Accepted (baseline-derived).
+
+## RU-02 — A node justifies its own result; the parent approves
+
+- **Rule:** Each design node is responsible for the **justification** of its design result. The justification is authored by that (child) node and **attached to its submission package**; the **parent node — as enforcer — reviews and approves or rejects** it. Justification travels *with* the result, added once the node is designed, not maintained separately.
+- **Derived from:** the **design node** as a self-contained agent with sub-human authority (glossary `design-node`); **submission ≠ acceptance** (a node may produce and justify, but acceptance authority sits with the parent); *authority follows meaning*.
+- **Scope:** D2 and D1 design (design-tree governance; applies to D2's own design too — the Phase 6 "Why" narratives are node justifications in this sense).
+- **Source:** Phase 4 §Item 2 (submission vs acceptance; upward proposals routed by authority); Phase 6 Item 2 §7; Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).

@@ -44,7 +44,7 @@ Carry a bounded design responsibility from prepared input to an evaluated design
 Evaluate before submission (conformance, comparison, tests, semantic review), at local vs integration scopes, scaled by posture/importance. **Source:** Phase 6 Item 2 §6, §8, §9.
 
 ### C-12 — Submission & acceptance governance · *D2 · Serves R-02*
-Treat submission and acceptance as distinct; support outcomes (accept / return / conditional / escalate). **Source:** Phase 6 Item 2 §7.
+Treat submission and acceptance as distinct; the submission package carries the authoring (child) node's **justification**, which the **parent node reviews and approves / rejects** (**RU-02**); support outcomes (accept / return / conditional / escalate). **Source:** Phase 6 Item 2 §7.
 
 ### C-13 — Designer-oriented result reporting · *D2 · Serves R-01*
 Concise Designer-oriented reports after major accepted work, with deeper material on demand. **Source:** Phase 6 Item 2 §10.
