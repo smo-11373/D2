@@ -6,6 +6,8 @@
 
 *(opened 2026-07-13)* — D2 performs the design work through **internal agents**. **R-02 Design Node Builder** is only *one kind*; there will likely be others (e.g. a standard-enforcing agent, an integration agent) alongside **R-03 D1 Programmer**. Unresolved: **how many agents, how many types, and how (if at all) the Designer specifies them.** Deliberately left open at this stage rather than fixing a taxonomy prematurely (*Top-to-Bottom*). These are D2's own design-time labor, not positions the Designer configures. Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §2.
 
+**Refinement (2026-07-15).** At the top level, a **design node is modeled as a single agent** — a self-contained unit, human-like but with sub-human authority — which *may itself consist of multiple agents*. The count and types of internal agents remain open; the single-agent-at-the-boundary framing is settled. See glossary `design-node`.
+
 ### Degree of setup changeability (roles table & posture)
 
 *(opened 2026-07-13)* — How much may the D1 Designer **revise or add to** the roles table and the posture *at setup*? A D2 design question; the intent is to **start simple and relatively rigid** and widen later as warranted. Independent of the degree chosen, the **minimum guaranteed floor is inspectability**: he can always look inside — each role's definition and intrinsic/default status, and each posture knob's definition and consequence (a next-level view). Distinct from the *mid-run* mutability question below (which concerns changing setup after work is underway). Context: `../phase-6/functional/d2-functionality-for-the-d1-designer.md` §3.
