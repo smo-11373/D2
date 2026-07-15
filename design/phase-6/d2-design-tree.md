@@ -40,12 +40,33 @@ hierarchy: *Role → Action → Capability → Architecture → Implementation.*
 | **Functionality** | the capabilities `C-*` + the Action↔Capability map | Role-Action |
 | **Architecture** | Phase 7 architecture | Functionality |
 
+## Node governance — contracts, proposals, stopping points
+
+Worked out on the simplest case (Role node vs Action node):
+
+- **Ownership.** Each table-node owns its table: the **Role node** owns the role table (`R-`); the
+  **Role-Action node** owns the role-action table (`A-`).
+- **Contract down.** A parent specifies a **contract** for its child that **includes the parent's
+  owned data**. The Role node's contract to the Role-Action node carries the **role table**; the
+  Role-Action node works within it. *(RU-04.)*
+- **Propose up.** To change inherited data, the child **proposes the change to the owning ancestor**,
+  which accepts or rejects. The Role-Action node cannot rewrite the role table — it proposes; the
+  Role node decides. *(RU-04.)*
+- **Stop on a pending proposal.** An open upward proposal is a **stopping point**: the proposer may
+  not spawn or advance until it is resolved. This prevents **drift** in a long, deep tree. *(RU-05.)*
+
+**Worked example (A → B → C).**
+
+- **B** proposes a change to **A** → B stops; A accepts or rejects.
+- **C** proposes a change that affects **both B and A** → C stops; the change is approved by **A**
+  (the owner) and confirmed **down through B**; only then may C proceed — e.g. spawn **D**.
+
 ## To resolve next (the "own data" question)
 
-1. **Table nodes vs functional nodes overlap.** `A-055` (Decision) and `A-015` (Setup) also live in
-   the **Role-Action table** the Role-Action node owns. Decide the ownership model: does the
-   Role-Action node own the *whole* `A-` table (and Decision/Setup only *reference* their rows), or
-   is the table's content *distributed* to the functional nodes that use it?
+1. **Table nodes own their tables — resolved.** Each table-node owns its table (Roles → `R-`,
+   Role-Action → `A-`); parents pass owned data down as a contract, children propose changes up
+   (`RU-04`, `RU-05`). Functional nodes (Decision, Setup) therefore **reference** their `A-`/`C-`
+   rows read-only rather than owning them. *(Confirm this reference model for the functional nodes.)*
 2. **"Functionality" node** may be **omitted / folded** into Role-Action or Architecture.
 3. **Roles under Setup?** The role table was part of setup in functional-doc §3; here Roles is a
    *child* of Setup. Confirm.

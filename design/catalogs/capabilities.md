@@ -59,7 +59,7 @@ Offer a review opportunity at appropriate points before continuation; tendency s
 Determine the next design work (advance / spawn / integrate / revisit); keep advancement and spawning distinct. **Spawning is driven by the Designer's actions (RU-03):** a *static* passive-action list (from the approved setup/fundamentals) spawns children first; active-action spawning is deferred. **Source:** Phase 6 Item 2 §13–14.
 
 ### C-17 — Revision-authority governance · *D2 · Serves R-01, R-02*
-Carry a revision-authority status per result (D2-managed / Designer-governed); route revision proposals; prevent silent revision. **Source:** Phase 6 Item 2 §15.
+Carry a revision-authority status per result (D2-managed / Designer-governed); route revision proposals; prevent silent revision. An **open upward proposal is a stopping point** — the proposer halts until it is resolved (**RU-05**); the contract-down / propose-up discipline is **RU-04**. **Source:** Phase 6 Item 2 §15.
 
 ### C-18 — Design lineage & traceability · *D2 · Serves R-01 (autonomous)*
 Preserve enough history to explain what is effective, where it came from, what governs it, and why it changed. **Source:** Phase 6 Item 2 §16.

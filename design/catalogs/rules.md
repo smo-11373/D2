@@ -26,3 +26,20 @@
 - **Scope:** D2 and D1 design (design-tree governance; applied to D2's own design first).
 - **Source:** Phase 4 §Item 2; Phase 6 functional model (passive/active actions); Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed); active-action spawning deferred (see `../phase-6/working-notes.md`).
+
+## RU-04 — Contract passes down; changes to inherited data are proposed up
+
+- **Rule:** A parent node specifies a **contract** for each child, and the contract **includes the parent's owned data** that governs the child (e.g. the **Role node** owns the role table and passes it to the **Action node** as part of its contract). The child works **within** the contract. To change **inherited (ancestor-owned) data**, the child **proposes the change upward** to the owning node, which **accepts or rejects** — a node may not rewrite what it does not own.
+- **Derived from:** *authority follows meaning*; the node owns-its-own-data rule (glossary `design-node`); Phase 4 §Item 2 (child contract; upward revision proposals — "Designer control prevents silent revision, **not** upward feedback").
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Phase 4 §Item 2; Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
+## RU-05 — An open upward proposal is a stopping point (no drift)
+
+- **Rule:** Proposing a change to a parent/ancestor is a **stopping point**. The proposing node **must stop — it may not spawn children or advance — until the proposal is resolved** (approved or rejected). A change affecting an ancestor several levels up must be **approved by the owning node and confirmed down the intervening chain** before the proposer may proceed.
+- **Rationale:** the design tree can be **long and deep**; halting on a pending upward proposal **prevents drift** — descendants never build on a change that has not yet been approved.
+- **Derived from:** RU-04 (upward proposals); the submission/acceptance discipline (RU-02); *Verification Before Realization* — do not build on the unapproved.
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Phase 4 §Item 2; Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
