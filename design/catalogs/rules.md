@@ -35,6 +35,15 @@
 - **Source:** Phase 4 §Item 2; Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed).
 
+## RU-06 — Evaluate before you propose (evaluation is separate from the official proposal)
+
+- **Rule:** A proposed change is **evaluated before it is officially proposed**, and evaluation is a **separate step/command** that **commits nothing**. Evaluation **dry-runs** the change: it probes **upward** (would the change land correctly on the ancestor?) and **downward** (how does it alter the child's contract / affect the child?), and returns an **evaluation report**. On the report, the initiator either **formalizes** the change or **revises** it. Only the **official proposal** propagates the change (up, then — if accepted — down) and firms it up (RU-04, RU-05).
+- **Two initiation sources:** (a) **agent-initiated** — a node proposes a change while building under its contract, or in response to a child's proposal; (b) **Designer-initiated** — the D2 Designer (later the D1 Designer) proposes a change, usually after a round or more of **discussion**.
+- **Derived from:** *Verification Before Realization* (evaluate before committing); impact analysis (C-05); the propose-up / stopping-point discipline (RU-04, RU-05).
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
 ## RU-05 — An open upward proposal is a stopping point (no drift)
 
 - **Rule:** Proposing a change to a parent/ancestor is a **stopping point**. The proposing node **must stop — it may not spawn children or advance — until the proposal is resolved** (approved or rejected). A change affecting an ancestor several levels up must be **approved by the owning node and confirmed down the intervening chain** before the proposer may proceed.

@@ -36,6 +36,7 @@
 | A-055 | C-37 | Decide whether to adopt D2 (orientation-backed) |
 | A-056 | C-38 | Review/adjust the roles table |
 | A-057 | C-15, C-39, C-40 | Confirm the D1 foundational documents incl. rules (key Review Stop) |
+| A-058 | C-41 | Evaluate a proposed change (impact dry-run) before proposing |
 
 ## R-02 — Design Node Builder  *(served by D2 capabilities)*
 

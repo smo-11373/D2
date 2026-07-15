@@ -61,6 +61,27 @@ Worked out on the simplest case (Role node vs Action node):
 - **C** proposes a change that affects **both B and A** → C stops; the change is approved by **A**
   (the owner) and confirmed **down through B**; only then may C proceed — e.g. spawn **D**.
 
+### Change process — evaluate, then propose
+
+**Initiation — two sources.**
+
+- **Agent-initiated** — a node (e.g. B) proposes a change while building under its contract, *or* in
+  response to a child's (C's) proposal. B decides, then submits the proposal upward.
+- **Designer-initiated** — the **D2 Designer** (later the D1 Designer) proposes a change to a node,
+  usually after a round or more of **discussion**.
+
+**Evaluate before proposing** — a *separate command* that **commits nothing** (`RU-06`, `C-41`).
+Once a change is roughly formulated, evaluate it as a **dry-run**:
+
+- **Probe up** (to A): would the change land correctly on the ancestor?
+- **Probe down** (to C): how would C's contract change, and what is the effect on C?
+- Returns an **evaluation report**. On it, the initiator **formalizes** the change or **revises** it.
+
+**Official proposal** — on a decision to proceed (`RU-04`, `RU-05`): the change **propagates
+upward**; if accepted, **propagates downward**; then it is **firmed up**. Upward proposals are
+stopping points (`RU-05`). Keeping evaluation separate lets the initiator learn the impact *before*
+committing to the stopping-point proposal.
+
 ## To resolve next (the "own data" question)
 
 1. **Table nodes own their tables — resolved.** Each table-node owns its table (Roles → `R-`,
