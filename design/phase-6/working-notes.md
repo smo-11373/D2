@@ -105,6 +105,13 @@ potential actions, which split into:
 
 **Plan: passive first** (it is hard enough), then expand to active.
 
+**What a node is (minimal).** A node **holds its own data**, has **authority over that data**, and
+**enforces the rules its data specifies**; it may also **spawn children** (RU-03). The **design tree
+expresses design dependency** — a node's place follows from *what data it owns*.
+
+**Working order.** (1) Define what a node is — *done*. (2) Clarify **each node's own data**.
+(3) Lay out the nodes by dependency. Step 3 waits on step 2.
+
 **Proposed passive-action children** *(from the functional doc's `[P]` sections — to confirm):* the
 fundamentals node spawns a child per passive Designer-action cluster —
 
