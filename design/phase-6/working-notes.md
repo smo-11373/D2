@@ -124,3 +124,8 @@ fundamentals node spawns a child per passive Designer-action cluster —
 
 Each child designs the D2 support for its action cluster. The active clusters (inspecting /
 monitoring / intervening; checking how D2 served) are **deferred**.
+
+**Correction (2026-07-15): the tree is dependency-shaped, not action-order-shaped.** The passive
+action list identifies *scope* (what must be designed), but the **tree structure follows design
+dependency** — see `d2-design-tree.md` for the first-cut layout (Fundamentals → {Decision, Setup};
+Setup → Roles → Role-Action → Functionality → Architecture).
