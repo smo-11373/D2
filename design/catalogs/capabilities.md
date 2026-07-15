@@ -56,7 +56,7 @@ Investigate first, then batch high-leverage questions into a consolidated Clarif
 Offer a review opportunity at appropriate points before continuation; tendency scales with level/posture. **Source:** Phase 6 Item 2 §12.
 
 ### C-16 — Design advancement & spawning · *D2 · Serves R-02*
-Determine the next design work (advance / spawn / integrate / revisit); keep advancement and spawning distinct. **Source:** Phase 6 Item 2 §13–14.
+Determine the next design work (advance / spawn / integrate / revisit); keep advancement and spawning distinct. **Spawning is driven by the Designer's actions (RU-03):** a *static* passive-action list (from the approved setup/fundamentals) spawns children first; active-action spawning is deferred. **Source:** Phase 6 Item 2 §13–14.
 
 ### C-17 — Revision-authority governance · *D2 · Serves R-01, R-02*
 Carry a revision-authority status per result (D2-managed / Designer-governed); route revision proposals; prevent silent revision. **Source:** Phase 6 Item 2 §15.

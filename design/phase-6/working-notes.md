@@ -86,3 +86,34 @@ between D2 and D1 design steps.**
 design-node concepts — deferred to **later, likely after this phase** (Phase 7 architecture
 territory). Note the exact Design Tree relationship model (single- vs multi-parent) is itself
 still open (Phase 4, Item 2).
+
+## Building the D2 design tree — spawn by passive actions first
+
+*(Recorded 2026-07-15, Designer direction.)*
+
+**The rearrangement.** With the **fundamentals** (constitution / foundational documents, §4)
+approved, the next step is to create the **top design node** that represents and **enforces the
+fundamentals**. Every node carries a **spawning responsibility**; the top node spawns its children.
+
+**Spawn by the Designer's actions** (RU-03). Children are spawned according to the Designer's
+potential actions, which split into:
+
+- **Passive actions** — a **static list derived from the approved setup/fundamentals** (the setup
+  is itself a preset list, approved). Because the list is fixed, spawning one child per passive
+  action is straightforward. **Do this first.**
+- **Active actions** — **dynamic and flexible**, harder to spawn from. **Deferred.**
+
+**Plan: passive first** (it is hard enough), then expand to active.
+
+**Proposed passive-action children** *(from the functional doc's `[P]` sections — to confirm):* the
+fundamentals node spawns a child per passive Designer-action cluster —
+
+1. entry-point decision (§2)
+2. setup: roles + posture (§3)
+3. foundational-documents intake & confirm (§4)
+4. operating framework (§5)
+5. overseeing the work
+6. being asked only when it's worth it
+
+Each child designs the D2 support for its action cluster. The active clusters (inspecting /
+monitoring / intervening; checking how D2 served) are **deferred**.

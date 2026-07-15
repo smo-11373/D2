@@ -18,3 +18,11 @@
 - **Scope:** D2 and D1 design (design-tree governance; applies to D2's own design too — the Phase 6 "Why" narratives are node justifications in this sense).
 - **Source:** Phase 4 §Item 2 (submission vs acceptance; upward proposals routed by authority); Phase 6 Item 2 §7; Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed).
+
+## RU-03 — Spawn design-tree children by the Designer's actions
+
+- **Rule:** A design node's **spawning** is driven by the relevant **Designer's potential actions** — each node determines its children by the actions its scope must support. The action set splits into **passive** (a *static* list derived from the approved setup/fundamentals — one child per passive action is straightforward) and **active** (dynamic and flexible — harder). **Passive-action spawning is implemented first; active-action spawning is deferred.**
+- **Derived from:** the node's **spawning responsibility** (C-16; Phase 4 §Item 2 — spawning strategy) and the **passive/active action model** (functional doc §1). Actions are the common unit both the tree (nodes) and the capability model (support) hang on.
+- **Scope:** D2 and D1 design (design-tree governance; applied to D2's own design first).
+- **Source:** Phase 4 §Item 2; Phase 6 functional model (passive/active actions); Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed); active-action spawning deferred (see `../phase-6/working-notes.md`).
