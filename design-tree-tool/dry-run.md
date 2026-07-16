@@ -100,3 +100,16 @@ structural question is **Findings #1 + #2 — how functional areas (Decision, Se
 Operating-framework) relate to the catalog-table nodes (Roles, Role-Action)**: is the tree organized
 by *functional area*, by *catalog layer*, or a hybrid? Recommend settling that before extending the
 tree past Role-Action.
+
+## 5. Resolution (Designer 2026-07-15)
+
+- **Finding #1 → resolved (`RU-09`).** **Ownership = authorship.** The **Action node authors the
+  `A-` table**; the Role node **reads** it but is not the author. A table is changed only **through
+  its author** — the child *proposes up* to change the parent's table, or the parent *requests down*
+  to change the child's table. No inversion: the aggregating node keeps authorship.
+- **Finding #2 → resolved (`RU-10`).** The functional areas are **not** top-level nodes; they are the
+  Action node's **internal decomposition** (passive-action / active-action sub-nodes, to any depth),
+  **merged** into the aggregate `A-` table. The Role node's contract to the Action node requires only
+  the **aggregate**; how the child dissects and merges is its own business.
+- **Still deferred:** Fundamentals as a five-phase multi-node (the harder case). See
+  `design-tree.md` §"To resolve next".

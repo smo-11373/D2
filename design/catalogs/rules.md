@@ -44,6 +44,23 @@
 - **Source:** Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed).
 
+## RU-09 — A table is changed only through its author (propose-up or request-down)
+
+- **Rule:** Each table is **authored and owned by exactly one node**: the **Role node** authors the role table (`R-`); the **Action node** authors the role-action table (`A-`). Other nodes — **including the parent** — may **read** the whole package but are **not the author**. A table is changed **only through its author**: a node **proposes up** to change an *ancestor-authored* table (`RU-04`), and a parent **requests down** to change a *child-authored* table (the author makes the change and re-submits). **No node edits a table it does not author.**
+- **Resolves the ownership inversion:** an aggregating child keeps authorship of its own table; the parent reaches it by **read + request**, not by owning it.
+- **Derived from:** authority follows meaning; RU-02 (justify at submission); RU-04 (contract / propose-up).
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
+## RU-10 — Contract sets the deliverable; decompose freely, aggregate always
+
+- **Rule:** A parent's spawning **contract specifies the child's required deliverable** — e.g. the Role node demands "the **role-action table as an aggregate**." The child may **decompose the work internally to any depth** — sub-nodes by category/type (e.g. **passive-action**, **active-action**, each possibly with its own children) — as it sees fit, but it **must return the contracted aggregate**. Internal shape is the child's discretion; the aggregate is its obligation.
+- **Derived from:** modularity (Phase 5 §Item 5); the contract model (RU-04); design advancement & spawning (C-16).
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
 ## RU-05 — An open upward proposal is a stopping point (no drift)
 
 - **Rule:** Proposing a change to a parent/ancestor is a **stopping point**. The proposing node **must stop — it may not spawn children or advance — until the proposal is resolved** (approved or rejected). A change affecting an ancestor several levels up must be **approved by the owning node and confirmed down the intervening chain** before the proposer may proceed.

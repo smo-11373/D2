@@ -46,8 +46,9 @@ hierarchy: *Role → Action → Capability → Architecture → Implementation.*
 
 Worked out on the simplest case (Role node vs Action node):
 
-- **Ownership.** Each table-node owns its table: the **Role node** owns the role table (`R-`); the
-  **Role-Action node** owns the role-action table (`A-`).
+- **Ownership = authorship.** Each table is **authored by exactly one node**, and the author owns it:
+  the **Role node** authors the role table (`R-`); the **Action node** authors the role-action table
+  (`A-`). A parent may **read** the child's whole package but is **not** the author. *(RU-09.)*
 - **Contract down.** A parent specifies a **contract** for its child that **includes the parent's
   owned data**. The Role node's contract to the Role-Action node carries the **role table**; the
   Role-Action node works within it. *(RU-04.)*
@@ -62,6 +63,26 @@ Worked out on the simplest case (Role node vs Action node):
 - **Contract input links.** The parent's contract to a child carries **read-only links** to material
   the parent can access — its **ancestors** and the child's **siblings** — curated by the parent.
   Links are read-context, not communication channels. *(RU-08, C-08.)*
+- **Change through the author.** A table is changed **only through its author**: a node **proposes up**
+  to change an *ancestor-authored* table (`RU-04`); a parent **requests down** to change a
+  *child-authored* table — the author makes the change and re-submits. No node edits a table it does
+  not author. *(RU-09.)*
+- **Contract sets the deliverable; decompose freely, aggregate always.** The parent's contract states
+  the child's **required deliverable** — e.g. the Role node demands "the role-action table **as an
+  aggregate**." The child may **decompose internally to any depth** (sub-nodes by type —
+  *passive-action*, *active-action*, …) but must return the aggregate. *(RU-10.)*
+
+**Action-node decomposition (illustration).** Within the Action node:
+
+```
+Role-Action  (authors the aggregate A- table)
+├── passive-action node   →  entry · setup · foundational-docs · operating-framework · …
+└── active-action node    →  inspecting/monitoring · checking · …   (may have its own children)
+```
+
+The Action node may dissect the actions by category and **merge** them; the contract only requires
+the **aggregate** `A-` table at the Action node's boundary. This resolves the earlier inversion —
+the aggregating node **authors** its own table, and the Role node reaches it by read + request.
 
 **Worked example (A → B → C).**
 
@@ -92,12 +113,19 @@ committing to the stopping-point proposal.
 
 ## To resolve next (the "own data" question)
 
-1. **Table nodes own their tables — resolved.** Each table-node owns its table (Roles → `R-`,
-   Role-Action → `A-`); parents pass owned data down as a contract, children propose changes up
-   (`RU-04`, `RU-05`). Functional nodes (Decision, Setup) therefore **reference** their `A-`/`C-`
-   rows read-only rather than owning them. *(Confirm this reference model for the functional nodes.)*
-2. **"Functionality" node** may be **omitted / folded** into Role-Action or Architecture.
-3. **Roles under Setup?** The role table was part of setup in functional-doc §3; here Roles is a
+1. **Authorship = ownership — resolved (`RU-09`, `RU-10`).** The **author owns its table**: the Action
+   node authors the `A-` table; the Role node reads it but is not the author. Changes route through
+   the author (propose-up / request-down). This removes the earlier inversion — the aggregating node
+   is no longer a "referenced leaf."
+2. **Functional areas dissolve into the Action node — resolved (`RU-10`).** Decision / Setup /
+   foundational-docs / operating-framework are **not** separate top-level nodes; they are the Action
+   node's **internal decomposition** (under passive-action / active-action sub-nodes), merged into the
+   aggregate `A-` table the contract demands. *(Fundamentals as a 5-phase node is the harder case,
+   deferred — see below.)*
+3. **"Functionality" node** may be **omitted / folded** into Role-Action or Architecture.
+4. **Roles under Setup?** The role table was part of setup in functional-doc §3; here Roles is a
    *child* of Setup. Confirm.
-4. **Shared capabilities** (`C-13/C-14/C-15/C-20…`) sit in the Functionality layer; ownership
+5. **Shared capabilities** (`C-13/C-14/C-15/C-20…`) sit in the Functionality layer; ownership
    within it still TBD.
+6. **Fundamentals as a multi-node (the harder case).** The Fundamentals node holds five phases —
+   a significant piece of work — and likely decomposes into its own subtree, on the same rules. Deferred.
