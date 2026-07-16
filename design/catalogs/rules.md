@@ -52,3 +52,21 @@
 - **Scope:** D2 and D1 design (design-tree governance).
 - **Source:** Phase 4 §Item 2; Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed).
+
+## RU-07 — Communicate only with your immediate parent or child (adjacency)
+
+- **Rule:** Within the design tree a node **communicates only with the node immediately connected to it** — its **parent** or one of its **children**. There is **no direct communication across more than one level**: to reach a node two levels up, a node talks to its parent, which in turn talks to *its* parent (relay, level by level).
+- **Rationale:** keeps the connection graph simple and the nodes **modular** — a node's only interface is its parent and its children.
+- **Distinct from read-links.** This governs **communication** (proposals, submissions, negotiation). The read-only **input links** a parent hands down in the contract (`RU-08`) let a node *use* ancestor/sibling data without communicating with those nodes directly.
+- **Derived from:** modularity (Phase 5 §Item 5); the contract / sandbox model (Phase 4 §Item 2).
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
+## RU-08 — The contract supplies the child's input links (ancestors + siblings)
+
+- **Rule:** The **contract** a parent gives a child (at, and possibly after, spawning) includes the child's **relevant inputs** — chiefly **links** to material the parent can access: nodes **above the parent** (ancestors) and nodes **spawned by the parent** (the child's **siblings** / their subtrees). The parent **curates** which links are relevant. These are **read-context**, not communication channels (`RU-07`).
+- **Derived from:** the contract model (`RU-04`; Phase 4 §Item 2 — "rules above it in the Design Tree are candidates for inclusion in the child contract … a compiled governing contract"); per-work-unit context preparation (`C-08`).
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).

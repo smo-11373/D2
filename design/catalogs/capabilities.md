@@ -32,7 +32,7 @@ Maintain a plan (current defined, later provisional) and the D1 Design Operating
 Study the predecessor once broadly; preserve a revisable roadmap linking design subjects to reference locations. **Source:** Phase 6 Item 2 §2.
 
 ### C-08 — Per-work-unit context preparation · *D2 · Serves R-02 (autonomous)*
-Assemble the bounded context before a work unit begins — "prepare the boundary before the work." **Source:** Phase 6 Item 2 §3.
+Assemble the bounded context before a work unit begins — "prepare the boundary before the work." The context/contract includes **input links** to material the parent can access — ancestors and the child's siblings (**RU-08**). **Source:** Phase 6 Item 2 §3.
 
 ### C-09 — Targeted predecessor investigation before design · *D2 · Serves R-02*
 Investigate relevant predecessor material to the depth warranted by importance/posture/uncertainty. **Source:** Phase 6 Item 2 §4.

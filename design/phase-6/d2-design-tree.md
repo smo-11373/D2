@@ -54,6 +54,12 @@ Worked out on the simplest case (Role node vs Action node):
   Role node decides. *(RU-04.)*
 - **Stop on a pending proposal.** An open upward proposal is a **stopping point**: the proposer may
   not spawn or advance until it is resolved. This prevents **drift** in a long, deep tree. *(RU-05.)*
+- **Adjacency-only communication.** A node communicates only with its **immediate parent or child**;
+  to reach two levels up it relays through its parent. Keeps connections simple and nodes modular.
+  *(RU-07.)*
+- **Contract input links.** The parent's contract to a child carries **read-only links** to material
+  the parent can access — its **ancestors** and the child's **siblings** — curated by the parent.
+  Links are read-context, not communication channels. *(RU-08, C-08.)*
 
 **Worked example (A → B → C).**
 
