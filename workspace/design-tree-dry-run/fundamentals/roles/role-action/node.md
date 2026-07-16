@@ -12,6 +12,11 @@
   - `passive-action/` — the D1 Designer's **passive [P]** action pieces.
   - `active-action/` — the D1 Designer's **active [A]** action pieces.
   - The two are **merged** into `role-action-table.md`, the contracted aggregate.
+- **Drives the capability design (`RU-11`).** Once complete, the aggregate drives a **dependency
+  successor** child, `capability/`, contracted to *design capabilities covering every action in the
+  aggregate*. Note the two kinds of child: `passive-action`/`active-action` are
+  **internal-decomposition** children (they *produce* the aggregate); `capability/` is a
+  **dependency** child (it *consumes* the aggregate).
 - **Justification (`RU-02`):** each row's `Source` column (baseline-derived / position-derived /
   Designer-dated).
 - **Finding (dry run).** The passive/active split cleanly covers **R-01 (the D1 Designer)**. The

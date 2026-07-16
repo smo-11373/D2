@@ -10,13 +10,17 @@ each node holds a `node.md` card (its contract, ownership, justification) plus i
 ```
 fundamentals/                         constitution (Phases 1–5) + method + rules
 └── roles/                            authors the role table (R-)
-    └── role-action/                  authors the aggregate role-action table (A-)
-        ├── passive-action/           the D1 Designer's passive [P] action pieces
-        └── active-action/            the D1 Designer's active [A] action pieces
+    └── role-action/                  the ACTION AGGREGATE — authors the aggregate A- table
+        ├── passive-action/           [internal] the D1 Designer's passive [P] action pieces
+        ├── active-action/            [internal] the D1 Designer's active [A] action pieces
+        └── capability/               [dependency] driven by the aggregate — authors C- + the map
 ```
 
-Edges are **design dependency** (not action order). Resolved per `RU-09` (author owns its table) and
-`RU-10` (contract demands the aggregate; child decomposes freely).
+Edges are **design dependency** (not action order). `RU-09` (author owns its table), `RU-10`
+(contract demands the aggregate; child decomposes freely), `RU-11` (the action aggregate **drives**
+the capability design; coverage is the contract). Two child kinds appear under the action aggregate:
+**internal-decomposition** (passive/active — *produce* the aggregate) and **dependency**
+(capability — *consumes* it).
 
 ## What was copied in (snapshot)
 
@@ -26,6 +30,8 @@ Edges are **design dependency** (not action order). Resolved per `RU-09` (author
 | `fundamentals/rules.md` | `design/catalogs/rules.md` (RU-01…RU-10) |
 | `fundamentals/roles/role-table.md` | `design/catalogs/role-action.md` → Roles table |
 | `fundamentals/roles/role-action/role-action-table.md` | `design/catalogs/role-action.md` → Actions table |
+| `fundamentals/roles/role-action/capability/capabilities-table.md` | `design/catalogs/capabilities.md` |
+| `fundamentals/roles/role-action/capability/action-capability-map.md` | `design/catalogs/action-capability-map.md` |
 
 The `passive-action` / `active-action` cards list which `A-` rows each owns (the *pieces*); the
 Action node holds the *merged aggregate*. Constitution (Phases 1–5) is referenced in `../../ref/`,

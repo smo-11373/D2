@@ -84,6 +84,12 @@ The Action node may dissect the actions by category and **merge** them; the cont
 the **aggregate** `A-` table at the Action node's boundary. This resolves the earlier inversion —
 the aggregating node **authors** its own table, and the Role node reaches it by read + request.
 
+- **The aggregate drives the next layer (`RU-11`).** A completed aggregate **drives its dependency
+  successor**: the **action aggregate drives the capability design**, whose contract is to **cover
+  every action** (coverage is the contract). Distinguish a node's **internal-decomposition** children
+  (which *produce* its aggregate — e.g. passive/active-action) from its **dependency** children
+  (which *consume* it — e.g. the Capability node). *(Two edge kinds under one parent — flagged.)*
+
 **Worked example (A → B → C).**
 
 - **B** proposes a change to **A** → B stops; A accepts or rejects.

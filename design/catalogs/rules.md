@@ -61,6 +61,14 @@
 - **Source:** Designer 2026-07-15.
 - **Status:** Accepted (Designer-directed).
 
+## RU-11 — The action aggregate drives the capability design (coverage is the contract)
+
+- **Rule:** The **capability design is driven by the action aggregate.** The action node's completed **aggregate `A-` table** is the read-only input (and driver) for the **Capability node**, whose contract is to **design the capabilities (`C-`) that support every action** in the aggregate. **Coverage is the contract:** every action must map to ≥1 capability (autonomous capabilities excepted); the action↔capability map records it and a coverage check verifies "nothing is missed."
+- **Derived from:** the **Role → Action → Capability** dependency (Phase 6 governing hierarchy); RU-10 (aggregate at the boundary); the bookkeeping / coverage discipline (functional doc §1 "The bookkeeping").
+- **Scope:** D2 and D1 design (design-tree governance).
+- **Source:** Designer 2026-07-15.
+- **Status:** Accepted (Designer-directed).
+
 ## RU-05 — An open upward proposal is a stopping point (no drift)
 
 - **Rule:** Proposing a change to a parent/ancestor is a **stopping point**. The proposing node **must stop — it may not spawn children or advance — until the proposal is resolved** (approved or rejected). A change affecting an ancestor several levels up must be **approved by the owning node and confirmed down the intervening chain** before the proposer may proceed.
