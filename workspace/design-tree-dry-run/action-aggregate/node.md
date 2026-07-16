@@ -5,6 +5,9 @@
 branches meet here: the **production branch** (below) formulates the aggregate; the **successor
 branch** (off the hub) consumes it — delayed.*
 
+- **Contract received:** `contract.md` — the **generative contract** (deliverable + derivation
+  inputs + acceptance test) an automated engine runs the design-node algorithm over to spawn the
+  Roles node and per-role action nodes and re-derive the table *substantially the same*.
 - **Authors / owns:** `role-action-table.md` — the **aggregate role-action table `A-`**, merged from
   the production branch (`RU-09`).
 - **Production branch — below, in order (this is a dependency pipeline):**
