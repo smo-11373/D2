@@ -1,43 +1,42 @@
-# Design-tree dry run — materialized sandbox (up to the role-action table)
+# Design-tree dry run — the ACTION AGGREGATE as hub
 
-*A **materialized** dry run of the D2 design tree: the nodes are folders, nested parent → child, and
-each node holds a `node.md` card (its contract, ownership, justification) plus its **authored data**,
-**copied in** from the authoritative sources. Non-authoritative by nature (workspace) — a snapshot to
-**test the framework** in `../../design-tree-tool/`. Authoritative data lives in `../../design/`.*
+*A **materialized** dry run centered on the **action aggregate node**. The aggregate sits at the
+**top**; its **production branch** hangs below (the pieces that merge into its table); its
+**successor branch** (capabilities → architecture → …) comes off it and is **delayed**. Data is
+**copied in** from the authoritative sources in `../../design/`. Non-authoritative snapshot — a test
+of the framework in `../../design-tree-tool/`.*
 
-## The tree (folders mirror the tree)
+## The shape (folders mirror the tree)
 
 ```
-fundamentals/                         constitution (Phases 1–5) + method + rules
-└── roles/                            authors the role table (R-)
-    └── role-action/                  the ACTION AGGREGATE — authors the aggregate A- table
-        ├── passive-action/           [internal] the D1 Designer's passive [P] action pieces
-        ├── active-action/            [internal] the D1 Designer's active [A] action pieces
-        └── capability/               [dependency] driven by the aggregate — authors C- + the map
+action-aggregate/            ← TOP · hub · key data = the merged role-action aggregate table (A-)
+├── passive-action/          [production] the D1 Designer's passive [P] pieces
+└── active-action/           [production] the D1 Designer's active [A] pieces
+                                 …merge up → action-aggregate/role-action-table.md
+
+successor-branch/            [DELAYED] capability → architecture → …  (driven by the aggregate, RU-11)
+context/                     [inputs]  role table + method + rules (read-only, RU-08)
 ```
 
-Edges are **design dependency** (not action order). `RU-09` (author owns its table), `RU-10`
-(contract demands the aggregate; child decomposes freely), `RU-11` (the action aggregate **drives**
-the capability design; coverage is the contract). Two child kinds appear under the action aggregate:
-**internal-decomposition** (passive/active — *produce* the aggregate) and **dependency**
-(capability — *consumes* it).
+- **Production branch** (below) *produces* the aggregate — free internal shape, aggregate at the
+  boundary (`RU-10`); the aggregate's author owns it (`RU-09`).
+- **Successor branch** (off the hub) *consumes* the aggregate — the action aggregate **drives** the
+  capability design (`RU-11`). Delayed here; the focus is the aggregate.
+- **Context** holds the read-only inputs (the role table, method, rules); to change the role table
+  the aggregate would **propose up** to the Role node.
 
 ## What was copied in (snapshot)
 
 | File | Copied from |
 |---|---|
-| `fundamentals/method.md` | functional doc §1 (Methodology) |
-| `fundamentals/rules.md` | `design/catalogs/rules.md` (RU-01…RU-10) |
-| `fundamentals/roles/role-table.md` | `design/catalogs/role-action.md` → Roles table |
-| `fundamentals/roles/role-action/role-action-table.md` | `design/catalogs/role-action.md` → Actions table |
-| `fundamentals/roles/role-action/capability/capabilities-table.md` | `design/catalogs/capabilities.md` |
-| `fundamentals/roles/role-action/capability/action-capability-map.md` | `design/catalogs/action-capability-map.md` |
-
-The `passive-action` / `active-action` cards list which `A-` rows each owns (the *pieces*); the
-Action node holds the *merged aggregate*. Constitution (Phases 1–5) is referenced in `../../ref/`,
-not copied.
+| `action-aggregate/role-action-table.md` | `design/catalogs/role-action.md` → Actions table |
+| `context/role-table.md` | `design/catalogs/role-action.md` → Roles table |
+| `context/method.md` | functional doc §1 (Methodology) |
+| `context/rules.md` | `design/catalogs/rules.md` (RU-01…RU-11) |
+| `successor-branch/capability/capabilities-table.md` | `design/catalogs/capabilities.md` |
+| `successor-branch/capability/action-capability-map.md` | `design/catalogs/action-capability-map.md` |
 
 ## Reading order
 
-Start at `fundamentals/node.md`, then descend. Each `node.md` states: **owns/authors**, **contract
-received**, **contract to children**, **justification**, and **children**.
+Start at `action-aggregate/node.md` (the hub). Each `node.md` states **owns/authors · contract
+received · contract to children · justification**.

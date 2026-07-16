@@ -9,7 +9,7 @@
   - **Evaluate a change:** `A-058` (impact dry-run, before proposing) — *initiator-driven, placed
     here as a self-started command; borderline, noted below*
   - **Check afterward:** `A-020` (request / review a D2 audit)
-- **Contract received (from Role-Action):** produce the active-action pieces for merge.
+- **Contract received (from the action aggregate):** produce the active-action pieces for merge.
 - **Contract to children:** none — leaf node (authors its own pieces; no descendants in this run).
 - **Justification (`RU-02`):** the `[A]` sections of the functional doc (§9 inspecting/monitoring/
   intervening; checking how D2 served) and their "Why" arguments.

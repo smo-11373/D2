@@ -1,4 +1,9 @@
-# Node: Capability (driven by the action aggregate)
+# Node: Capability (successor branch — DELAYED)
+
+*The first node of the **successor branch** that comes off the action aggregate (capability →
+architecture → …). Kept here as the driven layer, but **out of focus** for now — the current dry run
+centers on the action aggregate. Included to show how the aggregate drives it (`RU-11`).*
+
 
 - **Authors / owns:**
   - `capabilities-table.md` — the **capability catalog `C-`** (`C-01…C-41`), the D2 support for the
