@@ -5,6 +5,9 @@ produced, stopping at the role-action table. Lay out the nodes first, then the c
 then report what the exercise reveals. This is a **test of the framework** (`design-tree.md`),
 not D2 design content.*
 
+> **Materialized sandbox:** this dry run is instantiated as an actual nested folder tree with the
+> real data copied in at `../workspace/design-tree-dry-run/` — start at its `README.md`.
+
 ## 1. Nodes (laid out)
 
 ```
