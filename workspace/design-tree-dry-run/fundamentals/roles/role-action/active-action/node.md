@@ -10,6 +10,7 @@
     here as a self-started command; borderline, noted below*
   - **Check afterward:** `A-020` (request / review a D2 audit)
 - **Contract received (from Role-Action):** produce the active-action pieces for merge.
+- **Contract to children:** none — leaf node (authors its own pieces; no descendants in this run).
 - **Justification (`RU-02`):** the `[A]` sections of the functional doc (§9 inspecting/monitoring/
   intervening; checking how D2 served) and their "Why" arguments.
 - **Finding (dry run).** A few actions are **borderline** between passive and active — e.g. `A-058`

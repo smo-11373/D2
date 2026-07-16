@@ -11,5 +11,6 @@
   - **Operating framework:** `A-001` (accept), `A-002` (modify), `A-004` (discuss)
   - **Overseeing:** `A-005` (review a node), `A-006` (reserve/assign revision authority)
 - **Contract received (from Role-Action):** produce the passive-action pieces for merge.
+- **Contract to children:** none — leaf node (authors its own pieces; no descendants in this run).
 - **Justification (`RU-02`):** the `[P]` sections of the functional doc (§2–§5, overseeing,
   being-asked) and their "Why" arguments.

@@ -6,7 +6,9 @@
   change; to change the *role* table, this node **proposes up** (`RU-04`, `RU-09`).
 - **Contract received (from Roles, `RU-10`):** deliver the role-action table **as an aggregate**;
   the **role table** is supplied read-only (`RU-08`).
-- **Decomposition (`RU-10`) — free internally, aggregate at the boundary:**
+- **Contract to children (`RU-10`):** each child must **produce its action pieces for merge** —
+  `passive-action/` the `[P]` rows, `active-action/` the `[A]` rows — returned here for aggregation.
+- **Decomposition — free internally, aggregate at the boundary:**
   - `passive-action/` — the D1 Designer's **passive [P]** action pieces.
   - `active-action/` — the D1 Designer's **active [A]** action pieces.
   - The two are **merged** into `role-action-table.md`, the contracted aggregate.
