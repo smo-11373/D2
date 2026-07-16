@@ -5,13 +5,18 @@ lives in the top-level `workspace/`). Carried across phases; Phase 7 keeps using
 
 ## Files
 
-- `registry.md` — **the table of tables**: author/owner and read/write authority for each catalog table
 - `role-action.md` — Roles (`R-`) and the Actions (`A-`) each performs
 - `capabilities.md` — Capabilities (`C-`), tagged by layer (D2 / D1-product / D0-product)
 - `action-capability-map.md` — the Action ↔ Capability join table
 - `designer-queries.md` — Designer query examples (`Q-`)
 - `rules.md` — design rules (`RU-`), each derived from a role or principle
 - `glossary.md` — D2 / D1 / D0 term definitions
+
+*The catalog **registry** (author/owner & read-write authority per table) and the **design-tree
+framework** used to conduct D2's own design live outside this quad in `../../design-tree-tool/` —
+they are a D3-level tool, not D2 design content. Some framework entries (`RU-02…08`, glossary
+`design-node` / `submission-package`, capabilities `C-16/17/41`) are still co-located here for
+stable IDs; see that folder's `README.md`.*
 
 ## Relational conventions
 

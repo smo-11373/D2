@@ -1,8 +1,10 @@
 # The D2 Design Tree — first cut
 
 *Provisional. D2's own design, laid out on the **design-tree framework it prescribes** (dogfooding).
-See `working-notes.md` for the spawning mechanism (`RU-03`) and node definition (glossary
-`design-node`); `../decisions/` for open questions.*
+See `README.md` for the D3-level framing, `../design/phase-6/working-notes.md` for the spawning
+mechanism (`RU-03`) and node definition (glossary `design-node`), and `../design/decisions/` for
+open questions. The framework's formal rules (`RU-`), terms, and capabilities currently live in
+`../design/catalogs/` for stable IDs; see `README.md`.*
 
 ## Principle — edges are design dependency, not action order
 

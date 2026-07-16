@@ -3,8 +3,9 @@
 *Living. Bookkeeping **over the catalog tables themselves**: who authors/owns each table, and who
 may read and write it. This applies the **design-tree governance discipline to D2's own design**
 early — while it is cheap to shape — so the working apparatus can be refined here and later
-**migrated into the D1 design template** D2 provides. See `README.md` for the catalogs' relational
-conventions.*
+**migrated into the D1 design template** D2 provides. The catalog tables themselves live in
+`../design/catalogs/`; see that folder's `README.md` for their relational conventions, and this
+folder's `README.md` for the D3-level framing.*
 
 ## Why this exists
 
@@ -20,12 +21,12 @@ conventions.*
 | Table | Holds | Author / Owner | Read | Write |
 |---|---|---|---|---|
 | `registry.md` (this file) | the table of tables | D2 Designer (R-00) | open | Owner |
-| `role-action.md` | Roles `R-`, Actions `A-` | D2 Designer (R-00) | open | Owner; others propose |
-| `capabilities.md` | Capabilities `C-` | D2 Designer (R-00) | open | Owner; others propose |
-| `action-capability-map.md` | Action ↔ Capability join | D2 Designer (R-00) | open | Owner; others propose |
-| `designer-queries.md` | Queries `Q-` | D2 Designer (R-00) | open | Owner; others propose |
-| `rules.md` | Rules `RU-` | D2 Designer (R-00) | open | Owner; others propose |
-| `glossary.md` | Terms | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/role-action.md` | Roles `R-`, Actions `A-` | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/capabilities.md` | Capabilities `C-` | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/action-capability-map.md` | Action ↔ Capability join | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/designer-queries.md` | Queries `Q-` | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/rules.md` | Rules `RU-` | D2 Designer (R-00) | open | Owner; others propose |
+| `../design/catalogs/glossary.md` | Terms | D2 Designer (R-00) | open | Owner; others propose |
 
 *Current drafting is done by the **D2-design assistant** (the LLM building D2) under Designer
 direction; the **D2 Designer (R-00)** holds Designer-originated completion authority over these
