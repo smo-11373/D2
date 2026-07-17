@@ -28,3 +28,10 @@ for what the program generates, so the two never get confused.
 
 Because the output is an **open list**, success is *substantial* match, not identity — the example is
 a target, not a key.
+
+## Scope
+
+This test deliberately pins down only the **shape of the output** and the **shape of the input
+contract (narrative)**; the contract form is **fluid**. Contract *generation*, *why this node is
+first*, and whether the **algorithm / declarations** belong in the input are **left open** — see
+`scope.md`.
