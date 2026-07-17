@@ -41,6 +41,7 @@
 |-------|--------|--------|-------|
 | A-010 | Complete / clarify / expand D2's living working sets (glossary, query catalog, philosophy) | Phase 5 §Item 2 | Low-hurdle Designer-originated completion |
 | A-011 | Revise D2's persistent working sets through the explicit D2 design process | Phase 3–5 | Working sets change only via explicit revision |
+| A-061 | Review and adopt / reject D2 improvements proposed by the optional post-run D2 audit | Phase 3 §Item 5 | Governs D2's revision (Designer-originated completion authority); cf. A-020 (R-01 requests the audit) |
 
 ### R-01 — D1 Designer
 
@@ -82,6 +83,7 @@
 | A-025 | Submit the design result for acceptance | Phase 6 Item 2 §7 | Submission ≠ acceptance |
 | A-026 | Propose a spawning strategy (descendant responsibilities) | Phase 4 §Item 2; Phase 6 Item 2 §14 | Spawning ≠ advancement |
 | A-027 | Propose upward revision of governing design | Phase 4 §Item 2 | Routed by the affected node's revision authority |
+| A-060 | Establish the node's verification harness and derive design evidence *before* committing the design (observation / monitoring / health-visibility, representative inputs, expected outputs, evaluation cases) | Phase 2 §P4 (Verification Before Realization); Phase 5 §Item 1 (Harness First) | "Monitoring before usage"; distinct from passive study A-021 |
 
 ### R-03 — D1 Programmer
 
@@ -126,3 +128,14 @@
 | A-049 | Diagnose a D0 deployment issue | position-derived | |
 | A-050 | Apply a fix, patch, or configuration change to a deployment | position-derived | Within established design; no product redesign |
 | A-051 | Escalate to the D1 Technical Manager (R-04) when a problem exceeds front-line support | position-derived | |
+| A-059 | Monitor / observe D0 deployment health and status (standing, proactive) | Phase 5 §Item 3 | The operational-monitoring counterpart to A-038's health *settings*; distinct from reactive diagnosis A-049 |
+
+### R-07 — D2 Assistant
+
+*The non-human interaction point. Its actions deliver D2's support to the D1 Designer — they map to the D2 capabilities that serve R-01. (Whether these belong as R-07 role-actions or stay purely capability-level is a modelling call — flagged.)*
+
+| ID | Action | Source | Notes |
+|-------|--------|--------|-------|
+| A-062 | Conduct the design on the Designer's behalf and answer his queries through the single interaction point | Phase 2 §P3; Phase 4 §Item 3 | The D2 Assistant's core function |
+| A-063 | Interpret and route the Designer's input (direction, clarification, investigation, monitoring, intervention) to the right D2 function; preserve interaction context | Phase 2 §4.1–4.3 | D2 owns the routing burden |
+| A-064 | Present Designer-oriented output — completion reports, Review Stops, Clarification Requests, human-readable summaries — with drill-down on request | Phase 1 §2.4; Phase 2 §3.2, §3.4; Phase 3 phase-wide rule | The reporting side of every item |

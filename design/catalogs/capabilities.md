@@ -137,8 +137,8 @@ User-level health monitoring, plus viewing results/outputs/reports and activity/
 ### C-31 — Operator notifications & routine error handling · *D0-product · Serves R-05*
 Surface notifications/prompts/approvals for a low-technical operator; support routine retry/restart. **Source:** Phase 5 §Item 3 (position-derived).
 
-### C-32 — D0 deployment install & technical maintenance · *D0-product · Serves R-06*
-Install and technically maintain a deployment (paths, endpoints, service config, resource limits, credentials, health); diagnose and apply fixes/patches within the established design. **Source:** Phase 5 §Item 3.
+### C-32 — D0 deployment install, monitoring & technical maintenance · *D0-product · Serves R-06*
+Install and technically maintain a deployment (paths, endpoints, service config, resource limits, credentials, health); **monitor deployment health/status**; diagnose and apply fixes/patches within the established design. **Source:** Phase 5 §Item 3.
 
 ### C-33 — Technical support & escalation · *D0-product · Serves R-05, R-06*
 Front-line technical support for the operator, with an escalation chain (Operator → D0 Technical Manager → D1 Technical Manager). **Source:** Phase 5 §Item 3 (position-derived).

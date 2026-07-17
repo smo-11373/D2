@@ -8,6 +8,7 @@
 |--------|------------|-------|
 | A-010 | — | Meta: designing D2 itself; no operational capability |
 | A-011 | — | Meta |
+| A-061 | C-21 | Review/adopt D2 audit-proposed improvements |
 
 ## R-01 — D1 Designer  *(served by D2 capabilities)*
 
@@ -49,6 +50,7 @@
 | A-025 | C-12 | Submit for acceptance |
 | A-026 | C-16 | Propose spawning strategy |
 | A-027 | C-17 | Propose upward revision |
+| A-060 | C-08, C-11 | Establish harness / derive evidence before design |
 
 ## R-03 — D1 Programmer  *(D1-product)*
 
@@ -93,3 +95,12 @@
 | A-049 | C-32 | Diagnose a deployment issue |
 | A-050 | C-32 | Apply a fix/patch |
 | A-051 | C-33 | Escalate to D1 Technical Manager |
+| A-059 | C-32 | Monitor deployment health/status |
+
+## R-07 — D2 Assistant  *(delivers D2 capabilities that serve R-01)*
+
+| Action | Capability | Notes |
+|--------|------------|-------|
+| A-062 | C-20, C-13 | Conduct the design; answer queries |
+| A-063 | C-20 | Interpret & route input; preserve context |
+| A-064 | C-13, C-15, C-14, C-20 | Present Designer-oriented output; drill-down |
