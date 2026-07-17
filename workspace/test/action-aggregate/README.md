@@ -13,7 +13,7 @@ how close it came. Non-authoritative snapshot (workspace); sources live in `../.
 | `input/` | the **contract** for the action aggregate node | populated |
 | `output/` | the node's **produced output** (its role-action table), written by the future program | **empty** |
 | `evaluation/` | compares `output/` against `output-example/` and scores effectiveness | **empty** |
-| `output-example/` | an **example** of the target output (the role-action catalog) — a comparison target, **not** an exact answer key | populated |
+| `output-example/` | an **example** of the target **three-product output** — table + algorithm + declaration; a comparison target, **not** an exact answer key | populated |
 
 The output example sits at the **home level** (not inside `output/`) on purpose: `output/` is reserved
 for what the program generates, so the two never get confused.

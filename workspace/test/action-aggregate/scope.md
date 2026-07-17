@@ -22,9 +22,15 @@ Everything below is deliberately deferred.
    especially D1** — before capabilities, architecture, implementation. That ordering is *assumed*
    here, not derived; the isolation reflects the assumption.
 
-3. **The algorithm and the "declarations" — and whether they belong in the input.** The design-node
-   **algorithm** and the node's **declarations** are **left open**: whether they should be part of
-   `input/`, and in what form, is an **open question**. For now `input/` holds only the contract.
+3. **The algorithm and the "declaration."** *Resolved (first cut):* they are **not inputs — they are
+   output products** of the contract, alongside the table (see `input/contract.md` §1 and the three
+   files in `output-example/`). The node *produces* the algorithm and the declaration; `input/` holds
+   only the contract. *("Declaration" meaning is a first cut, to confirm.)*
+
+4. **Submission & cascade — out of scope.** After the output package is produced it is submitted to
+   Fundamentals for approval, and on approval the node calls out the successor branch (capability →
+   architecture → implementation) as a **cascade**. This test does **not** exercise that; it isolates
+   the contract and the shape of the output (`contract.md` §6).
 
 ## Status of the contract form
 

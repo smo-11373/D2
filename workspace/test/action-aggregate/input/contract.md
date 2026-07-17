@@ -7,11 +7,18 @@ spawn the Roles node and the per-role action nodes and re-derive a role-action t
 What makes that possible is that the contract **pins the inputs and the acceptance test**; the
 algorithm supplies the general decomposition.*
 
-## 1. Deliverable (binding)
+## 1. Deliverable (binding) — an output package of three products
 
-A single **role-action aggregate table** for the D2 product: the actions each recognized role
-performs — **merged**, **grouped by role**, each row carrying a **stable ID** and a **Source**.
-Target = the **common, anticipable** action set (open-list: substantially complete, not exhaustive).
+The node produces an **output package** with three products, all products of this contract:
+
+1. **The role-action aggregate table** — the actions each recognized role performs, **merged**,
+   **grouped by role**, stable IDs, each row **Source**-cited. Target = the **common, anticipable**
+   set (open-list; substantially complete, not exhaustive).
+2. **The algorithm** — the procedure the node ran to derive the table (seek roles → per-role actions
+   → aggregate → coverage-check), written so the table can be **re-derived / reproduced**.
+3. **The declaration** — the node's **manifest**: its identity, the deliverable it provides, its
+   coverage/traceability status, and the **interface it offers downstream** (the aggregate that
+   drives the capability branch). *(First-cut meaning of "declaration" — to confirm.)*
 
 ## 2. Derivation inputs — the source of truth (binding, read-only)
 
@@ -55,3 +62,11 @@ The general algorithm applies its standard pattern to this contract:
 is *coverage against those inputs*. Two competent runs over the same frozen source land on the same
 roles and substantially the same actions. **Free** → variation: naming, granularity, which
 *position-derived* actions get elaborated, and the open-list tail. That residual is the "not 100%."
+
+## 6. Submission & cascade (later — NOT exercised by this test)
+
+Once the output package is generated it is **submitted to the parent (Fundamentals) for approval**
+(`RU-02`). On approval, the node **calls out its successor branch** — the **capability** node
+(`RU-11`), then **architecture**, **implementation**, cascading downward. **This test does not
+exercise submission, approval, or cascade** — it isolates the **contract** and the **shape of the
+output**.

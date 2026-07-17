@@ -1,8 +1,14 @@
 # output-example — the target (a comparison example, not an answer key)
 
-`role-action-catalog.md` — the role-action table we built by hand, copied from
-`../../../../design/catalogs/role-action.md`. This is what the node **should reproduce
-substantially** from the contract + environment.
+An example of the node's **three-product output package**, for `evaluation/` to compare a generated
+`output/` against. Because the output is an **open list**, this is an *example* of a good result, not
+an exact key: success is *substantial* match.
 
-Because the output is an **open list**, this is an *example* of a good result, not an exact key:
-success is *substantial* match (same roles; substantially the same actions).
+- `role-action-catalog.md` — **product 1: the role-action table** (the substance). Copied from
+  `../../../../design/catalogs/role-action.md`.
+- `algorithm.md` — **product 2: the algorithm** the node ran to derive the table (reproducible).
+- `declaration.md` — **product 3: the declaration** (manifest: identity, deliverable, status,
+  downstream interface).
+
+All three are **products of the contract** (`../input/contract.md` §1). The node must reproduce the
+*table* substantially; the algorithm and declaration should match in **shape/intent**.

@@ -7,11 +7,13 @@ spawn the Roles node and the per-role action nodes and re-derive a role-action t
 What makes that possible is that the contract **pins the inputs and the acceptance test**; the
 algorithm supplies the general decomposition.*
 
-## 1. Deliverable (binding)
+## 1. Deliverable (binding) — an output package of three products
 
-A single **role-action aggregate table** for the D2 product: the actions each recognized role
-performs — **merged**, **grouped by role**, each row carrying a **stable ID** and a **Source**.
-Target = the **common, anticipable** action set (open-list: substantially complete, not exhaustive).
+The node produces an **output package**: (1) the **role-action aggregate table** — the actions each
+recognized role performs, merged, grouped by role, stable IDs, Source-cited (open-list); (2) the
+**algorithm** — the procedure to re-derive the table; (3) the **declaration** — the node's manifest
+and downstream interface. All three are products of this contract. *(Worked example: the test package
+`../../test/action-aggregate/`.)*
 
 ## 2. Derivation inputs — the source of truth (binding, read-only)
 
