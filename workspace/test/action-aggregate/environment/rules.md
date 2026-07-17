@@ -25,7 +25,7 @@
 - **Derived from:** the node's **spawning responsibility** (C-16; Phase 4 §Item 2 — spawning strategy) and the **passive/active action model** (functional doc §1). Actions are the common unit both the tree (nodes) and the capability model (support) hang on.
 - **Scope:** D2 and D1 design (design-tree governance; applied to D2's own design first).
 - **Source:** Phase 4 §Item 2; Phase 6 functional model (passive/active actions); Designer 2026-07-15.
-- **Status:** Accepted (Designer-directed); active-action spawning deferred (see `../phase-6/working-notes.md`).
+- **Status:** Accepted (Designer-directed); active-action spawning deferred.
 
 ## RU-04 — Contract passes down; changes to inherited data are proposed up
 

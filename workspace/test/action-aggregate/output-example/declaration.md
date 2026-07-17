@@ -8,7 +8,7 @@ to confirm.*
 ## Identity
 
 - **Node:** the **Action Aggregate** node (a.k.a. action integration node).
-- **Fulfilling:** the contract at `../../input/contract.md`.
+- **Fulfilling:** the contract at `../input/contract.md`.
 - **Governed by:** the rules `RU-01…RU-11`.
 
 ## What I will deliver (plan)

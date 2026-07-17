@@ -27,7 +27,7 @@
 
 - **D1 system operator** — monitors D0 health from the D1 wrapper (~half a level above D0). Not among Phase 5's positions; likely folded into the D1 Technical Manager (R-04) or omitted.
 
-> **Resolved — role layering (corrected).** R-00 **D2 Designer** builds D2; R-01 **D1 Designer** is D2's primary & only user and builds the D1 product (= Phase 1's "Designer"). Design Node Builder / D1 Programmer are internal to D2. See `../decisions/open-questions.md` and glossary.
+> **Resolved — role layering (corrected).** R-00 **D2 Designer** builds D2; R-01 **D1 Designer** is D2's primary & only user and builds the D1 product (= Phase 1's "Designer"). Design Node Builder / D1 Programmer are internal to D2. See the decisions log and glossary.
 
 ## Actions
 

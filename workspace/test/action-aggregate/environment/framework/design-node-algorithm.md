@@ -23,7 +23,7 @@ needs:
 
 So the design-node algorithm at Fundamentals is: **read own plan (method) → identify the next
 deliverable → fill the standard contract template → attach own data as read-only inputs → hand
-down.** The result is exactly `action-aggregate/contract.md`:
+down.** The result is exactly the action-aggregate contract (`../../input/contract.md`):
 
 > deliverable = the role-action aggregate table · inputs = constitution + method + rules ·
 > acceptance = coverage + traceability · (decomposition left to the child, `RU-10`)
