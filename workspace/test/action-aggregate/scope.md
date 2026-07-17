@@ -27,10 +27,12 @@ Everything below is deliberately deferred.
    files in `output-example/`). The node *produces* the algorithm and the declaration; `input/` holds
    only the contract. *("Declaration" meaning is a first cut, to confirm.)*
 
-4. **Submission & cascade — out of scope.** After the output package is produced it is submitted to
-   Fundamentals for approval, and on approval the node calls out the successor branch (capability →
-   architecture → implementation) as a **cascade**. This test does **not** exercise that; it isolates
-   the contract and the shape of the output (`contract.md` §6).
+4. **Submission — two-step structure defined, not exercised.** Submission is **two steps** (§6):
+   Step 1 submits the **algorithm + declaration** for **activation** (children spawn only after
+   approval); Step 2 submits the **result** — the table with substantial descriptions of each action
+   and each role. On approval the node cascades into the successor branch (capability → architecture →
+   implementation). This test **defines** the structure but does **not exercise** submission/approval/
+   cascade — it isolates the contract and the shape of the output.
 
 ## Status of the contract form
 

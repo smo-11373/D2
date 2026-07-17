@@ -1,7 +1,9 @@
-# Output product 2 — the algorithm (example)
+# Output product 2 — the algorithm (example) · submitted at **Step 1 (activation)**
 
-*One of three output products. The **procedure** this node ran to derive the role-action table,
-written so the table can be **re-derived / reproduced** from the environment. (Specialization of
+*One of three output products, submitted with the declaration at **Step 1** for the parent's approval
+— the node is **activated** (and may spawn its children) only once this is accepted. The **procedure**
+this node runs to derive the role-action table, written so the table can be **re-derived /
+reproduced** from the environment. (Specialization of
 `design-tree-tool/design-node-algorithm.md` to this node.)*
 
 ## Procedure

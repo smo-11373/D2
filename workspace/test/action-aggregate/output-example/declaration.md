@@ -1,7 +1,9 @@
-# Output product 3 — the declaration (example)
+# Output product 3 — the declaration (example) · submitted at **Step 1 (activation)**
 
-*One of three output products. The node's **manifest**: what it is, what it delivers, its status, and
-the interface it offers downstream. (First-cut meaning of "declaration" — to confirm.)*
+*One of three output products, submitted with the algorithm at **Step 1** for the parent's approval.
+The node's **manifest / plan / downstream interface**: what it is, what it *will* deliver, and the
+interface it offers downstream. (Scope/coverage figures below are the **declared plan**, confirmed at
+Step 2. First-cut meaning of "declaration" — to confirm.)*
 
 ## Node
 
