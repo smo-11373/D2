@@ -3,7 +3,9 @@
 *Home test directory for the **action aggregate node**. It packages a runnable test of the
 design-node algorithm: given the **environment** + **input** (contract), a (future) program produces
 its own **output**; **evaluation** then compares that output against the **output example** and scores
-how close it came. Non-authoritative snapshot (workspace); sources live in `../../../design/`.*
+how close it came. Non-authoritative snapshot (workspace). **Strictly self-contained** — every input
+the node needs (fundamentals, framework, algorithm, contract) is copied in here; nothing outside the
+package is required.*
 
 ## The pieces
 
@@ -21,7 +23,7 @@ for what the program generates, so the two never get confused.
 ## How it will run (later)
 
 1. A program reads `input/contract.md` + `environment/` and runs the **design-node algorithm**
-   (`../../../design-tree-tool/design-node-algorithm.md`).
+   (`environment/framework/design-node-algorithm.md`).
 2. It writes its result — a re-derived role-action table — into `output/`.
 3. `evaluation/` compares `output/` against `output-example/` and scores **"substantially the same"**
    (same roles; substantially the same actions, modulo naming / granularity / open-list).

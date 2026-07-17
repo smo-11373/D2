@@ -13,7 +13,7 @@ Everything below is deliberately deferred.
 ## Deliberately not addressed (open)
 
 1. **How the contract is specified / generated.** Conceptually the contract **comes from the
-   fundamentals** (the parent derives it — see `../../../design-tree-tool/design-node-algorithm.md`).
+   fundamentals** (the parent derives it — see `environment/framework/design-node-algorithm.md`).
    We do **not** exercise that generation here. First we want to learn whether the **current shape**
    of the contract can produce the desired outcome at all; contract *generation* comes after.
 

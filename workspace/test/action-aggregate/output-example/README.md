@@ -12,7 +12,7 @@ output is an **open list**, this is an *example* of a good result, not an exact 
 ## Step 2 — the result
 
 - `role-action-catalog.md` — **the role-action table with substantial descriptions.** Copied from
-  `../../../../design/catalogs/role-action.md`; it already carries a **substantial description of
+  a snapshot of the hand-built role-action catalog; it already carries a **substantial description of
   each action** (the Action column) and of **each role** (the Description column) — the substance the
   contract requires, not just IDs.
 
