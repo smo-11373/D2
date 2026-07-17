@@ -1,28 +1,55 @@
-# Output product 2 — the algorithm (example) · submitted at **Step 1 (activation)**
+# Output product 2 — the algorithm · submitted at **Step 1 (activation)**
 
-*One of three output products, submitted with the declaration at **Step 1** for the parent's approval
-— the node is **activated** (and may spawn its children) only once this is accepted. The **procedure**
-this node runs to derive the role-action table, written so the table can be **re-derived /
-reproduced** from the environment. (Specialization of
-`design-tree-tool/design-node-algorithm.md` to this node.)*
+*Submitted with the declaration for the parent's approval. The node is **activated** (may spawn its
+children) only once this is accepted. This is the concrete procedure the node commits to; it is
+written to be **re-run** and to yield the role-action table substantially the same each time.*
 
-## Procedure
+## 0. Inputs I read (from `environment/`)
 
-1. **Seek the roles.** Read `environment/constitution/phase-5-...` (Item 3, Human Position First) and
-   the layer model (D2→D1→D0). Extract the positions; tag each **intrinsic / default**; cite Source.
-   → the role table (`R-`).
-2. **Actions per role.** For each role, read the constitution + `environment/method.md` for that
-   role's job function and the relevant phase items; extract **what the role does** (its actions).
-   Name each, assign a **stable ID**, cite Source. For the **D1 Designer**, sub-split **passive /
-   active** by whether he *responds to* D2 or acts *on his own initiative*.
-3. **Aggregate.** Merge the per-role pieces into one table, grouped by role.
-4. **Coverage check (stop condition).** Every action a competent re-derivation would surface is
-   present; every row is Source-cited; IDs stable and deduplicated. Gaps → return to step 2.
-5. **Package & (later) submit.** Emit the three-product package; submission/approval is out of this
-   test's scope.
+- `constitution/phase-5-…` **Item 3 (Human Position First)** — the **positions** (roles).
+- `constitution/phase-3-…` and `phase-4-…` — the **Designer's action model** (Phase 3 = his D2
+  actions; Phase 4 = his D1 actions), the source of the D1 Designer's actions.
+- `constitution/phase-1-…`, `phase-2-…` — authority, attention, the principles that shape actions.
+- `method.md` (§1) — the derivation discipline: **identify actions → abstract the common element →
+  split passive / active → open-list → keep the D0-user throughline**.
+- `rules.md`, `glossary.md` — governance and terms.
 
-## Reproducibility note
+## 1. Decomposition — the children I spawn, with their sub-contracts
 
-The procedure is deterministic in its **inputs and stop condition** (frozen Phases 1–5; coverage),
-LLM-agent in its **extraction/abstraction**. Hence the table reproduces **substantially**, not
-identically.
+1. **Roles node.** Sub-contract: *"Derive the role table from Phase 5 Item 3 + the layer model
+   (D2→D1→D0). For each position give: stable ID, name, relationship, a **substantial description**,
+   and an **intrinsic / default** tag, each Source-cited. Deliver the role table."*
+2. **Per-role action nodes** (one per role the Roles node returns). Sub-contract: *"For role R,
+   derive the actions R performs from its **job function** (Phase 5) and the relevant phase items.
+   For each action: stable ID, a **substantial description**, Source. For the **D1 Designer**,
+   sub-split **passive / active**. Deliver R's action pieces."*
+
+## 2. Derivation method (how each child extracts — not invents)
+
+- **Roles:** take the positions listed in Phase 5 Item 3; add the **D2 Assistant** (the unified
+  interaction point, Phase 4 Item 3). Tag **intrinsic** (ecosystem-fixed: D1 Designer, D2 Assistant,
+  internal agents) vs **default** (product-side: the D0 roles, the IT Manager).
+- **D1 Designer actions:** walk the method's journey — *entry → setup → input → direction → framework
+  → oversee → inspect/monitor → asked → check* — lifting each action; classify **passive** (he
+  *responds to* D2) vs **active** (he acts *on his own initiative*).
+- **Downstream-role actions:** lift from each position's job function in Phase 5 — D0 Operator
+  (run / monitor / configure / view / notify / support-request), D0 Technical Manager (install /
+  maintain / diagnose / patch / escalate), D1 Technical Manager (deploy / upgrade / rollback /
+  records), D1 Programmer (implement / test / fix).
+
+## 3. Aggregate
+
+Merge all per-role pieces into one table, **grouped by role**, stable IDs, deduplicated.
+
+## 4. Acceptance / stop condition (coverage — this is what makes it terminate & reproduce)
+
+- Every action a competent re-derivation from the inputs would surface is **present** (open-list
+  target — not claimed exhaustive).
+- Every action and role is **Source-cited** and **substantially described**.
+- IDs **stable** and **deduplicated**.
+- If a gap is found, return to step 2 for the affected role; otherwise stop.
+
+## 5. Package
+
+Emit the three products. **Step 1:** this algorithm + the declaration (now). **Step 2:** the
+role-action table with descriptions (after the work). Submission/approval is out of this test's scope.
