@@ -1,0 +1,94 @@
+Structural check — output\role-action-catalog.md
+  status : PASS
+  roles  : 8
+  actions: 63
+  checks :
+    [x] role_ids_unique_wellformed
+    [x] action_ids_unique_wellformed
+    [x] no_retired_id_reuse
+    [x] actions_grouped_by_role
+    [x] traceability_sources_present
+    [x] substance_screen
+    [x] no_obvious_text_dupes
+
+Lexical pre-alignment (PROVISIONAL — for the Layer-B judge, not a verdict)
+  output : output\role-action-catalog.md (8 roles, 63 actions)
+  example: output-example\role-action-catalog.md (8 roles, 63 actions)
+
+Role alignment:
+  MATCH   R-00 (D2 Designer) <- R-00 (D2 Designer)
+  MATCH   R-01 (D1 Designer) <- R-01 (D1 Designer)
+  MATCH   R-02 (Design Node Builder) <- R-02 (Design Node Builder)
+  MATCH   R-03 (D1 Programmer) <- R-03 (D1 Programmer)
+  MATCH   R-04 (D1 Technical Manager) <- R-04 (D1 Technical Manager)
+  MATCH   R-05 (D0 Operator) <- R-05 (D0 Operator)
+  MATCH   R-06 (D0 Technical Manager) <- R-06 (D0 Technical Manager)
+  MATCH   R-07 (D2 Assistant) <- R-07 (D2 Assistant)
+
+Action pre-alignment (example -> proposed output match):
+  EX-ID    ROLE   SCORE  PROPOSED
+  A-010    R-00   0.83   A-101
+  A-011    R-00   0.89   A-102
+  A-061    R-00   1.0    A-103
+  A-012    R-01   0.3    A-105
+  A-013    R-01   1.0    A-106
+  A-014    R-01   0.71   A-107
+  A-015    R-01   0.21   A-108
+  A-016    R-01   1.0    A-109
+  A-017    R-01   0.4    A-118
+  A-001    R-01   1.0    A-112
+  A-002    R-01   0.8    A-113
+  A-004    R-01   1.0    A-119
+  A-005    R-01   0.8    A-114
+  A-006    R-01   0.78   A-115
+  A-007    R-01   0.62   A-120
+  A-008    R-01   0.64   A-121
+  A-009    R-01   0.7    A-122
+  A-018    R-01   0.75   A-116
+  A-019    R-01   0.45   A-126
+  A-020    R-01   0.56   A-117
+  A-052    R-01   0.58   A-123
+  A-053    R-01   1.0    A-124
+  A-054    R-01   0.86   A-125
+  A-055    R-01   1.0    A-104
+  A-056    R-01   0.86   A-110
+  A-057    R-01   1.0    A-111
+  A-058    R-01   0.6    A-127
+  A-021    R-02   0.71   A-128
+  A-022    R-02   0.75   A-129
+  A-023    R-02   0.8    A-130
+  A-024    R-02   0.83   A-131
+  A-025    R-02   0.57   A-132
+  A-026    R-02   1.0    A-133
+  A-027    R-02   0.62   A-134
+  A-060    R-02   0.39   A-135
+  A-028    R-03   1.0    A-136
+  A-040    R-03   1.0    A-137
+  A-041    R-03   0.56   A-138
+  A-029    R-04   1.0    A-139
+  A-030    R-04   1.0    A-140
+  A-031    R-04   1.0    A-141
+  A-032    R-04   0.8    A-142
+  A-033    R-04   1.0    A-143
+  A-042    R-04   1.0    A-144
+  A-043    R-04   1.0    A-145
+  A-034    R-05   1.0    A-146
+  A-035    R-05   1.0    A-147
+  A-036    R-05   1.0    A-148
+  A-044    R-05   1.0    A-149
+  A-045    R-05   1.0    A-150
+  A-046    R-05   1.0    A-151
+  A-047    R-05   0.89   A-152
+  A-048    R-05   0.89   A-153
+  A-037    R-06   1.0    A-154
+  A-038    R-06   1.0    A-155
+  A-039    R-06   0.83   A-156
+  A-049    R-06   1.0    A-157
+  A-050    R-06   0.56   A-158
+  A-051    R-06   0.9    A-159
+  A-059    R-06   1.0    A-160
+  A-062    R-07   1.0    A-161
+  A-063    R-07   0.62   A-162
+  A-064    R-07   0.87   A-163
+
+Provisional lexical coverage: 63/63 = 100%  (NOT the score; Layer B decides)

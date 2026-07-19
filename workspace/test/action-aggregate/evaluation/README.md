@@ -1,7 +1,72 @@
-# evaluation — EMPTY (for now)
+# evaluation — the scoring harness
 
-Reserved for the comparison of `../output/` against `../output-example/`: does the re-derived table
-match the target **substantially** (same roles; substantially the same actions, modulo naming,
-granularity, and the open-list tail)? Scoring method TBD.
+Compares a generated `../output/` against the target `../output-example/` and decides whether the
+re-derived role-action table is **substantially the same** — per `../input/contract.md` §3
+(same roles; substantially the same actions modulo naming / granularity / open-list; traceability;
+integrity).
 
-Intentionally empty until there is an output to evaluate.
+**Status:** harness built and exercised on two runs.
+
+- **`scorecard-cleanroom.md` (run-02, the real measurement)** — a fresh agent given only
+  `../environment/` + `../input/`, blind to the example. Scored **≈ 86/100**, **verdict "Close — not
+  yet substantially the same"**: gate G3 fails because the Design Node Builder role was folded into the
+  D2 Assistant, and the position-derived open-list tail was left implicit. Strong convergence on the
+  pinned core. Two contract edits recommended in the scorecard's findings.
+- **`scorecard-run01-seen-example.md` (run-01, superseded)** — engine had seen the example; ≈99.
+  Validates the harness end-to-end but not an untainted convergence signal. Files archived in
+  `../work/run01-seen-example/`.
+
+## Design in one line
+
+The deliverable is an **open list** with free IDs and naming, so "substantially the same" is a
+**semantic** judgment, not string-equality — which splits the harness into two layers: mechanical
+checks in code, meaning-based judgment by rubric.
+
+| Layer | File | Does | Runnable |
+|---|---|---|---|
+| **A — structural** | `structural_check.py` | parse; check IDs / grouping / Sources / substance screen; emit a lexical pre-alignment | **yes, now** |
+| **B — semantic** | `semantic-judgment.md` | finalize alignment by meaning; judge coverage & substance; write the scorecard | LLM/human |
+| spec | `scoring-method.md` | dimensions, weights, gates, thresholds, verdict | — |
+
+## How to run
+
+```bash
+# Layer A — structural check on one catalog
+python evaluation/structural_check.py output/role-action-catalog.md
+
+# Layer A — structural check + lexical pre-alignment vs the target
+python evaluation/structural_check.py output/role-action-catalog.md \
+    --compare output-example/role-action-catalog.md
+
+# machine-readable
+python evaluation/structural_check.py output/role-action-catalog.md \
+    --compare output-example/role-action-catalog.md --json
+```
+
+Then a judge runs Layer B (`semantic-judgment.md`) over Layer A's output and the two catalogs, and
+fills the **scorecard template**. Exit code: `0` if Layer A passes, `1` if it fails (CI-friendly).
+
+## Verdict scale
+
+`overall = 0.25·role + 0.35·coverage + 0.15·traceability + 0.10·integrity + 0.15·substance` (×100),
+behind gates G1–G3 (integrity / traceability / roles-complete). **≥ 85 = substantially the same.**
+The number always ships with a **gap list** and **extras list** — see `scoring-method.md` §Verdict.
+
+## Self-test (Verification Before Realization)
+
+The runnable layer is validated against the reference itself:
+
+- `structural_check.py output-example/role-action-catalog.md` → **PASS**, 8 roles, 63 actions, all
+  checks green (the reference passes its own structural checks — the baseline).
+- self-compare (example vs example) → **100%** provisional coverage, all roles matched, no extras.
+- a deliberately-broken fixture (`../work/degraded-fixture.md`) → **FAIL** with every injected fault
+  surfaced (duplicate ID, retired-ID reuse, missing Source, thin text, missing role R-07, spurious
+  extra). Confirms the harness *makes deviation visible* (Phase 5 Item 1, Harness First).
+
+## What this harness does not do
+
+- It does not generate `../output/` — that is the node/engine's job (the other empty piece).
+- Layer A does not judge meaning — paraphrase and re-granularization are deferred to Layer B by
+  design (a paraphrased action scored 0.13 lexically in the self-test yet is a true match).
+- Scoring the Step-1 products (`algorithm.md`, `declaration.md`) is shape/intent-only and light; the
+  primary scored object is the role-action catalog.

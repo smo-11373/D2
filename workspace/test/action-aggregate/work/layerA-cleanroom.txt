@@ -1,0 +1,95 @@
+Structural check — output\role-action-catalog.md
+  status : PASS
+  roles  : 7
+  actions: 50
+  checks :
+    [x] role_ids_unique_wellformed
+    [x] action_ids_unique_wellformed
+    [x] no_retired_id_reuse
+    [x] actions_grouped_by_role
+    [x] traceability_sources_present
+    [x] substance_screen
+    [x] no_obvious_text_dupes
+
+Lexical pre-alignment (PROVISIONAL — for the Layer-B judge, not a verdict)
+  output : output\role-action-catalog.md (7 roles, 50 actions)
+  example: output-example\role-action-catalog.md (8 roles, 63 actions)
+
+Role alignment:
+  MATCH   R-00 (D2 Designer) <- R-00 (D2 Designer)
+  MATCH   R-01 (D1 Designer) <- R-01 (D1 Designer)
+  MATCH   R-02 (Design Node Builder) <- R-02 (D2 Assistant)
+  MATCH   R-03 (D1 Programmer) <- R-03 (D1 Programmer)
+  MATCH   R-04 (D1 Technical Manager) <- R-04 (D1 Technical Manager)
+  MATCH   R-05 (D0 Operator) <- R-05 (D0 Operator)
+  MATCH   R-06 (D0 Technical Manager) <- R-06 (D0 Technical Manager)
+  MATCH   R-07 (D2 Assistant) <- R-02 (D2 Assistant)
+
+Action pre-alignment (example -> proposed output match):
+  EX-ID    ROLE   SCORE  PROPOSED
+  A-010    R-00   0.24   A-002
+  A-011    R-00   0.06   MISSING?
+  A-061    R-00   0.11   MISSING?
+  A-012    R-01   0.17   MISSING?
+  A-013    R-01   0.3    A-008
+  A-014    R-01   0.38   A-009
+  A-015    R-01   0.11   MISSING?
+  A-016    R-01   0.11   MISSING?
+  A-017    R-01   0.08   MISSING?
+  A-001    R-01   0.23   A-011
+  A-002    R-01   0.18   A-011
+  A-004    R-01   0.07   MISSING?
+  A-005    R-01   0.21   A-009
+  A-006    R-01   0.24   A-022
+  A-007    R-01   0.1    MISSING?
+  A-008    R-01   0.11   MISSING?
+  A-009    R-01   0.13   MISSING?
+  A-018    R-01   0.14   MISSING?
+  A-019    R-01   0.05   MISSING?
+  A-020    R-01   0.19   A-016
+  A-052    R-01   0.16   MISSING?
+  A-053    R-01   0.25   A-018
+  A-054    R-01   0.14   MISSING?
+  A-055    R-01   0.11   MISSING?
+  A-056    R-01   0.15   MISSING?
+  A-057    R-01   0.33   A-013
+  A-058    R-01   0.39   A-024
+  A-021    R-02   0.31   A-028
+  A-022    R-02   0.05   MISSING?
+  A-023    R-02   0.11   MISSING?
+  A-024    R-02   0.06   MISSING?
+  A-025    R-02   0.11   MISSING?
+  A-026    R-02   0.1    MISSING?
+  A-027    R-02   0.06   MISSING?
+  A-060    R-02   0.03   MISSING?
+  A-028    R-03   0.83   A-036
+  A-040    R-03   0.18   A-036
+  A-041    R-03   0.17   MISSING?
+  A-029    R-04   0.33   A-040
+  A-030    R-04   0.37   A-041
+  A-031    R-04   0.5    A-042
+  A-032    R-04   0.0    MISSING?
+  A-033    R-04   0.04   MISSING?
+  A-042    R-04   0.06   MISSING?
+  A-043    R-04   0.06   MISSING?
+  A-034    R-05   0.23   A-044
+  A-035    R-05   0.36   A-045
+  A-036    R-05   0.53   A-046
+  A-044    R-05   0.0    MISSING?
+  A-045    R-05   0.1    MISSING?
+  A-046    R-05   0.07   MISSING?
+  A-047    R-05   0.27   A-045
+  A-048    R-05   0.0    MISSING?
+  A-037    R-06   0.33   A-048
+  A-038    R-06   0.5    A-050
+  A-039    R-06   0.5    A-049
+  A-049    R-06   0.12   MISSING?
+  A-050    R-06   0.11   MISSING?
+  A-051    R-06   0.21   A-049
+  A-059    R-06   0.11   MISSING?
+  A-062    R-07   0.1    MISSING?
+  A-063    R-07   0.12   MISSING?
+  A-064    R-07   0.4    A-030
+
+Provisional lexical coverage: 26/63 = 41%  (NOT the score; Layer B decides)
+Output actions with no lexical example match (open-list extras to classify): A-001, A-004, A-005, A-006, A-007, A-010, A-012, A-014, A-015, A-017, A-019, A-020, A-021, A-023, A-025, A-026, A-027, A-029, A-031, A-032, A-033, A-034, A-035, A-037, A-038, A-039, A-043, A-047, A-051

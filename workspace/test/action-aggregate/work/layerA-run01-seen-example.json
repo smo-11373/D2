@@ -1,0 +1,500 @@
+{
+  "structural": {
+    "path": "output\\role-action-catalog.md",
+    "n_roles": 8,
+    "n_actions": 63,
+    "errors": [],
+    "warnings": [],
+    "checks": {
+      "role_ids_unique_wellformed": true,
+      "action_ids_unique_wellformed": true,
+      "no_retired_id_reuse": true,
+      "actions_grouped_by_role": true,
+      "traceability_sources_present": true,
+      "substance_screen": true,
+      "no_obvious_text_dupes": true
+    }
+  },
+  "comparison": {
+    "roles_matched": [
+      [
+        "R-00",
+        "R-00"
+      ],
+      [
+        "R-01",
+        "R-01"
+      ],
+      [
+        "R-02",
+        "R-02"
+      ],
+      [
+        "R-03",
+        "R-03"
+      ],
+      [
+        "R-04",
+        "R-04"
+      ],
+      [
+        "R-05",
+        "R-05"
+      ],
+      [
+        "R-06",
+        "R-06"
+      ],
+      [
+        "R-07",
+        "R-07"
+      ]
+    ],
+    "roles_missing_from_output": [],
+    "roles_extra_in_output": [],
+    "action_prealignment": [
+      {
+        "example_action": "A-010",
+        "example_role": "R-00",
+        "example_text": "Complete / clarify / expand D2's living working sets (glossary, query catalog, philosophy)",
+        "proposed_output_match": "A-101",
+        "lexical_score": 0.83
+      },
+      {
+        "example_action": "A-011",
+        "example_role": "R-00",
+        "example_text": "Revise D2's persistent working sets through the explicit D2 design process",
+        "proposed_output_match": "A-102",
+        "lexical_score": 0.89
+      },
+      {
+        "example_action": "A-061",
+        "example_role": "R-00",
+        "example_text": "Review and adopt / reject D2 improvements proposed by the optional post-run D2 audit",
+        "proposed_output_match": "A-103",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-012",
+        "example_role": "R-01",
+        "example_text": "Confirm the Designer\u2013D2 Operating Contract (relationship terms)",
+        "proposed_output_match": "A-105",
+        "lexical_score": 0.3
+      },
+      {
+        "example_action": "A-013",
+        "example_role": "R-01",
+        "example_text": "Provide the initial design input (Predecessor D1 package + intended change)",
+        "proposed_output_match": "A-106",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-014",
+        "example_role": "R-01",
+        "example_text": "Review the initial design understanding & direction",
+        "proposed_output_match": "A-107",
+        "lexical_score": 0.71
+      },
+      {
+        "example_action": "A-015",
+        "example_role": "R-01",
+        "example_text": "Select a design posture (Standard / High Harness / Lean)",
+        "proposed_output_match": "A-108",
+        "lexical_score": 0.21
+      },
+      {
+        "example_action": "A-016",
+        "example_role": "R-01",
+        "example_text": "Review / revise the Selected Setup Configuration Package",
+        "proposed_output_match": "A-109",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-017",
+        "example_role": "R-01",
+        "example_text": "Revise setup material later (governed)",
+        "proposed_output_match": "A-118",
+        "lexical_score": 0.4
+      },
+      {
+        "example_action": "A-001",
+        "example_role": "R-01",
+        "example_text": "Accept the proposed D1 Design Operating Framework",
+        "proposed_output_match": "A-112",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-002",
+        "example_role": "R-01",
+        "example_text": "Modify selected parts of the framework",
+        "proposed_output_match": "A-113",
+        "lexical_score": 0.8
+      },
+      {
+        "example_action": "A-004",
+        "example_role": "R-01",
+        "example_text": "Discuss a material concern",
+        "proposed_output_match": "A-119",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-005",
+        "example_role": "R-01",
+        "example_text": "Review a Design Node (e.g. approve / \"continue\")",
+        "proposed_output_match": "A-114",
+        "lexical_score": 0.8
+      },
+      {
+        "example_action": "A-006",
+        "example_role": "R-01",
+        "example_text": "Reserve or assign revision authority over a design object",
+        "proposed_output_match": "A-115",
+        "lexical_score": 0.78
+      },
+      {
+        "example_action": "A-007",
+        "example_role": "R-01",
+        "example_text": "Inquiry / inspection (explain, report, trace, show, compare design or process state)",
+        "proposed_output_match": "A-120",
+        "lexical_score": 0.62
+      },
+      {
+        "example_action": "A-008",
+        "example_role": "R-01",
+        "example_text": "Investigation / concern (request D2 critically examine a matter or suspected problem and recommend action)",
+        "proposed_output_match": "A-121",
+        "lexical_score": 0.64
+      },
+      {
+        "example_action": "A-009",
+        "example_role": "R-01",
+        "example_text": "Designer directive (impose, revise, reserve, suspend, or exercise authority)",
+        "proposed_output_match": "A-122",
+        "lexical_score": 0.7
+      },
+      {
+        "example_action": "A-018",
+        "example_role": "R-01",
+        "example_text": "Answer a Clarification Request",
+        "proposed_output_match": "A-116",
+        "lexical_score": 0.75
+      },
+      {
+        "example_action": "A-019",
+        "example_role": "R-01",
+        "example_text": "Tune resolution depth / intervention posture",
+        "proposed_output_match": "A-126",
+        "lexical_score": 0.45
+      },
+      {
+        "example_action": "A-020",
+        "example_role": "R-01",
+        "example_text": "Request / review an optional D2 audit after completion",
+        "proposed_output_match": "A-117",
+        "lexical_score": 0.56
+      },
+      {
+        "example_action": "A-052",
+        "example_role": "R-01",
+        "example_text": "Monitor design progress (advancement, changes since last review, revision counts)",
+        "proposed_output_match": "A-123",
+        "lexical_score": 0.58
+      },
+      {
+        "example_action": "A-053",
+        "example_role": "R-01",
+        "example_text": "Monitor resource & cost spend (time and cost, cumulative & per node)",
+        "proposed_output_match": "A-124",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-054",
+        "example_role": "R-01",
+        "example_text": "Monitor design-process health & anomalies (abnormal behavior, rejection loops, high-impact open issues)",
+        "proposed_output_match": "A-125",
+        "lexical_score": 0.86
+      },
+      {
+        "example_action": "A-055",
+        "example_role": "R-01",
+        "example_text": "Evaluate D2 and decide whether to adopt it for this design (adopt / decline / defer)",
+        "proposed_output_match": "A-104",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-056",
+        "example_role": "R-01",
+        "example_text": "Review and adjust the roles table (the cast of roles for this project)",
+        "proposed_output_match": "A-110",
+        "lexical_score": 0.86
+      },
+      {
+        "example_action": "A-057",
+        "example_role": "R-01",
+        "example_text": "Review and confirm the D1 foundational documents (the D1 Constitution)",
+        "proposed_output_match": "A-111",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-058",
+        "example_role": "R-01",
+        "example_text": "Evaluate a proposed change before formalizing it (impact dry-run \u2014 probe up & down, get a report)",
+        "proposed_output_match": "A-127",
+        "lexical_score": 0.6
+      },
+      {
+        "example_action": "A-021",
+        "example_role": "R-02",
+        "example_text": "Investigate relevant predecessor & reference material",
+        "proposed_output_match": "A-128",
+        "lexical_score": 0.71
+      },
+      {
+        "example_action": "A-022",
+        "example_role": "R-02",
+        "example_text": "Develop, compare, and critique candidate design choices",
+        "proposed_output_match": "A-129",
+        "lexical_score": 0.75
+      },
+      {
+        "example_action": "A-023",
+        "example_role": "R-02",
+        "example_text": "Produce the Node Design Specification / design result",
+        "proposed_output_match": "A-130",
+        "lexical_score": 0.8
+      },
+      {
+        "example_action": "A-024",
+        "example_role": "R-02",
+        "example_text": "Internally evaluate the result before submission",
+        "proposed_output_match": "A-131",
+        "lexical_score": 0.83
+      },
+      {
+        "example_action": "A-025",
+        "example_role": "R-02",
+        "example_text": "Submit the design result for acceptance",
+        "proposed_output_match": "A-132",
+        "lexical_score": 0.57
+      },
+      {
+        "example_action": "A-026",
+        "example_role": "R-02",
+        "example_text": "Propose a spawning strategy (descendant responsibilities)",
+        "proposed_output_match": "A-133",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-027",
+        "example_role": "R-02",
+        "example_text": "Propose upward revision of governing design",
+        "proposed_output_match": "A-134",
+        "lexical_score": 0.62
+      },
+      {
+        "example_action": "A-060",
+        "example_role": "R-02",
+        "example_text": "Establish the node's verification harness and derive design evidence *before* committing the design (observation / monitoring / health-visibility, representative inputs, expected outputs, evaluation cases)",
+        "proposed_output_match": "A-135",
+        "lexical_score": 0.39
+      },
+      {
+        "example_action": "A-028",
+        "example_role": "R-03",
+        "example_text": "Implement product (D0) code from the implementation specification",
+        "proposed_output_match": "A-136",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-040",
+        "example_role": "R-03",
+        "example_text": "Write and run implementation-level tests against the code",
+        "proposed_output_match": "A-137",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-041",
+        "example_role": "R-03",
+        "example_text": "Diagnose and fix implementation defects (code changes within the spec)",
+        "proposed_output_match": "A-138",
+        "lexical_score": 0.56
+      },
+      {
+        "example_action": "A-029",
+        "example_role": "R-04",
+        "example_text": "Adjust a governed product parameter without changing code",
+        "proposed_output_match": "A-139",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-030",
+        "example_role": "R-04",
+        "example_text": "Run the upgrade validation / regression (smoke-test) harness",
+        "proposed_output_match": "A-140",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-031",
+        "example_role": "R-04",
+        "example_text": "Update release state, repackage, and distribute the product",
+        "proposed_output_match": "A-141",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-032",
+        "example_role": "R-04",
+        "example_text": "Deploy D0 into production (optionally retaining D1)",
+        "proposed_output_match": "A-142",
+        "lexical_score": 0.8
+      },
+      {
+        "example_action": "A-033",
+        "example_role": "R-04",
+        "example_text": "Monitor D0 health & performance via the D1 wrapper",
+        "proposed_output_match": "A-143",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-042",
+        "example_role": "R-04",
+        "example_text": "Roll back to a previous release on a failed upgrade",
+        "proposed_output_match": "A-144",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-043",
+        "example_role": "R-04",
+        "example_text": "Review upgrade records / release history",
+        "proposed_output_match": "A-145",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-034",
+        "example_role": "R-05",
+        "example_text": "Perform routine operation \u2014 start, run, stop, schedule, pause/resume, or cancel D0 jobs",
+        "proposed_output_match": "A-146",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-035",
+        "example_role": "R-05",
+        "example_text": "Perform routine user-level monitoring \u2014 observe whether D0 is working and healthy",
+        "proposed_output_match": "A-147",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-036",
+        "example_role": "R-05",
+        "example_text": "Set operator-level controls (spending limits, scheduling, collection scope, approved operating choices)",
+        "proposed_output_match": "A-148",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-044",
+        "example_role": "R-05",
+        "example_text": "View D0 results, outputs, and reports",
+        "proposed_output_match": "A-149",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-045",
+        "example_role": "R-05",
+        "example_text": "Acknowledge and respond to notifications, prompts, or routine approvals from D0",
+        "proposed_output_match": "A-150",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-046",
+        "example_role": "R-05",
+        "example_text": "Handle routine, non-technical error conditions (retry / restart within competence)",
+        "proposed_output_match": "A-151",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-047",
+        "example_role": "R-05",
+        "example_text": "View routine activity, usage, and cost-to-date (operator-level status)",
+        "proposed_output_match": "A-152",
+        "lexical_score": 0.89
+      },
+      {
+        "example_action": "A-048",
+        "example_role": "R-05",
+        "example_text": "Request front-line technical support / escalate a problem to the D0 Technical Manager (R-06)",
+        "proposed_output_match": "A-153",
+        "lexical_score": 0.89
+      },
+      {
+        "example_action": "A-037",
+        "example_role": "R-06",
+        "example_text": "Install a D0 deployment",
+        "proposed_output_match": "A-154",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-038",
+        "example_role": "R-06",
+        "example_text": "Technically maintain a D0 deployment (deployment paths, storage endpoints, service config, resource limits, credentials, health settings)",
+        "proposed_output_match": "A-155",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-039",
+        "example_role": "R-06",
+        "example_text": "Provide front-line technical support",
+        "proposed_output_match": "A-156",
+        "lexical_score": 0.83
+      },
+      {
+        "example_action": "A-049",
+        "example_role": "R-06",
+        "example_text": "Diagnose a D0 deployment issue",
+        "proposed_output_match": "A-157",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-050",
+        "example_role": "R-06",
+        "example_text": "Apply a fix, patch, or configuration change to a deployment",
+        "proposed_output_match": "A-158",
+        "lexical_score": 0.56
+      },
+      {
+        "example_action": "A-051",
+        "example_role": "R-06",
+        "example_text": "Escalate to the D1 Technical Manager (R-04) when a problem exceeds front-line support",
+        "proposed_output_match": "A-159",
+        "lexical_score": 0.9
+      },
+      {
+        "example_action": "A-059",
+        "example_role": "R-06",
+        "example_text": "Monitor / observe D0 deployment health and status (standing, proactive)",
+        "proposed_output_match": "A-160",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-062",
+        "example_role": "R-07",
+        "example_text": "Conduct the design on the Designer's behalf and answer his queries through the single interaction point",
+        "proposed_output_match": "A-161",
+        "lexical_score": 1.0
+      },
+      {
+        "example_action": "A-063",
+        "example_role": "R-07",
+        "example_text": "Interpret and route the Designer's input (direction, clarification, investigation, monitoring, intervention) to the right D2 function; preserve interaction context",
+        "proposed_output_match": "A-162",
+        "lexical_score": 0.62
+      },
+      {
+        "example_action": "A-064",
+        "example_role": "R-07",
+        "example_text": "Present Designer-oriented output \u2014 completion reports, Review Stops, Clarification Requests, human-readable summaries \u2014 with drill-down on request",
+        "proposed_output_match": "A-163",
+        "lexical_score": 0.87
+      }
+    ],
+    "output_actions_unmatched": []
+  }
+}
