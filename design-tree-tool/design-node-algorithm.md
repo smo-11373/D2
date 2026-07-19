@@ -6,6 +6,11 @@ Fundamentals → Action-Aggregate (a.k.a. the action integration node). A node i
 (glossary `design-node`); "automated" means **agent-executed**, and the acceptance test is what makes
 it **terminate and reproduce**.*
 
+*Naming: this describes the **module's method** — one component of the **module** (design tree +
+design node module), alongside the enforcer, acceptance, and submission. It is **not** the run output
+`algorithm.md`, which is a *product* of running the module. See `conformance.md` for the module's
+conformance acceptance requirement.*
+
 ## Q1 — How the Fundamentals node delivers the contract (downward)
 
 A parent does **not invent** a child's contract; it **instantiates** one from its own owned data.
@@ -26,7 +31,12 @@ deliverable → fill the standard contract template → attach own data as read-
 down.** The result is exactly `action-aggregate/contract.md`:
 
 > deliverable = the role-action aggregate table · inputs = constitution + method + rules ·
-> acceptance = coverage + traceability · (decomposition left to the child, `RU-10`)
+> acceptance = **conformance** (gating) + coverage + traceability · (decomposition left to the child, `RU-10`)
+
+The contract carries **conformance to the governing layer** as its first, gating acceptance criterion
+(see `conformance.md`) — the child must contradict no governing statement of the inherited fundamentals,
+not merely cite them. This is layer-relative: the same clause emitted by the D1 module reads "conform to
+the D1 constitution."
 
 **The point:** the contract is *derived*, not authored freehand — Fundamentals turns the method's
 discipline into a pinned instruction. Any run over the same method+rules emits the same contract.
@@ -47,10 +57,15 @@ traced:
    downstream role, it lifts the actions implied by that position's job function. It names, assigns a
    stable ID, cites the Source; the D1 Designer's set sub-splits **passive / active**.
 3. **Aggregate.** Merge the per-role pieces into the table.
-4. **Self-check against acceptance.** Run **coverage** (every action a competent re-derivation would
-   surface is present), **traceability** (every row Source-cited), **integrity** (IDs, dedup, map
-   resolves). Gaps → derive more. This is the **termination condition**.
-5. **Submit** with justification (`RU-02`) for Fundamentals' approval.
+4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
+   contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,
+   method discipline, or rule; distinct from traceability, which only checks a `Source` is cited — see
+   `conformance.md`), then **coverage** (every action a competent re-derivation would surface is
+   present), **traceability** (every row Source-cited), **integrity** (IDs, dedup, map resolves).
+   On a conformance conflict, **revise to conform** or **propose up and halt** (`RU-04`/`RU-05`) —
+   never emit-and-flag. Other gaps → derive more. This is the **termination condition**.
+5. **Submit** with justification (`RU-02`) — including an explicit **conformance argument** — for
+   Fundamentals' approval, which independently runs the conformance gate before accepting.
 
 **Where the "substance" comes from:** each agent *reads the frozen constitution and extracts /
 abstracts* the roles and actions. The substance is the extracted text + its `Source` (the derivation

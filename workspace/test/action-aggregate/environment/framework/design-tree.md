@@ -1,9 +1,9 @@
 # The D2 Design Tree — first cut
 
-*Provisional. D2's own design, laid out on the **design-tree framework it prescribes** (dogfooding).
-Self-contained copy for this sandbox: the framework's formal rules `RU-01…RU-11` are in
-`../rules.md`, the **design-node algorithm** is the sibling `design-node-algorithm.md`, and the terms
-are in `../glossary.md`.*
+*Provisional. D2's own design, laid out on the **module it prescribes** (the design tree + design
+node module; dogfooding). Self-contained copy for this sandbox: the module's formal rules
+`RU-01…RU-11` are in `../rules.md`, the **module's method** is the sibling `design-node-algorithm.md`,
+and the terms are in `../glossary.md`. **Pinned pre-conformance snapshot** — see `../README.md`.*
 
 ## Principle — edges are design dependency, not action order
 

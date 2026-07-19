@@ -6,6 +6,11 @@ Fundamentals → Action-Aggregate (a.k.a. the action integration node). A node i
 (glossary `design-node`); "automated" means **agent-executed**, and the acceptance test is what makes
 it **terminate and reproduce**.*
 
+*Naming (snapshot): this describes the **module's method** — module = design tree + design node
+module; the run output `algorithm.md` is a *product* of running the module, not this file. **Pinned
+pre-conformance snapshot** — it omits the module's later conformance acceptance requirement (source
+module `conformance.md`); this benchmark measures the pre-conformance module.*
+
 ## Q1 — How the Fundamentals node delivers the contract (downward)
 
 A parent does **not invent** a child's contract; it **instantiates** one from its own owned data.

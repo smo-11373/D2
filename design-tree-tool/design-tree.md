@@ -1,9 +1,10 @@
 # The D2 Design Tree — first cut
 
-*Provisional. D2's own design, laid out on the **design-tree framework it prescribes** (dogfooding).
-See `README.md` for the D3-level framing, `../design/phase-6/working-notes.md` for the spawning
+*Provisional. D2's own design, laid out on the **module it prescribes** (the design tree + design
+node module; dogfooding). See `README.md` for the D3-level framing and naming, `conformance.md` for
+the conformance acceptance requirement, `../design/phase-6/working-notes.md` for the spawning
 mechanism (`RU-03`) and node definition (glossary `design-node`), and `../design/decisions/` for
-open questions. The framework's formal rules (`RU-`), terms, and capabilities currently live in
+open questions. The module's formal rules (`RU-`), terms, and capabilities currently live in
 `../design/catalogs/` for stable IDs; see `README.md`.*
 
 ## Principle — edges are design dependency, not action order
@@ -71,6 +72,12 @@ Worked out on the simplest case (Role node vs Action node):
   the child's **required deliverable** — e.g. the Role node demands "the role-action table **as an
   aggregate**." The child may **decompose internally to any depth** (sub-nodes by type —
   *passive-action*, *active-action*, …) but must return the aggregate. *(RU-10.)*
+- **Conform to the layer above (gating).** The contract also carries, as its **first, gating
+  acceptance criterion**, that the child's deliverable **conform to the governing layer** — contradict
+  no governing statement of the inherited fundamentals, not merely cite them (conformance ≠
+  traceability). A conformance conflict is resolved by **revise-to-conform** or
+  **propose-up-and-halt** (`RU-04`/`RU-05`), never emit-and-flag; it is checked at both the node
+  (self-check) and the parent (acceptance). Layer-relative. *(See `conformance.md`.)*
 
 **Action-node decomposition (illustration).** Within the Action node:
 
