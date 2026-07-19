@@ -54,8 +54,23 @@ traced:
    actions from its **job function** and the relevant phase items*. The agent **reads the
    constitution/method for that role** and extracts **what the role does** — for the D1 Designer, it
    walks the method's journey (entry → setup → input → … → checking) and lifts each action; for a
-   downstream role, it lifts the actions implied by that position's job function. It names, assigns a
-   stable ID, cites the Source; the D1 Designer's set sub-splits **passive / active**.
+   downstream **operational** role it walks the **position-derived depth frame** (below). It names,
+   assigns a stable ID, cites the Source; the D1 Designer's set sub-splits **passive / active**.
+
+   **Position-derived depth frame** — a *derivation-depth harness* (not a closed list). Downstream
+   operational positions (Programmer, D1/D0 Technical Managers, D0 Operator) have no journey scaffold,
+   so two runs otherwise stop at different depths. For each such position, elaborate the actions its
+   Phase-5 Item-3 job function *genuinely implies* across the recurring facets — **operate/perform ·
+   monitor/observe · configure/control · view/report · handle routine errors · escalate/request
+   support** (maintenance/support positions also walk the **diagnose → apply-fix → recover-from-a-failed
+   -change → record-the-change** cycle their function implies). The facets are **abstracted from Phase 5
+   Item 3's own position language** (routine operation & monitoring; position-oriented configuration;
+   escalation; position hierarchy) — *not* manufactured. **Guards:** *(open list, method §1)* the frame
+   is a **completeness prompt, not a checklist** — elaborate only the facets a position genuinely
+   implies, never invent an action to fill one, and conformance/traceability still gate every row;
+   *(scope)* the operational cast only — **not** the D1 Designer (scaffolded above) nor the internal/meta
+   roles (D2 Designer, Design Node Builder, D2 Assistant); *(layer-relative)* general to operational
+   positions at any layer, so the D1 module reuses it unchanged.
 3. **Aggregate.** Merge the per-role pieces into the table.
 4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
    contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,

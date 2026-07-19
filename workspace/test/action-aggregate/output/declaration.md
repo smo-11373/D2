@@ -1,97 +1,93 @@
 # Declaration — the Action-Aggregate node
 
-*Deliverable 3 of the Action-Aggregate node (contract §1, delivered at Step 1 — activation). The
-node's **manifest / plan / downstream interface**: its identity, what it delivers, and the interface
-it offers the capability branch. First-cut meaning of "declaration," per contract §1 (to confirm).*
+*Product 3 of the node's output package (contract §1.3): the node's **manifest / plan / downstream
+interface** — its identity, what it will deliver, and the interface it offers the capability branch.
+First-cut meaning of "declaration" per contract §1.3, submitted (with the algorithm) at **Step 1
+activation**, before children are spawned.*
 
 ## 1. Identity (manifest)
 
-- **Node:** Action-Aggregate (a.k.a. the action integration node), the **Role-Action** node on the
-  D2 design tree.
-- **Position in the tree:** child of **Roles**, itself under **Setup → Fundamentals**; parent of the
-  dependency successor **Functionality (Capability)**. Spine: *Roles → Role-Action → Functionality →
-  Architecture* (mirrors the Phase 6 governing hierarchy Role → Action → Capability → Architecture →
-  Implementation). *(Source: `design-tree`.)*
-- **Owned data (authors & enforces):** the **role-action aggregate table** — the actions `A-*` each
-  role performs. The node **authors** this table; other nodes (including the parent) may **read** it
-  but are not its author (`RU-09`).
-- **Read-only inputs (from the contract):** the constitution (Phases 1–5), the method (§1), the rules
-  (`RU-*`), glossary/framework, and — carried down in the contract — the **role table `R-*`** owned by
-  the Roles node (`RU-04`, `RU-08`). The Source namespace is `sources.md`.
-- **Authority:** a self-contained design agent with authority over its own table, below the human
-  Designer's (glossary `design-node`). It may decompose internally and spawn children (`RU-03`,
-  `RU-10`) but must return the contracted aggregate.
+- **Node:** Action-Aggregate (a.k.a. the action integration node).
+- **Place in the tree:** child of **Fundamentals**; parent of the **Functionality / Capability** node.
+  Spine: `Fundamentals → … → Roles → Role-Action → Functionality → Architecture` (design-tree.md).
+- **Owns / authors:** the **role-action aggregate `A-` table** (`role-action-catalog.md`). Ownership =
+  authorship (`RU-09`) — the node authors and owns this table; the parent may **read** the package but
+  is not its author.
+- **Reads (read-only, via contract):** the **role table `R-*`** handed down from the **Roles** node
+  (`RU-04`/`RU-08`), plus the inherited fundamentals — constitution Phases 1–5, method §1, rules
+  `RU-01…11`, glossary, framework. Communication is adjacency-only (`RU-07`).
 
-## 2. What it delivers (plan)
+## 2. Deliverable (plan)
 
-An **output package of three products** across a **two-step submission** (contract §1, §6):
+An **output package of three products**, delivered across a **two-step submission** (contract §6;
+`RU-02`):
 
-- **Step 1 — activation:** this **declaration** + the **algorithm** (`algorithm.md`), submitted to the
-  parent (Fundamentals) for approval (`RU-02`). Only on acceptance is the node activated and may spawn
-  children.
-- **Step 2 — result:** the **role-action aggregate table with substantial descriptions**
-  (`role-action-catalog.md`) — a substantial description of each role and each action, grouped by role,
-  stable-ID'd, every row Source-cited.
+- **Step 1 — activation** (before spawning children): submit the **algorithm** (`algorithm.md`) and
+  this **declaration** (`declaration.md`) to Fundamentals for approval. Only on acceptance is the node
+  activated and may spawn its children.
+- **Step 2 — result** (after the work): submit the **role-action aggregate table with substantial
+  descriptions** (`role-action-catalog.md`) — a substantial description of each action and of each
+  role — with the node's justification and conformance argument.
 
-**Internal decomposition (discretionary, `RU-10`):** the node may dissect its work by category —
-a **passive-action** sub-node (entry · operating contract · setup · foundational docs · operating
-framework · node review · being-asked) and an **active-action** sub-node (inspect · monitor progress ·
-monitor spend · investigate · redirect · lay down a rule · audit), each possibly with its own
-children — and **merge** them into the single aggregate `A-` table. Spawning is driven by the
-Designer's potential actions (`RU-03`); passive-action spawning is implemented first, active deferred.
-The boundary obligation is the aggregate, not the internal shape.
+**Delivered content:** 7 roles (`R-00…R-06`) and 47 actions (`A-001…A-048`, `A-003` retired/skipped),
+grouped by role, every row Source-cited within the namespace.
 
-## 3. Contents delivered (this run)
+## 3. Internal decomposition (discretionary — `RU-10`)
 
-- **7 roles** `R-00…R-06` (D2 Designer, D1 Designer, Design Node Builder, D1 Programmer,
-  D1 Technical Manager, D0 Operator, D0 Technical Manager).
-- **44 actions** `A-001…A-045` (`A-003` retired/skipped), grouped by role; the D1 Designer's set
-  sub-split passive `[P]` (12) / active `[A]` (9).
-- Every role and action carries a substantial description and a namespace-resolved `Source`.
+The contract fixes the **aggregate** as the obligation and leaves internal shape to the node. Planned
+decomposition, merged back into the single `A-` table at the boundary:
 
-## 4. Downstream interface (offered to the capability branch)
+```
+Role-Action (authors the aggregate A- table)
+├── Roles seek            → derive R-00…R-06 from Phase 5 Item 3 + layer model
+├── passive-action node   → D1 Designer [P]: entry · operating-contract · input · setup ·
+│                            understanding · foundational-docs · operating-framework · node-review …
+├── active-action node    → D1 Designer [A]: inspect · monitor · investigate · direct · initiate · audit
+└── per-role action nodes → R-00, R-02 (meta, no depth frame); R-03…R-06 (position-derived depth frame)
+```
 
-Per **`RU-11`**, the completed aggregate `A-` table is the **read-only input and driver** for the
-**Functionality (Capability)** node:
+Passive-action spawning is implemented first; active-action spawning is the harder, deferred case
+(`RU-03`). All pieces are merged; only the aggregate is the contracted boundary output (`RU-10`).
 
-- **Contract offered downstream:** *design the capabilities `C-*` that support every action in the
-  aggregate.* **Coverage is the contract** — every action maps to ≥1 capability (autonomous
-  capabilities excepted); the **action↔capability map** records it and a coverage check verifies
-  "nothing is missed."
-- **Stable IDs as the join key:** the `A-*` IDs are the durable handles the action↔capability map
-  resolves against; `A-003` is permanently retired and must not be reissued.
-- **Change protocol:** the Capability node **reads** this table; to change it, it **proposes up** and
-  the Action-Aggregate node (the author) makes the change and re-submits (`RU-09`). To change the
-  ancestor **role table**, this node proposes up to the Roles node and **halts** until resolved
-  (`RU-04`/`RU-05`). Communication is **adjacency-only** (`RU-07`).
-- **Boundary exposure:** the interface exposes the `A-*` IDs, action names, per-action descriptions,
-  role grouping, and `[P]`/`[A]` class — enough for capability derivation and coverage checking —
-  while hiding the node's internal passive/active decomposition (`RU-08`, Phase 5 §Item 5).
+## 4. Downstream interface (to the capability branch)
 
-## 5. Conformance argument (gating self-check result — contract §3)
+- **The aggregate drives the capability design (`RU-11`).** The completed `A-` table is the read-only
+  **input and driver** for the **Capability node**, whose contract is to design the capabilities
+  (`C-`) that **support every action** in the aggregate. **Coverage is the contract:** every action
+  maps to ≥1 capability (autonomous capabilities excepted); the action↔capability map records it and a
+  coverage check verifies "nothing is missed."
+- **Access is read + request, not edit.** Downstream and parent nodes **read** the whole package but
+  do not edit it; a change to the `A-` table routes **through its author** — parent **requests down**,
+  a descendant **proposes up** and halts (`RU-09`/`RU-04`/`RU-05`).
+- **Successor cascade (out of scope here):** capability → architecture → implementation (`RU-11`).
 
-Conformance was run **first and gating** (`conformance.md`; algorithm §4). The deliverable
-contradicts no governing statement of the fundamentals:
+## 5. Conformance argument (gating self-check — passed)
 
-- **Named enumeration preserved.** All six positions named in **Phase 5 §Item 3** appear as distinct
-  roles (`R-01`–`R-06`); **none dropped, collapsed, or re-cast** — the named-enumeration conformance
-  requirement. The layer model adds `R-00` D2 Designer.
-- **Designer distinction preserved.** `R-00` D2 Designer and `R-01` D1 Designer are kept **separate**;
-  folding them would contradict glossary `designer`/`d2-designer`/`d1-designer`. The internal-agent
-  **Design Node Builder** is kept as a **full role** (not folded into "the design process") because
-  Phase 5 §Item 3 names it in the enumeration.
-- **Method discipline honoured.** The D1 Designer's actions carry the **passive/active** split and the
-  **D0-user optimization** throughline (`A-024`); the list is treated as **open** (method §1).
-- **Traceability within namespace.** Every row cites a `Source` resolving inside `sources.md`; no
-  `Phase 6 Item N` or `Designer <date>` citation is used.
+The deliverable **conforms** — it contradicts no governing statement of the fundamentals:
 
-**No conformance conflict was found**, so **no propose-up-and-halt** was raised and the node did not
-emit-and-flag. Had a conflict arisen, the node would have **revised to conform**, or — if the conflict
-were a genuine defect in the fundamentals — raised an upward proposal (`RU-04`) and **halted**
-(`RU-05`) here rather than emitting a deviating table.
+- **Named enumeration preserved.** Every position of the **Phase 5 Item 3** enumeration is present as
+  a role, none collapsed, dropped, or re-cast; the D2 Designer is added from the glossary layer anchor,
+  not substituted for one.
+- **Method discipline honoured.** The D1 Designer's actions are sub-split **passive / active**
+  (method §1); the **D0-user throughline** is carried (`A-020`); the list is treated as **open**
+  (common, anticipable set, not exhaustive).
+- **Depth-frame guards held.** The position-derived depth frame was applied only to the operational
+  cast (R-03…R-06) as a completeness prompt — genuinely-implied facets only, **no invented rows** — and
+  **not** to the D1 Designer (scaffolded by the journey) or the internal/meta roles (R-00, R-02).
+- **Rules not contradicted.** Ownership/authorship (`RU-09`), aggregate-at-the-boundary (`RU-10`),
+  coverage-drives-capability (`RU-11`), propose-up/stop (`RU-04`/`RU-05`), and governed-parameter
+  derivation (`RU-01`) are all respected.
+- **Traceability.** Every row cites an in-namespace `Source` (`sources.md`); traceability is treated
+  as necessary but not sufficient — conformance was checked first and independently.
 
-## 6. Successor cascade (out of scope for this test)
+No conformance conflict was found; therefore **no propose-up-and-halt** is raised and the node
+proceeds to emit the deliverable. (Had a conflict been found, this section would instead record a
+revise-to-conform or a propose-up-and-halt per `conformance.md` — never emit-and-flag.)
 
-After acceptance, the node calls out its successor branch — **capability → architecture →
-implementation** — a cascade (`RU-11`). This test **defines** the two-step submission and the
-downstream interface but does **not exercise** submission, approval, or the cascade.
+## 6. To confirm with the parent (open, first-cut)
+
+- The **first-cut meaning of "declaration"** (identity + plan + downstream interface) — confirm scope
+  (contract §1.3 flags this as "to confirm").
+- The **intrinsic/default** tagging of Design Node Builder (tagged intrinsic as part of D2's design
+  mechanism) — confirm against the Roles node's owned role table (`RU-04`; the Roles node authors that
+  distinction).
