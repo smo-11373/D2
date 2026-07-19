@@ -1,9 +1,11 @@
-# Evaluation scorecard — run-01 (engine had SEEN the example) vs `output-example/`
+# Positive control (ceiling) — cheat run vs `output-example/`
 
-> **Superseded as the reproducibility measurement by the clean-room run
-> (`scorecard-cleanroom.md`).** This run's engine and judge were the same session that had already
-> read `output-example/`, so its ~99 validates the harness end-to-end but is **not** an untainted
-> convergence signal. The scored files are archived at `../work/run01-seen-example/`.
+> **This is a benchmark-validity control, not a measurement.** The engine was given sight of
+> `output-example/` (a *cheat*), so its ~99–100 is the **ceiling**: it proves the harness scores a
+> truly-matching output high (no false-negative at the top) and that the target is achievable and
+> self-consistent. It is **not** an untainted convergence signal. The real, blind measurement is
+> `../../output/` + `../../evaluation/scorecard-run03-conformant.md`. The scored files sit beside this
+> note in `positive/`. See `../README.md` for how the pos/neg controls validate the harness.
 
 *Produced by running the harness (`scoring-method.md` + `semantic-judgment.md`) over the generated
 role-action catalog. Layer A is machine output; Layer B is this judge's semantic pass.*

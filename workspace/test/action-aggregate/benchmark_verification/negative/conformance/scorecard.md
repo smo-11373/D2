@@ -1,9 +1,16 @@
-# Evaluation scorecard — CLEAN-ROOM run (run-02) vs `output-example/`
+# Negative control (conformance floor) — the fold vs `output-example/`
 
-*The **untainted** run: a fresh agent given only `../environment/` + `../input/`, forbidden from
-reading `output-example/`, `work/`, or `evaluation/`. It derived blind, then was scored through this
-harness. This is the real reproducibility measurement; run-01 (`scorecard-run01-seen-example.md`) had
-seen the target and is not comparable.*
+> **This is a benchmark-validity control, not the current measurement.** Originally the pre-conformance
+> clean-room run (run-02), it is retained here as the **conformance floor**: a structurally-clean,
+> fully-traceable output that **folds a named Phase-5 position** (Design Node Builder) into another
+> role. The harness must **reject** it as non-conformant. Note the mechanical Layer A *passes* it
+> (exit 0) and its role-alignment silently aliases the reused id (example `R-02` and `R-07` both map to
+> the output's single `R-02`) — the fold is caught only by Layer B below and the module's conformance
+> gate. That is precisely why it is kept. The real measurement of the conformant module is
+> `../../../output/` + `../../../evaluation/scorecard-run03-conformant.md`. See `../README.md`.
+
+*The blind derivation behind this control: a fresh agent given only `environment/` + `input/`,
+forbidden the example, scored through this harness.*
 
 Date: 2026-07-18   Engine: fresh sub-agent (clean context)   Judge: Claude (Layer B)
 Structural (Layer A): **PASS** (exit 0) · **7 roles · 50 actions** · all 7 checks green

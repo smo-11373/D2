@@ -11,14 +11,17 @@ package is required.*
 
 | Piece | What it holds | Status |
 |---|---|---|
-| `environment/` | the **fundamentals** the node reads — constitution (Phases 1–5), method (§1), rules (`RU-*`), glossary. The primary input. | populated |
+| `environment/` | the **fundamentals + module** the node reads — constitution (Phases 1–5), method (§1), rules (`RU-*`), glossary, and `framework/` (the module: design tree + design node module, incl. `conformance.md`). | populated |
 | `input/` | the **contract** for the action aggregate node | populated |
-| `output/` | the node's **produced output** (its role-action table), written by the future program | **empty** |
-| `evaluation/` | compares `output/` against `output-example/` and scores effectiveness | **empty** |
+| `output/` | the node's **produced output** — the real, **blind clean-room** run of the conformant module (run-03) | populated |
+| `evaluation/` | the **shared scoring harness** (`structural_check.py` + scoring/judgment specs) and the real scorecard | populated |
+| `benchmark_verification/` | the **harness-validity tool**: a **positive** (cheat/ceiling) control and **negative** (structural + conformance floor) controls that prove the harness discriminates | populated |
 | `output-example/` | an **example** of the target **three-product output** — table + algorithm + declaration; a comparison target, **not** an exact answer key | populated |
 
 The output example sits at the **home level** (not inside `output/`) on purpose: `output/` is reserved
-for what the program generates, so the two never get confused.
+for what the program generates, so the two never get confused. Likewise the **benchmark-validity
+controls** (cheat/degraded/fold) live in `benchmark_verification/`, never in `output/` — a contaminated
+control must never be read as a real measurement.
 
 ## How it will run (later)
 

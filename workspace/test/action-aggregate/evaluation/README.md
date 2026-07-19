@@ -5,16 +5,15 @@ re-derived role-action table is **substantially the same** — per `../input/con
 (same roles; substantially the same actions modulo naming / granularity / open-list; traceability;
 integrity).
 
-**Status:** harness built and exercised on two runs.
+**Status:** harness built and validated; used for one real clean-room measurement.
 
-- **`scorecard-cleanroom.md` (run-02, the real measurement)** — a fresh agent given only
-  `../environment/` + `../input/`, blind to the example. Scored **≈ 86/100**, **verdict "Close — not
-  yet substantially the same"**: gate G3 fails because the Design Node Builder role was folded into the
-  D2 Assistant, and the position-derived open-list tail was left implicit. Strong convergence on the
-  pinned core. Two contract edits recommended in the scorecard's findings.
-- **`scorecard-run01-seen-example.md` (run-01, superseded)** — engine had seen the example; ≈99.
-  Validates the harness end-to-end but not an untainted convergence signal. Files archived in
-  `../work/run01-seen-example/`.
+- **Harness validity** is checked in `../benchmark_verification/` — a **positive** control (cheat run →
+  must score ~100) and **negative** controls (a structural floor and a conformance floor → must fail).
+  That directory validates *this* harness; keep it green whenever the harness or the target changes.
+- **The real measurement** of the conformant module is **`scorecard-run03-conformant.md`** (output
+  `../output/`): conformance gate clear (the fold is closed), composite ≈ 84. Its pre-conformance
+  (run-02) and contaminated (run-01) predecessors are now the negative/positive controls in
+  `../benchmark_verification/`.
 
 ## Design in one line
 
@@ -59,9 +58,11 @@ The runnable layer is validated against the reference itself:
 - `structural_check.py output-example/role-action-catalog.md` → **PASS**, 8 roles, 63 actions, all
   checks green (the reference passes its own structural checks — the baseline).
 - self-compare (example vs example) → **100%** provisional coverage, all roles matched, no extras.
-- a deliberately-broken fixture (`../work/degraded-fixture.md`) → **FAIL** with every injected fault
-  surfaced (duplicate ID, retired-ID reuse, missing Source, thin text, missing role R-07, spurious
-  extra). Confirms the harness *makes deviation visible* (Phase 5 Item 1, Harness First).
+- a deliberately-broken fixture (`../benchmark_verification/negative/structural/degraded-fixture.md`) →
+  **FAIL** with every injected fault surfaced (duplicate ID, retired-ID reuse, missing Source, thin
+  text, missing role R-07, spurious extra). Confirms the harness *makes deviation visible* (Phase 5
+  Item 1, Harness First). This self-test is now formalized as the pos/neg controls in
+  `../benchmark_verification/`.
 
 ## What this harness does not do
 

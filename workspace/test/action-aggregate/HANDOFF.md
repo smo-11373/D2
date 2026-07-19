@@ -3,6 +3,12 @@
 *For the D2 developer. This note defines exactly what is being handed back, what it means, and how to
 reproduce it. Everything lives inside `action-aggregate/`; paths below are relative to this folder.*
 
+> **Structure note (updated after this handoff):** the controls were reorganized into
+> `benchmark_verification/` (positive = cheat/ceiling; negative = structural + conformance floors), and
+> a conformant re-run produced a new `output/` scored in `evaluation/scorecard-run03-conformant.md`.
+> Paths below that point into `work/` or `evaluation/scorecard-cleanroom.md` reflect the *original*
+> layout — see `benchmark_verification/README.md` for the current map.
+
 ## What was asked, and what this delivers
 
 The node test shipped with an **empty** `output/` and `evaluation/`. This handoff fills both:
