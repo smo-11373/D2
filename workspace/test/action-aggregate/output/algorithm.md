@@ -1,128 +1,121 @@
-# Algorithm — how this role–action aggregate was derived
+# Algorithm — deriving the Role–Action Aggregate Table
 
-*Submitted at **Step 1 (activation)**, alongside the declaration, for the parent
-(Fundamentals / the D2 Designer) to approve the **approach** before the node spawns children
-and does the work. This is the procedure that, run over the same frozen inputs, re-derives a
-**substantially matching** table (`input/contract.md` §3, §5).*
+*Deliverable 2 of the Action-Aggregate node (contract §1, delivered at Step 1 — activation). The
+procedure this node committed to and ran to derive `role-action-catalog.md`, written to be
+**re-runnable**: contract + the same frozen inputs + this procedure ⇒ a **substantially matching**
+table (same roles, substantially the same actions modulo naming, granularity, and the open-list
+tail — contract §5).*
 
-## 0. Node identity and contract
+## 0. Inputs (frozen, read-only) and the Source namespace
 
-This is the **Action Aggregate node** fulfilling `input/contract.md`. Its contracted deliverable
-is a **role–action aggregate table with substantial descriptions** — actions merged, grouped by
-role, stable IDs, every row Source-cited, each action and each role carrying a substantial
-description. Governed by `RU-01…11`; decomposition left to the child (`RU-10`).
+Derive everything from, and only from, these:
 
-## 1. Inputs read (the frozen source of truth)
+- **Constitution — Phases 1–5** (`environment/constitution/phase-1…5-*.md`). Positions live in
+  **Phase 5 §Item 3 (Human Position First)**; actions are implied by each position's job function
+  and the phase items.
+- **Method — functional doc §1** (`environment/method.md`). The translation discipline: identify
+  the Designer's actions → abstract the common element → split **passive `[P]` / active `[A]`** →
+  keep the **D0-user throughline** → treat the list as **open**.
+- **Rules — `RU-01…RU-11`** (`environment/rules.md`). Design-tree governance.
+- **Glossary, framework, sources** (`environment/glossary.md`, `framework/*.md`, `sources.md`).
 
-All substance is derived from these; nothing is invented (`design-node-algorithm.md` Q2). Read:
+**Cite only the namespace in `sources.md`:** `Phase 1…5 §<Item>`, `method §1`, `RU-01…11`,
+`glossary \`<slug>\``, `design-tree` / `design-node-algorithm`. **Never** cite `Phase 6 Item N` or
+`Designer <date>` — resolve those to their in-package basis via the `sources.md` provenance map.
 
-- **Constitution — Phases 1–5** (`constitution/phase-1…5-*.md`): primary user and provenance
-  discipline (Phase 1), the four principles (Phase 2), the Designer↔D2 action model (Phase 3),
-  the Designer↔D1 action model incl. node building and active inspection (Phase 4), and
-  Human Position First + the position list (Phase 5 §Item 3).
-- **Method — functional doc §1** (`method.md`): the derivation discipline — identify the
-  Designer's actions → abstract the common element → split **passive/active** → keep the
-  **D0-user throughline** → treat the list as **open**; plus the setup step (roles table + posture).
-- **Rules — `RU-01…11`** (`rules.md`): `RU-10` (decompose freely, aggregate always),
-  `RU-09` (author owns its table), `RU-11` (aggregate drives the capability layer),
-  `RU-02` (justify at submission), `RU-01` (governed parameters → D1 Technical Manager).
-- **Glossary** (`glossary.md`): role identities and the intrinsic/default distinction (`role`),
-  D2/D1/D0 layer definitions, catalog role numbers (`d2-designer` R-00, `d1-designer` R-01).
-- **Framework** (`framework/design-node-algorithm.md`, `framework/design-tree.md`): the standard
-  decomposition (seek roles → per-role actions → aggregate → self-check) and dependency shape.
-- **Traceability namespace** (`sources.md`): the authoritative Source list; `Phase 6 Item 1/2/3`
-  pointers were resolved to their in-package basis (setup → `method §1` + Phase 3; node-building
-  → Phase 4 §Item 2; operator/planning → Phase 5 §Item 3 + glossary `half-level`). **No Phase 6
-  citation appears in the output.**
+## 1. Seek the roles
 
-## 2. Decomposition (`RU-10` — decompose freely, aggregate always)
+1.1 Read **Phase 5 §Item 3** and lift its **named enumeration** of conceptual positions verbatim:
+D1 Designer, Design Node Builder, D1 Programmer, D1 Technical Manager, D0 Technical Manager,
+D0 Operator. *(Conformance: a named enumeration may not be dropped, collapsed, or re-cast — every
+one becomes a role.)*
 
-The node decomposes into one **Roles** child and one **action** child per role. Each child is a
-sub-contract; the node merges their returns into the aggregate it authors and owns (`RU-09`).
+1.2 Add the position the **layer model (D2 → D1 → D0)** requires above the D1 Designer: the
+**D2 Designer** (the meta/builder), which the glossary explicitly assigns to catalog role **R-00**.
 
-### 2a. Roles child — sub-contract
+1.3 Assign stable IDs `R-00…` in **layer order** (D2 → D1 → D0), pinned by the in-package anchors:
+`R-00` D2 Designer (glossary `d2-designer`), `R-01` D1 Designer (glossary `d1-designer`),
+`R-02` Design Node Builder, `R-03` D1 Programmer, `R-04` D1 Technical Manager (pinned by `RU-01`),
+`R-05` D0 Operator (glossary `d0`), `R-06` D0 Technical Manager (glossary `d0`).
 
-*Derive the positions from **Phase 5 §Item 3 (Human Position First)** + the layer model
-(D2 → D1 → D0). Add the **D2 Designer** (builder, Phase 5 §Item 2 / glossary `d2-designer`) and the
-**D2 Assistant** (unified interaction point, Phase 2 §Principle 3 + Phase 4 §Item 3). Tag each role
-**intrinsic** (ecosystem-fixed) or **default** (product-side, Designer-changeable, glossary `role`),
-give a substantial description, cite a Source.*
+1.4 Tag each **intrinsic** (fixed to the ecosystem/layer model) or **default** (a D2-provided
+starting position the D1 Designer can change), per glossary `role`: intrinsic = the design-side
+positions fixed by the method/layer model (`R-00`, `R-01`, `R-02`); default = the product/deployment
+cast the D1 Designer configures per project (`R-03`–`R-06`).
 
-Result — seven roles, ordered by layer:
+1.5 Give each role a substantial description (job function + relationship) and a namespace `Source`.
 
-| ID | Role | Tag | Anchor |
-|---|---|---|---|
-| R-00 | D2 Designer | Intrinsic | glossary `d2-designer`; Phase 5 §Item 2 |
-| R-01 | D1 Designer | Intrinsic | Phase 1 §2; glossary `d1-designer` |
-| R-02 | D2 Assistant | Intrinsic | Phase 2 §Principle 3; Phase 4 §Item 3 |
-| R-03 | D1 Programmer | Default | Phase 5 §Item 3 |
-| R-04 | D1 Technical Manager | Default | Phase 5 §Item 3; RU-01 |
-| R-05 | D0 Operator | Default | Phase 5 §Item 3; glossary `d0` |
-| R-06 | D0 Technical Manager | Default | Phase 5 §Item 3; glossary `d0` |
+## 2. Actions per role
 
-Rule for tagging: the **D2-layer** roles (builder, primary user, D2's own interaction agent) are
-**intrinsic** — fixed by the ecosystem's structure. The **D1/D0 product-cast** positions are
-**default** — D2 supplies them as a starting cast the D1 Designer may reshape for his particular
-product (glossary `role`; method §1 setup step). The **Design Node Builder** named in Phase 5
-§Item 3 is represented by the D2 Assistant's node-building actions (A-033) rather than as a separate
-role — a judgment call flagged for the parent.
+For each role, read the constitution/method **for that role** and extract *what the role does* —
+naming each action, assigning a stable ID, writing a substantial description (what it *is*), and
+citing a `Source`.
 
-### 2b. Per-role action children — sub-contracts
+- **R-01 D1 Designer** — walk the **method §1 journey** (entry → operating contract → initial input →
+  understanding/direction → setup roles+posture → D1 constitution → operating framework → node
+  building/review → oversight → active inspection/monitoring/intervention → being asked → checking)
+  cross-referenced with **Phase 3** (Designer–D2 model) and **Phase 4** (Designer–D1 model). **Sub-split
+  passive `[P]` / active `[A]`** (method §1): `[P]` = he responds to something D2 brings (review/
+  stopping point, clarification point); `[A]` = he initiates (monitor progress, monitor spend, inspect,
+  investigate, redirect, lay down a rule, audit). Keep the **D0-user optimization** throughline as an
+  explicit `[A]` action.
+- **R-00 D2 Designer** — from glossary `d2-designer` + Phase 5 §Item 2: build/author D2; Designer-
+  originated completion of D2's living sets; approve/reject revisions to Designer-governed D2 design.
+- **R-02 Design Node Builder** — from **Phase 4 §Item 2 (Build the Current Design Node)** + glossary
+  `design-node` + `RU-02/03/04/05/06`: build the node within its contract; produce the spec; report;
+  submit with justification; enforce owned rules; spawn/propose spawning; propose-up-and-halt;
+  evaluate-before-proposing.
+- **R-03 D1 Programmer** — from Phase 5 §Item 3 (+ Phase 2 §5.3): implement product code per spec;
+  realize an understood design without reconstructing it.
+- **R-04 D1 Technical Manager** — from Phase 5 §Item 3 + `RU-01` + glossary `d1`: adjust a governed
+  parameter (no code); run the required harness; update release/repackage/distribute; maintain
+  position-oriented defaults/profiles.
+- **R-05 D0 Operator** — from Phase 5 §Item 3 + glossary `d0`/`user`: routine operation; routine
+  user-level monitoring; set operator-level controls.
+- **R-06 D0 Technical Manager** — from Phase 5 §Item 3 + glossary `d0`: install/deploy; technically
+  maintain; set deployment-level controls.
 
-For each role, *derive the actions from its job function and the relevant phase items; name, assign
-a stable ID (`A-<digits>`, `A-003` retired/skipped), give a substantial description of what the
-action **is**, cite a Source.*
-
-- **R-01 D1 Designer — the walk-the-journey case.** Walk his journey across **Phases 3–4 + method
-  §1** (entry → operating contract → initial input → understanding/direction → enter D1 mode →
-  operating framework → setup roles/posture → foundational docs → node-building review →
-  oversight/inspection → audit) and **sub-split each action** `[P] passive` (he responds to
-  something D2 brings — a review/stopping point, a clarification point; the near-universal,
-  anticipable forms, method §1 / Phase 4 §Item 2) vs `[A] active` (his own initiative — monitor,
-  inspect, drill down, redirect, lay down a rule, propose a change, audit; fluid, project-dependent,
-  Phase 4 §Item 3). The **D0-user optimization** throughline (A-025) is carried as a standing
-  cross-cutting action (method §1; Phase 5 §Item 3).
-- **R-00 D2 Designer / R-02 D2 Assistant — obligation-derived.** Lift the builder's actions from
-  glossary `d2-designer` + Phase 5 §Item 2 + `RU-02`/design-tree; lift the Assistant's actions from
-  D2's standing obligations in Phases 1–4 (unified interaction, investigate-before-escalate,
-  human-oriented reporting, observability, node building, provenance discipline).
-- **R-03…R-06 downstream product roles — position-derived.** Elaborate the actions implied by each
-  position's Phase 5 §Item 3 **job function** (implement code; adjust governed parameters + run the
-  harness + repackage; routine operation + user-level monitoring + operating controls; install +
-  maintain + configure the deployment), tagging every elaborated row **position-derived** and
-  anchoring it on Phase 5 §Item 3 (with RU-01 / glossary `d0` / `d1` where they sharpen it).
+**ID discipline:** actions `A-001…` sequential in role order; **`A-003` is retired — skip it.**
 
 ## 3. Aggregate
 
-Merge the per-role returns into a single `A-` table grouped by role, in R-00 → R-06 order.
-De-duplicate; assign stable, unique IDs sequentially, **skipping the retired `A-003`**. The
-Action node **authors and owns** this aggregate (`RU-09`); the Roles table is inherited context.
+Merge the per-role action sets into **one table grouped by role** (`RU-10` — decompose freely
+internally, but the boundary deliverable is the aggregate). Each action row sits under its role's
+`### R-NN — <name>` heading. Deduplicate semantically overlapping actions into a single row.
 
-Scope produced: **7 roles**, **50 actions**, IDs **A-001…A-051** (A-003 skipped). The D1 Designer
-carries **21** actions, split **11 [P] / 10 [A]**.
+## 4. Acceptance self-check (conformance FIRST and gating, then coverage / traceability / integrity)
 
-## 4. Self-check against acceptance (the termination condition)
+Run in this order; **conformance gates** — a non-conformant table is rejected regardless of the rest.
 
-Per `input/contract.md` §3 and `design-node-algorithm.md` step 4:
+1. **Conformance** (contradict no governing statement of the fundamentals — distinct from citing a
+   Source):
+   - Every position in the Phase 5 §Item 3 **named enumeration** is present as a distinct role — none
+     dropped, collapsed, or re-cast (this is the classic named-enumeration conformance trap).
+   - The **D2 Designer / D1 Designer** distinction (glossary `designer`, `d2-designer`, `d1-designer`)
+     is preserved — the two are not folded.
+   - The D1 Designer's actions carry the **passive/active** split (method §1 discipline).
+   - The **D0-user throughline** is present (method §1; Phase 5 §Item 3).
+   - No row cites outside the `sources.md` namespace (no `Phase 6 Item N`, no `Designer <date>`).
+   - On any conflict: **revise-to-conform**, or if the conflict is a genuine defect in the
+     fundamentals, **propose-up-and-halt** (`RU-04`/`RU-05`) and record it in `declaration.md`.
+     **Never emit-and-flag.**
+2. **Coverage** — every action a competent re-derivation from the inputs would surface is present
+   (open-list target: the common, anticipable set). Gaps → derive more.
+3. **Traceability** — every row cites a `Source` resolving inside the namespace.
+4. **Integrity** — stable IDs (`A-003` skipped), grouped by role, deduplicated; the table is shaped
+   to let the downstream action↔capability map resolve (`RU-11`).
 
-- **Coverage** (open-list). Every action a competent re-derivation would surface is present: the
-  full passive journey (entry, operating contract, input, understanding, mode-entry, framework,
-  setup, foundational docs, clarification, node review, completion reports), the common active set
-  (monitor progress, monitor cost, inspect D0, inspect the tree, drill down, directive, rule,
-  propose, audit), the D0-user throughline, D2's standing obligations, and each downstream
-  position's job function. Aim = the **common, anticipable** set, not exhaustive enumeration.
-- **Traceability.** Every role and every action row cites a `Source` inside the `sources.md`
-  namespace; no `Phase 6` or bare `Designer <date>` citation is used.
-- **Integrity.** IDs unique and stable, grouped by role, deduplicated; `A-003` retired; the table
-  is shaped so `RU-11` (action → capability coverage) can consume it downstream.
-- **Substance.** Each role and each action carries a real descriptive phrase (what it **is**), not
-  a one-word label.
+## 5. Submit
 
-Gaps found → derive more; when the four checks pass, the node **terminates** and submits.
+Emit the aggregate table (`role-action-catalog.md`) with an explicit **conformance argument** as part
+of the node's justification (`RU-02`). Per the two-step submission (contract §6): this algorithm and
+the declaration are the **Step 1 — activation** package; the table with substantial descriptions is
+the **Step 2 — result**. *(This test defines the structure but does not exercise submission/approval.)*
 
-## 5. Submit (`RU-02`)
+## Why it reproduces (contract §5)
 
-Two-step submission (structure defined, not exercised by this test): **Step 1** submits this
-algorithm + the declaration for activation; **Step 2** submits the result (the catalog with
-substantial descriptions) for acceptance. On acceptance the aggregate drives the successor
-**capability → architecture → implementation** cascade (`RU-11`).
+**Pinned → convergence:** frozen Phases 1–5, a fixed method, and acceptance measured as
+coverage/conformance against those inputs make two competent runs land on the **same roles** (the
+Phase 5 §Item 3 enumeration + the layer model) and **substantially the same actions**. **Free →
+variation:** action naming, granularity, which position-derived actions get elaborated, and the
+open-list `[A]` tail — that residual is the intended "not identical."

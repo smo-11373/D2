@@ -3,7 +3,8 @@
 *Provisional. D2's own design, laid out on the **module it prescribes** (the design tree + design
 node module; dogfooding). Self-contained copy for this sandbox: the module's formal rules
 `RU-01…RU-11` are in `../rules.md`, the **module's method** is the sibling `design-node-algorithm.md`,
-and the terms are in `../glossary.md`. **Pinned pre-conformance snapshot** — see `../README.md`.*
+and the terms are in `../glossary.md`. **Snapshot synced to the conformant module** — includes
+`conformance.md` (this folder); see `../README.md`.*
 
 ## Principle — edges are design dependency, not action order
 
@@ -70,6 +71,12 @@ Worked out on the simplest case (Role node vs Action node):
   the child's **required deliverable** — e.g. the Role node demands "the role-action table **as an
   aggregate**." The child may **decompose internally to any depth** (sub-nodes by type —
   *passive-action*, *active-action*, …) but must return the aggregate. *(RU-10.)*
+- **Conform to the layer above (gating).** The contract also carries, as its **first, gating
+  acceptance criterion**, that the child's deliverable **conform to the governing layer** — contradict
+  no governing statement of the inherited fundamentals, not merely cite them (conformance ≠
+  traceability). A conformance conflict is resolved by **revise-to-conform** or
+  **propose-up-and-halt** (`RU-04`/`RU-05`), never emit-and-flag; checked at both the node and the
+  parent. *(See `conformance.md`.)*
 
 **Action-node decomposition (illustration).** Within the Action node:
 

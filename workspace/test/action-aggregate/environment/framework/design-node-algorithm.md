@@ -7,9 +7,9 @@ Fundamentals → Action-Aggregate (a.k.a. the action integration node). A node i
 it **terminate and reproduce**.*
 
 *Naming (snapshot): this describes the **module's method** — module = design tree + design node
-module; the run output `algorithm.md` is a *product* of running the module, not this file. **Pinned
-pre-conformance snapshot** — it omits the module's later conformance acceptance requirement (source
-module `conformance.md`); this benchmark measures the pre-conformance module.*
+module; the run output `algorithm.md` is a *product* of running the module, not this file. Snapshot
+**synced to the conformant module** — it includes the module's conformance acceptance requirement
+(`conformance.md`, this folder).*
 
 ## Q1 — How the Fundamentals node delivers the contract (downward)
 
@@ -31,7 +31,11 @@ deliverable → fill the standard contract template → attach own data as read-
 down.** The result is exactly the action-aggregate contract (`../../input/contract.md`):
 
 > deliverable = the role-action aggregate table · inputs = constitution + method + rules ·
-> acceptance = coverage + traceability · (decomposition left to the child, `RU-10`)
+> acceptance = **conformance** (gating) + coverage + traceability · (decomposition left to the child, `RU-10`)
+
+The contract carries **conformance to the governing layer** as its first, gating acceptance criterion
+(see `conformance.md`): the child must contradict no governing statement of the inherited fundamentals,
+not merely cite them.
 
 **The point:** the contract is *derived*, not authored freehand — Fundamentals turns the method's
 discipline into a pinned instruction. Any run over the same method+rules emits the same contract.
@@ -52,10 +56,15 @@ traced:
    downstream role, it lifts the actions implied by that position's job function. It names, assigns a
    stable ID, cites the Source; the D1 Designer's set sub-splits **passive / active**.
 3. **Aggregate.** Merge the per-role pieces into the table.
-4. **Self-check against acceptance.** Run **coverage** (every action a competent re-derivation would
-   surface is present), **traceability** (every row Source-cited), **integrity** (IDs, dedup, map
-   resolves). Gaps → derive more. This is the **termination condition**.
-5. **Submit** with justification (`RU-02`) for Fundamentals' approval.
+4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
+   contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,
+   method discipline, or rule; distinct from traceability, which only checks a `Source` is cited — see
+   `conformance.md`), then **coverage** (every action a competent re-derivation would surface is
+   present), **traceability** (every row Source-cited), **integrity** (IDs, dedup, map resolves).
+   On a conformance conflict, **revise to conform** or **propose up and halt** (`RU-04`/`RU-05`) —
+   never emit-and-flag. Other gaps → derive more. This is the **termination condition**.
+5. **Submit** with justification (`RU-02`) — including an explicit **conformance argument** — for
+   Fundamentals' approval, which independently runs the conformance gate before accepting.
 
 **Where the "substance" comes from:** each agent *reads the frozen constitution and extracts /
 abstracts* the roles and actions. The substance is the extracted text + its `Source` (the derivation
@@ -73,6 +82,6 @@ same procedure pointed two ways — **emit contract** = instantiate the method f
 
 The extraction/abstraction is **LLM-agent reasoning**, not deterministic code — appropriate, since a
 design node *is* an agent. "Automated" therefore means: agents execute contracts, derive from frozen
-sources, and self-check against a coverage/traceability acceptance test. "**Substantially** the same"
+sources, and self-check against a conformance/coverage/traceability acceptance test. "**Substantially** the same"
 follows: frozen inputs + fixed method + coverage pin convergence; naming, granularity, and the
 open-list tail are the residual variation.

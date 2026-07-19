@@ -11,12 +11,12 @@ package is needed.
   may cite, and how out-of-package `Phase 6 Item 1/2/3` provenance references resolve to in-package
   Sources. Makes the package **fully self-tracing**.
 - `framework/` — the **module** (the design tree + design node module): `design-tree.md` (the tree +
-  node governance) and `design-node-algorithm.md` (the **module's method** — how a node reads its
-  contract, decomposes, derives, and submits). Run outputs like `algorithm.md` are *products* of
-  running the module, not the module itself.
+  node governance), `design-node-algorithm.md` (the **module's method** — how a node reads its
+  contract, decomposes, derives, and submits), and `conformance.md` (the **conformance** acceptance
+  requirement). Run outputs like `algorithm.md` are *products* of running the module, not the module
+  itself.
 
 Snapshots of the D2 fundamentals and the D2 **module** (the design-tree tool). The `framework/` copies
-are a **pinned pre-conformance snapshot**: they intentionally omit the module's later conformance
-acceptance requirement (source module `conformance.md`), because this benchmark measures the
-*pre-conformance* module. Any doc-internal links inside these copies that point elsewhere are
+are **synced to the conformant module**: they include the module's conformance acceptance requirement
+(`framework/conformance.md`). Any doc-internal links inside these copies that point elsewhere are
 provenance only — not operational dependencies.

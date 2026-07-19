@@ -36,6 +36,13 @@ Roles and actions are **derived from these**, not invented; every row cites wher
 
 ## 3. Acceptance criteria (binding — this is what makes it reproducible)
 
+- **Conformance (gating).** The deliverable **conforms to the governing fundamentals** — it
+  contradicts no governing statement of the inputs (a **named enumeration**, principle, method
+  discipline, or rule). Distinct from traceability: citing a `Source` is necessary but **not
+  sufficient**. A conformance conflict is resolved by **revise-to-conform** or
+  **propose-up-and-halt** (`RU-04`/`RU-05`), never emit-and-flag. This **gates** acceptance — a
+  non-conformant deliverable is rejected regardless of the others. *(See
+  `../environment/framework/conformance.md`.)*
 - **Coverage.** Every action a competent re-derivation from the inputs would surface is present
   (open-list target).
 - **Traceability.** Every row cites a `Source` in the inputs. *(This is why we record Sources: the
