@@ -43,8 +43,14 @@ Roles and actions are **derived from these**, not invented; every row cites wher
   **propose-up-and-halt** (`RU-04`/`RU-05`), never emit-and-flag. This **gates** acceptance — a
   non-conformant deliverable is rejected regardless of the others. *(See
   `../environment/framework/conformance.md`.)*
+- **Completeness (active).** The deliverable **omits nothing the fundamentals specify or a competent
+  derivation implies**: actively derive the *should-exist* set and check each is present — **gating**
+  for pieces the fundamentals name or explicitly list, a strong bias for what they imply. The mirror of
+  conformance (don't omit vs don't contradict); it also carries the **harness-richness** emphasis —
+  preferentially surface each position's testing / monitoring / error-detection / health-visibility
+  (Harness First, Phase 5 Item 1).
 - **Coverage.** Every action a competent re-derivation from the inputs would surface is present
-  (open-list target).
+  (open-list target — the genuine tail of completeness).
 - **Traceability.** Every row cites a `Source` in the inputs. *(This is why we record Sources: the
   Source **is** the derivation trace that lets the table be reproduced.)*
 - **Integrity.** Stable IDs, grouped by role, deduplicated; the action↔capability map resolves.

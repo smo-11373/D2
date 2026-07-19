@@ -77,7 +77,10 @@ Worked out on the simplest case (Role node vs Action node):
   no governing statement of the inherited fundamentals, not merely cite them (conformance ≠
   traceability). A conformance conflict is resolved by **revise-to-conform** or
   **propose-up-and-halt** (`RU-04`/`RU-05`), never emit-and-flag; it is checked at both the node
-  (self-check) and the parent (acceptance). Layer-relative. *(See `conformance.md`.)*
+  (self-check) and the parent (acceptance). Layer-relative. *(See `conformance.md`.)* Its mirror,
+  **completeness**, is likewise carried and gating for fundamentals-specified pieces: the deliverable
+  must **omit nothing the fundamentals name or a competent derivation implies** (an active hunt, not a
+  passive stop; open-list only at the genuine tail).
 
 **Action-node decomposition (illustration).** Within the Action node:
 

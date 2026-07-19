@@ -8,8 +8,8 @@ it **terminate and reproduce**.*
 
 *Naming (snapshot): this describes the **module's method** — module = design tree + design node
 module; the run output `algorithm.md` is a *product* of running the module, not this file. Snapshot
-**synced to the current module** — includes the conformance acceptance requirement (`conformance.md`,
-this folder) and the **position-derived depth frame** (step 2).*
+**synced to the current module** — includes conformance (`conformance.md`, this folder), **completeness**
+(step 4), and the **position-derived depth frame** + **harness-richness bias** (step 2).*
 
 ## Q1 — How the Fundamentals node delivers the contract (downward)
 
@@ -31,7 +31,7 @@ deliverable → fill the standard contract template → attach own data as read-
 down.** The result is exactly the action-aggregate contract (`../../input/contract.md`):
 
 > deliverable = the role-action aggregate table · inputs = constitution + method + rules ·
-> acceptance = **conformance** (gating) + coverage + traceability · (decomposition left to the child, `RU-10`)
+> acceptance = **conformance** (gating) + **completeness** + traceability · (decomposition left to the child, `RU-10`)
 
 The contract carries **conformance to the governing layer** as its first, gating acceptance criterion
 (see `conformance.md`): the child must contradict no governing statement of the inherited fundamentals,
@@ -70,14 +70,32 @@ traced:
    *(scope)* the operational cast only — **not** the D1 Designer (scaffolded above) nor the internal/meta
    roles (D2 Designer, Design Node Builder, D2 Assistant); *(layer-relative)* general to operational
    positions at any layer, so the D1 module reuses it unchanged.
+
+   **Harness-richness bias** (Harness First, pointed at the product) — beyond each position's core
+   function, **hunt the harness facets**: what does this position **test**, **monitor**, **detect**
+   (hidden errors / failures), and **make visible**? Preferentially surface these; a D1/D0 design thin
+   on testing, monitoring, health-visibility, or failure-handling is a **Harness-First deficiency to
+   investigate**, not an acceptable minimum. Applies to **every** role (the Builder's verification
+   harness, the Designer's process monitoring, the operational cast's health/error handling) — not only
+   the operational cast — and **propagates to the capability / architecture successors**, where the
+   actual test suites, monitors, and health checks are designed. *Grounding:* Phase 5 Item 1 (Harness
+   First; monitoring before usage — health status, monitoring behavior, failure visibility), Phase 2
+   (Verification Before Realization), glossary `d1` (wrapper health-monitoring, upgrade smoke-tests).
+   *Guard (Quality over Expediency):* bias ≠ padding — do **not** manufacture a harness the fundamentals
+   don't warrant; conformance and completeness still gate every row.
 3. **Aggregate.** Merge the per-role pieces into the table.
 4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
    contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,
    method discipline, or rule; distinct from traceability, which only checks a `Source` is cited — see
-   `conformance.md`), then **coverage** (every action a competent re-derivation would surface is
-   present), **traceability** (every row Source-cited), **integrity** (IDs, dedup, map resolves).
-   On a conformance conflict, **revise to conform** or **propose up and halt** (`RU-04`/`RU-05`) —
-   never emit-and-flag. Other gaps → derive more. This is the **termination condition**.
+   `conformance.md`), then **completeness** — the omission-counterpart to conformance: *actively derive
+   the should-exist set from the fundamentals and check each is present.* **Gating** for pieces the
+   fundamentals **name or explicitly list** (named enumerations, position-oriented control lists, the
+   passive/active journey, the depth-frame facets); a **strong bias** for pieces a competent derivation
+   implies; open-list only at the genuine tail (method §1). Then **traceability** (every row
+   Source-cited) and **integrity** (IDs, dedup, map resolves). On a conformance conflict, **revise to
+   conform** or **propose up and halt** (`RU-04`/`RU-05`); on a completeness gap, **derive the missing
+   piece** (a named/specified omission is a gate failure) — never emit-and-flag. This is the
+   **termination condition**.
 5. **Submit** with justification (`RU-02`) — including an explicit **conformance argument** — for
    Fundamentals' approval, which independently runs the conformance gate before accepting.
 
