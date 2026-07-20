@@ -1,101 +1,86 @@
-# Declaration — the Action-Aggregate node's manifest (Step 1 activation product)
+# Declaration — the Action-Aggregate node
 
-*The node's identity, plan, deliverable, downstream interface, and acceptance self-check record.
-Submitted with `algorithm.md` at **Step 1 (activation)**, before children are spawned. First-cut
-meaning of "declaration": the node's manifest / plan / downstream interface (contract §1.3).*
+*Product 3 of 3 (contract §1; Step-1 activation product). The node's manifest / plan / downstream
+interface: its identity, what it will deliver, and the interface it offers the capability branch.
+First-cut meaning of "declaration" per contract §1.3 — **to confirm** with the parent.*
 
-## 1. Identity
+## Identity
 
-- **Node:** Action-Aggregate (a.k.a. the Action / action-integration node) — the **Role-Action** node
-  of the D2 design tree (`framework/design-tree.md`).
-- **Position in the tree:** child of **Roles**, which is a child of **Setup → Fundamentals**. Depends
-  on Roles (reads its `R-` table read-only); drives **Functionality (Capability)** downstream.
-- **Owns & authors:** the **role-action aggregate `A-` table** (`RU-09`/`RU-10`). It does **not** own the
-  role table — that is inherited read-only from the Roles node; changes to it are proposed up (`RU-04`).
-- **Authority:** sub-human design-node authority; justifies its own result, the parent (Fundamentals)
-  accepts or rejects (`RU-02`; submission ≠ acceptance).
+- **Node:** the **Action-Aggregate node** (a.k.a. the action-integration node) — a design node
+  (glossary `design-node`): a self-contained unit of design responsibility, one agent at its
+  boundary, authority below the human Designer's.
+- **Position in the tree:** child of **Roles**, itself under Setup → Fundamentals; parent of the
+  **Functionality (capability)** node it drives (`framework/design-tree.md`).
+- **Owned data:** it **authors and owns** the role-action aggregate `A-` table (`RU-09`). It **reads**
+  the role table `R-` handed down in its contract but does not author it — a change to the role table
+  is a **propose-up** to the Roles node (`RU-04`), never a local rewrite.
 
-## 2. Deliverable (what it will produce)
+## What it will deliver (the output package — contract §1)
 
-An **output package of three products** (contract §1), across a two-step submission:
-
-1. **`role-action-catalog.md`** — the role-action aggregate table with **substantial descriptions**:
-   the actions each recognized role performs, merged, grouped by role, stable IDs, each row
-   Source-cited; each action and each role carrying a substantial description. *(Step 2 — result.)*
+1. **`role-action-catalog.md`** — the role-action aggregate table with substantial descriptions:
+   the actions each recognized role performs, **merged, grouped by role**, stable IDs, each row
+   Source-cited, each action and each role carrying a substantial description. *(Step 2 — the result.)*
 2. **`algorithm.md`** — the reproducible derivation procedure (seek roles → per-role actions →
-   aggregate → self-check). *(Step 1 — activation.)*
+   aggregate → acceptance self-check). *(Step 1 — activation.)*
 3. **`declaration.md`** — this manifest. *(Step 1 — activation.)*
 
-## 3. Method summary
+**Delivered set (this run):** **8 roles** (R-00…R-07), **62 actions** (A-001…A-063, A-003 retired).
+Per role — R-00 D2 Designer 4 · R-01 D1 Designer 18 · R-02 Design Node Builder 9 · R-03 D1 Programmer
+4 · R-04 D1 Technical Manager 8 · R-05 D0 Operator 6 · R-06 D0 Technical Manager 7 · R-07 D2 Assistant 6.
 
-Seek roles from Phase 5 §Item 3 + the layer model (tag intrinsic/default); derive per-role actions from
-each role's job function and the relevant phase items — the D1 Designer's full journey sub-split
-passive/active, the operational cast via the position-derived depth frame, and the harness-richness bias
-across every role; aggregate grouped by role; self-check conformance → completeness → distinctness →
-traceability → integrity. Full detail in `algorithm.md`.
+## Inputs consumed (read-only)
 
-## 4. Downstream interface (to the capability branch)
+The constitution (Phases 1–5) **and its completions**, the method (functional doc §1), the rules
+`RU-01…RU-11`, the framework (design tree, design-node algorithm, conformance), the glossary, under
+the `sources.md` citation namespace. Nothing outside this namespace is cited or invented.
 
-The completed, accepted **`A-` aggregate table is the read-only input and driver for the Capability
-node** (`RU-11`): its contract is to design the capabilities (`C-`) that **cover every action** in the
-aggregate — coverage is the contract (every action → ≥1 capability, autonomous capabilities excepted);
-the action↔capability map records it and a coverage check verifies nothing is missed. The interface the
-Action node offers is therefore: a **stable, IDed, Source-cited, deduplicated action set** whose rows
-are distinct responsibilities, sized so each is a coherent unit for capability derivation. Successor
-cascade: **Capability → Architecture → Implementation** (`RU-11`; out of scope for this test).
+## Acceptance the node commits to (contract §3)
 
-## 5. Acceptance self-check record
+**Conformance** (first, gating) · **Completeness** (active, incl. work-conservation) · **Distinctness**
+(de-dup by responsibility at the fundamentals' own granularity) · **Coverage** (open-list target) ·
+**Traceability** (in-namespace Source per row) · **Integrity** (stable IDs, grouped, deduplicated) ·
+**Substantial reproducibility**. On a conformance conflict the only legal moves are revise-to-conform
+or propose-up-and-halt (`RU-04`/`RU-05`) — never emit-and-flag.
 
-Run per `algorithm.md` Step 4. **Result: PASS — no conformance conflict; no propose-up-and-halt required.**
+## Downstream interface (the interface offered the capability branch)
 
-- **Conformance (gating): PASS.** No governing statement contradicted. The role set reproduces Phase 5
-  §Item 3's named position enumeration exactly (six named positions + D2 Designer from the layer model)
-  — none collapsed, dropped, or re-cast. The passive/active split, the position-oriented control lists
-  (spending limits/scheduling for the Operator; deployment settings for the D0 TM; product
-  defaults/release params for the D1 TM), and Harness First ("no code change does not mean no harness")
-  are all honored, not contradicted.
-- **Completeness (active): PASS.** The should-exist set was derived and checked present: the seven
-  positions; the D1 Designer's full journey (entry → setup → input → understanding → foundational docs →
-  operating framework → clarification → node review) plus the active register (monitor/inspect/
-  investigate/direct/audit); the depth-frame facets for each operational role; the maintenance cycle
-  (diagnose→fix→recover→record) for both Technical Managers; and the harness facets (test/monitor/
-  detect/make-visible) surfaced across roles.
-- **Distinctness guard (strict): PASS.** See §6.
-- **Traceability: PASS.** Every row cites an in-package Source (`sources.md` namespace).
-- **Integrity: PASS.** 7 roles `R-00…R-06`; 48 actions `A-001…A-049` with **`A-003` retired**; contiguous,
-  grouped by role, deduplicated; the action↔capability map will resolve (`RU-11`).
+- **The aggregate drives the next layer (`RU-11`).** The completed `A-` table is the **read-only
+  input and driver** for the **Capability node**, whose contract is to design the capabilities (`C-`)
+  that **cover every action** — coverage is the contract; every action maps to ≥1 capability
+  (autonomous capabilities excepted), recorded in the action↔capability map and verified by a coverage
+  check.
+- **Harness propagation.** The harness-rich rows (test / monitor / detect / make-visible — e.g.
+  A-027, A-034, A-038, A-043, A-047/048, A-054, A-062/063) carry the Harness-First emphasis **forward**
+  to capability → architecture, where the actual test suites, monitors, and health checks are designed.
+- **Change discipline at the boundary.** The parent (Roles / Fundamentals) may **read** the whole
+  package and **request-down** changes to this node's `A-` table (the node re-authors and re-submits);
+  the node **proposes-up** to change the inherited `R-` table (`RU-09`). Communication is
+  adjacency-only (`RU-07`); read-context links arrive via the contract (`RU-08`).
 
-## 6. Distinctness guard — what was merged or dropped (vs a maximal enumeration)
+## Two-step submission (structure defined; not exercised by this test — contract §6)
 
-Per Quality over Expediency (Phase 5 §Item 4/5), completeness is *distinct responsibilities covered*,
-not row count. Relative to a maximal enumeration, this table:
+- **Step 1 — activation:** submit `algorithm.md` + this `declaration.md` to the parent (Fundamentals)
+  for approval (`RU-02`). Only on acceptance is the node activated to spawn its children (Roles →
+  per-role actions) and do the work.
+- **Step 2 — result:** submit `role-action-catalog.md` with substantial descriptions. On acceptance
+  the deliverable is final. Thereafter (out of scope) the successor cascade capability → architecture
+  → implementation is called out (`RU-11`).
 
-- **Did not create standalone rows for governing rules the roles merely operate under** — adjacency
-  (`RU-07`), work-within-contract (`RU-08`), decompose-internally (`RU-10`), coverage-is-the-contract
-  (`RU-11`). These are folded into the actions they govern (e.g. into the Design Node Builder's
-  spawn/submit rows), not enumerated as actions.
-- **D1 Designer:** dropped "confirm entry into D1 design mode" (Phase 3 Item 4 is a D2 notification, not a
-  distinct Designer responsibility); folded "being asked only when it's worth it" (a D2 quality, not an
-  action); folded "lay down a rule" and the Designer-initiated-change flow (`RU-06`) into **A-017**
-  (exercise Designer authority); merged progress-monitoring and health/abnormality-monitoring into **A-014**.
-- **D0 Operator:** merged "routine monitoring" and "view the operator-level health report" into one
-  monitoring responsibility (**A-038**) rather than two rows.
-- **Operational cast:** elaborated only the depth-frame facets each function genuinely implies — the
-  Programmer has no configure/view/maintenance-cycle rows; the Operator escalates rather than running a
-  maintenance cycle — never inventing an action to fill a facet.
-- **Kept as distinct** (not over-granular) the harness/safety facets Harness First elevates to
-  first-class: **run-the-harness**, **recover-from-a-failed-change**, and **record-the-change** for the
-  maintenance positions are separate responsibilities (verification, failure-safety, traceability), not
-  micro-steps of a single "maintain" action.
+## Self-check outcome (no propose-up-and-halt raised)
 
-## 7. Open item recorded (judgment, not a propose-up)
+The acceptance self-check **passed**; no conformance conflict required a propose-up-and-halt.
 
-**"D2 Assistant"** appears only in the algorithm's depth-frame scope guard as an internal/meta label. It
-is **not** named in Phase 5 §Item 3 (the authoritative position enumeration), has no job function in the
-frozen constitution, and carries no glossary `R-` id. Instantiating it would force invented actions
-(violating derive-from-frozen-inputs). Its assistance/interaction-fronting function is covered by D2's
-**unified-interaction** responsibility (Phase 2 Principle 3), which at this layer is a **capability**
-concern, not a distinct action-bearing position. It is therefore **not instantiated as a role**. This is
-a conformance-preserving **judgment** (Phase 5 Item 3's named enumeration is honored exactly), not a
-conformance conflict — so **no upward proposal / halt** is raised (`RU-04`/`RU-05` not triggered).
-</content>
+- **Conformance:** all named positions present and distinct — the six Phase 5 §Item 3 positions, the
+  D2 Designer (R-00), and the **completion-named D2 Assistant** (R-07, `completions.md C-2026-07-19-1`).
+  No enumeration collapsed; the passive/active split and the position-oriented control lists are honored.
+- **Completeness / work-conservation:** every candidate position was **kept** — none folded — so no
+  actions were orphaned or redistributed. The D2 Assistant was **taken from the completion** as a
+  first-class position and its stated responsibility (route / present / preserve-context / answer)
+  derived into A-058…A-063; without it, that interaction work would be orphaned (the completion's own
+  basis).
+- **Distinctness (calibrated):** merged only mechanics and rule-restatements (e.g. the Designer's
+  "reserve revision authority" folded into A-011 framework-confirmation + A-019 directive; the Builder's
+  node-report and submission folded into A-030). **Preserved** the fundamentals' own distinctions —
+  the D1 Designer's **monitor cost (A-017) vs monitor health (A-018)** are kept separate per Phase 4
+  §Item 3; the D0 Operator's **routine monitoring (A-047) vs user-facing health report (A-048)** are
+  kept separate (distinct Source/artifact).

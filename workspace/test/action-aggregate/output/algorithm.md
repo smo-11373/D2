@@ -1,109 +1,83 @@
-# Algorithm — deriving the Role–Action Aggregate (Step 1 activation product)
+# Algorithm — deriving the Role–Action Aggregate table
 
-*The reproducible procedure the Action-Aggregate node runs to derive `role-action-catalog.md` from
-the frozen inputs. It is a **product of running the module's method** over this contract — not the
-module itself. Its purpose is reproducibility: contract + same frozen inputs + this procedure ⇒ a
-**substantially matching** table (same roles; substantially the same actions modulo naming,
-granularity, and the open-list tail). Derive from the inputs; invent nothing; cite Sources.*
+*Product 2 of 3 (contract §1; Step-1 activation product). The procedure this node runs to derive
+Product 1 so that a competent re-run over the same frozen inputs reproduces the **same roles and
+substantially the same actions**. Substance is **derived** from the frozen inputs
+(constitution Phases 1–5 + their completions + method §1 + rules `RU-*`), nothing invented; every
+row carries a `Source` that is its derivation trace.*
 
-## Inputs (read-only, frozen)
+## Inputs (read-only source of truth)
 
-- **Constitution** — Phases 1–5 (`constitution/phase-1…5-*.md`). Positions live in **Phase 5 §Item 3**.
-- **Method** — functional doc §1 (`method.md`): identify Designer actions → abstract the common element
-  → split passive/active → keep the D0-user throughline → treat the list as open.
-- **Rules** — `RU-01…RU-11` (`rules.md`).
-- **Glossary / Framework** — `glossary.md`; `framework/{design-tree, design-node-algorithm, conformance}.md`.
-- **Source namespace** — `sources.md` (cite only in-package Sources; resolve out-of-package pointers).
+- The **constitution**, Phases 1–5 (`constitution/phase-1…5-*.md`) — positions in **Phase 5 §Item 3**;
+  the passive/active Designer journey in **Phases 3–4**; the philosophies (Harness First, Human
+  Position First, Quality over Expediency, Modularization) in **Phase 5**.
+- The **completions** (`constitution/completions.md`) — Designer-originated positions/requirements
+  that **govern alongside** the frozen baseline (cited `completions.md C-<id>`).
+- The **method** — functional doc §1 (`method.md`): identify actions → abstract the common element →
+  keep it an open list; split passive/active; hold the D0-user throughline.
+- The **rules** — `RU-01…RU-11` (`rules.md`); the **framework** (`framework/*.md`); the **glossary**.
+- The **Source namespace** (`sources.md`) — the only citations a row may use.
 
 ## Procedure
 
-### Step 1 — Seek the roles
+**Step 1 — Seek roles.** Extract the **named positions** from Phase 5 §Item 3 (D1 Designer, Design
+Node Builder, D1 Programmer, D1 Technical Manager, D0 Technical Manager, D0 Operator), **plus any
+position a completion names** (the **D2 Assistant**, `completions.md C-2026-07-19-1`), **plus** the
+layer-model roles the glossary fixes (the **D2 Designer**, `R-00`, meta/builder). Order by layer
+(`R-00…`). Tag each **intrinsic** (fixed) or **default** (D1-Designer-changeable). Cite each role's
+Source. All named positions are **gating for conformance** — none may be dropped, collapsed, or
+recast.
 
-Spawn (conceptually) a **Roles** child. Sub-contract: *derive the role table from **Phase 5 §Item 3**
-(Human Position First) + the **layer model** D2 → D1 → D0.*
+**Step 2 — Actions per role.**
+- **D1 Designer (R-01):** walk the full journey and **sub-split passive `[P]` / active `[A]`**.
+  Passive = the review/stop and clarification points of Phases 3–4 (entry → operating contract →
+  initial input → understanding/direction → enter-design → operating framework → Constitution
+  confirmation → clarification responses → node Review Stops). Active = inspect, investigate,
+  monitor progress/cost, monitor health, directives, propose-change, D0-user optimization,
+  Designer-level product controls, D2-process audit (Phase 4 §Item 3; Phase 2 §Principle 2; RU-06).
+- **Each downstream operational role** (Programmer, D1/D0 Technical Managers, D0 Operator): apply
+  the **position-derived depth frame** — elaborate the facets the role's Phase 5 §Item 3 job
+  function *genuinely implies*: **operate/perform · monitor · configure/control · view/report ·
+  handle routine errors · escalate**; for maintenance/support roles also walk **diagnose → apply-fix
+  → recover-from-a-failed-change → record-the-change**. The frame is a completeness prompt, not a
+  checklist — elaborate only genuinely-implied facets; never invent a row to fill one.
+- **Internal/meta roles** (D2 Designer, Design Node Builder, D2 Assistant): **not** depth-framed;
+  derive actions from the stated job function (glossary; Phase 4 §Item 2) and, for a completion-named
+  position, from the **responsibility the completion states**.
+- **Every role — harness-richness bias** (Harness First, Phase 5 §Item 1; Verification Before
+  Realization, Phase 2): preferentially surface what the role **tests / monitors / detects (hidden
+  failures) / makes visible**. Bias ≠ padding — do not manufacture a harness the fundamentals don't
+  warrant, nor split one responsibility into mechanical steps.
 
-1. Extract every named position from Phase 5 §Item 3: D1 Designer, Design Node Builder, D1 Programmer,
-   D1 Technical Manager, D0 Technical Manager, D0 Operator.
-2. Add the **D2 Designer** from the layer model + glossary `d2-designer` (the builder; `R-00`).
-3. Assign IDs in layer order **R-00…R-06**, honoring the pinned IDs (glossary `R-00`/`R-01`/`R-05`/`R-06`;
-   `RU-01` `R-04`); the free slots fill Phase 5 Item 3's own ordering (Design Node Builder `R-02`,
-   D1 Programmer `R-03`).
-4. Tag each **intrinsic** (fixed to the ecosystem) or **default** (a D2-provided default the D1 Designer
-   can change at setup) per glossary `role`. Give each a substantial description. Cite the Source.
-5. **Guard against invention:** a label named only in a scope-aside (e.g. "D2 Assistant" in the
-   algorithm's depth-frame guard) with no Phase 5 Item 3 entry and no job function is **not**
-   instantiated as a role — it would force invented actions. Record the judgment (see `declaration.md`).
+**Step 3 — Aggregate.** Merge the per-role action sets into one table, **grouped by role**, stable
+IDs `A-001…` (`A-003` retired/skipped), each row Source-cited.
 
-### Step 2 — Actions per role
+**Step 4 — Acceptance self-check** (gating order):
+1. **Conformance (first, gating).** Contradict **no** governing statement of the fundamentals or
+   their completions — no principle, named enumeration (incl. completion-named positions), method
+   discipline, or rule. Traceability ≠ conformance: a cited row can still contradict an enumeration.
+   On a conflict: **revise to conform** or **propose-up-and-halt** (`RU-04`/`RU-05`) — never
+   emit-and-flag (`conformance.md`).
+2. **Completeness (active).** Derive the *should-exist* set from the fundamentals + completions and
+   check each is present — **gating** for named/specified pieces (the position list, the
+   position-oriented control lists, the passive/active journey, the depth-frame facets), strong bias
+   for derivable ones. **Work-conservation:** every derivable action must be owned by some concrete
+   role; a folded/omitted candidate position's actions must redistribute or the position stays — no
+   orphaned work.
+3. **Distinctness guard (Quality over Expediency).** Each row is a **distinct responsibility**, not a
+   mechanical step or a restatement of a rule the node merely operates under. **Merge only** mechanics
+   and rule-restatements; **preserve any distinction the fundamentals themselves make** (distinct
+   data/concern/Source — e.g. monitor **cost** vs monitor **health**, Phase 4 §Item 3). Completeness =
+   distinct responsibilities covered, not row count.
+4. **Traceability & integrity.** Every row cites an in-namespace `Source` (`sources.md`); IDs stable,
+   grouped, deduplicated; the aggregate is ready to drive the capability layer (`RU-11`).
 
-For each role, spawn (conceptually) an **action** child. Sub-contract: *derive this role's actions from
-its **job function** and the relevant phase items; Source-cite each; name it; assign a stable `A-` id
-(continue the sequence, **skip `A-003`**).* Apply the discipline appropriate to the role's kind:
-
-- **D1 Designer (`R-01`) — walk the full journey; sub-split passive/active.** Lift each action from the
-  method's ordered journey and Phases 1–4: entry (decide to use D2) → operating contract → setup
-  (roles + posture) → design input → understanding/direction → foundational docs / D1 Constitution →
-  operating framework → clarification responses → node reviews (passive [P]); and the active-interaction
-  register — monitor, inspect, investigate, direct/intervene, audit (active [A]) (method §1; Phase 3;
-  Phase 4 §Item 3).
-- **Internal/meta roles (`R-00` D2 Designer, `R-02` Design Node Builder) — no depth frame.** Derive from
-  their constitutional function (Phase 5 §Item 2; Phase 4 §Item 2; glossary). Apply the **harness-richness
-  bias** (below).
-- **Operational cast (`R-03` Programmer, `R-04`/`R-06` Technical Managers, `R-05` Operator) — apply the
-  position-derived depth frame.** For each, elaborate the actions its Phase 5 §Item 3 job function
-  *genuinely implies* across the recurring facets: **operate · monitor · configure · view/report ·
-  handle routine errors · escalate**; maintenance/support positions also walk **diagnose → apply-fix →
-  recover-from-a-failed-change → record-the-change**. The frame is a completeness *prompt*, not a
-  checklist — never invent an action to fill a facet a position does not imply.
-- **Every role — harness-richness bias (Harness First).** Hunt each position's harness facets: what does
-  it **test**, **monitor**, **detect** (hidden errors/failures), and **make visible**? Surface these
-  preferentially; a role thin on testing/monitoring/health-visibility is a deficiency to investigate.
-  Bias ≠ padding (Quality over Expediency): do not manufacture a harness the fundamentals don't warrant,
-  nor split one responsibility into mechanical steps. *(Phase 5 §Item 1; Phase 2 Principle 4; glossary `d1`.)*
-
-### Step 3 — Aggregate
-
-Merge the per-role action pieces into one `A-` table, **grouped by role** in layer order, IDs
-contiguous (skipping `A-003`), deduplicated. The Action node **authors** this aggregate (`RU-09`/`RU-10`);
-internal decomposition (e.g. passive/active sub-nodes) is discretionary but the **aggregate** is the
-obligation.
-
-### Step 4 — Acceptance self-check (the termination condition)
-
-Run in order; on failure, revise (or propose-up-and-halt) — never emit-and-flag:
-
-1. **Conformance (first, gating).** The deliverable contradicts **no** governing statement of the
-   fundamentals — no principle, **named enumeration**, method discipline, or rule. Distinct from
-   traceability (a cited Source is necessary but not sufficient). E.g. the role set must not collapse,
-   drop, or re-cast Phase 5 Item 3's named position enumeration. On conflict: **revise to conform** or
-   **propose up and halt** (`RU-04`/`RU-05`). *(framework `conformance`.)*
-2. **Completeness (active).** Derive the *should-exist* set from the fundamentals and check each is
-   present — **gating** for pieces the fundamentals name or explicitly list (the position enumeration,
-   the passive/active journey, the position-oriented control lists, the depth-frame facets), a **strong
-   bias** for what a competent derivation implies, open-list only at the genuine tail. On a gap, **derive**
-   the missing piece.
-3. **Distinctness guard (Quality over Expediency, Phase 5 §Item 4/5) — applied strictly.** Each row is a
-   **distinct responsibility the role performs** — not a mechanical step, not a restatement of a governing
-   rule the node merely operates under (e.g. adjacency `RU-07`, work-within-contract `RU-08`, decompose
-   `RU-10`, coverage `RU-11` — folded into the actions they govern, not separate rows), not a
-   re-granularization of one responsibility. **De-duplicate by responsibility.** Completeness is measured
-   in *distinct responsibilities covered*, not row count.
-4. **Traceability.** Every row cites a Source resolving inside the package namespace (`sources.md`).
-5. **Integrity.** Stable IDs, grouped by role, deduplicated, `A-003` retired; the action↔capability map
-   will resolve (`RU-11`).
-
-### Step 5 — Submit (structure only; not exercised by this test)
-
-Two-step submission: Step 1 submits **algorithm + declaration** (activation); on acceptance the node
-spawns children and does the work; Step 2 submits the **table with substantial descriptions** (result),
-each carrying an attached **justification** including an explicit conformance argument (`RU-02`). The
-completed aggregate then drives the **Capability → Architecture → Implementation** successor cascade
-(`RU-11`).
+Iterate Step 4 until it passes; only then emit the three products. A known deviation is **never**
+emitted with a flag — it is resolved or a propose-up-and-halt is recorded in `declaration.md`.
 
 ## Why it reproduces
 
-The inputs are **frozen** (Phases 1–5), the method is fixed, and acceptance is coverage/conformance
-against those inputs — so two competent runs converge on the **same roles** and substantially the same
-actions. The residual "not identical" is confined to naming, granularity, which position-derived actions
-get elaborated, and the open-list tail (contract §5).
-</content>
+The inputs are **frozen**, the method is fixed, and acceptance is **coverage + conformance against
+those inputs**. Two competent runs land on the **same roles** and substantially the **same actions**;
+the residual variation (the deliberate "not identical") is naming, granularity, which position-derived
+actions get elaborated, and the open-list tail (contract §5).

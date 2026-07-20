@@ -15,7 +15,7 @@
 | R-04 | D1 Technical Manager | operates the D1 wrapper | Technical admin / IT manager of the delivered D1 product. Runs the D1 wrapper — deploys and upgrades D0 (running the smoke-test suite, keeping upgrade records), monitors D0 health, and changes governed tuning parameters — without changing product code. May deploy D0 into production while retaining D1. | Phase 5 §Item 3 |
 | R-05 | D0 Operator | operates D0 | **D1's primary beneficiary** — D1 is built for the D0 Operator's convenience first and foremost. Runs the deployed D0 in production; routine operation and user-level monitoring; normally low understanding of technical norms. (Phase 6 Item 1's "D0 user.") | Phase 5 §Item 3; Designer 2026-07-12 |
 | R-06 | D0 Technical Manager | supports D0 | Front-line technical support for a D0 deployment; installs and technically maintains it. | Phase 5 §Item 3 |
-| R-07 | D2 Assistant | fronts D2 for the Designer | Non-human, LLM-based position: the **D1 Designer's single point of contact** with the entire D2 system (the unified D2 interaction point). Conducts the design on his behalf and answers his queries; he never addresses a Design Node, governing authority, or service directly. Intrinsic to the D2 ecosystem — not a Designer-configurable default. | Phase 4 §Item 3; Designer 2026-07-13 |
+| R-07 | D2 Assistant | fronts D2 for the Designer | Non-human, LLM-based **Human-Position-First position** (`foundational/completions.md` C-2026-07-19-1): the **D1 Designer's single point of contact** with the entire D2 system (the unified interaction point). Conducts the design on his behalf and answers his queries, **routes his input** (preserving context), and **presents his output**; he never addresses a Design Node, governing authority, or service directly. Intrinsic — not a Designer-configurable default. | Phase 4 §Item 3; Phase 2 §P3; `foundational/completions.md` C-2026-07-19-1 |
 
 *D1 wraps D0: D0 is the core distributable; the thin D1 wrapper adds monitoring, upgrade smoke-tests, and upgrade records ("half a level above D0"). See glossary: `d0`, `d1`, `half-level`.*
 
@@ -132,7 +132,7 @@
 
 ### R-07 — D2 Assistant
 
-*The non-human interaction point. Its actions deliver D2's support to the D1 Designer — they map to the D2 capabilities that serve R-01. (Whether these belong as R-07 role-actions or stay purely capability-level is a modelling call — flagged.)*
+*The non-human interaction point — a **Human-Position-First position** (`foundational/completions.md` C-2026-07-19-1). Its actions deliver D2's support to the D1 Designer. **Resolved (was flagged):** these are **role-actions** — the position is real (its work orphans if folded). Their capability-level counterpart is the **demand** this position places on the Functionality layer (Role → Action → Capability), not an alternative to being a role.*
 
 | ID | Action | Source | Notes |
 |-------|--------|--------|-------|

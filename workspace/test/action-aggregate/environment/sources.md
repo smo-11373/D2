@@ -28,6 +28,7 @@ A row's `Source` must resolve to one of:
 | Namespace | Form | In-package file |
 |---|---|---|
 | Constitution | `Phase 1…5 §<Item/section>` | `constitution/phase-1…5-*.md` |
+| Completions | `completions.md C-<id>` (Designer-originated; govern alongside the baseline) | `constitution/completions.md` |
 | Method | `method §1` (functional doc §1) | `method.md` |
 | Rules | `RU-01 … RU-11` | `rules.md` |
 | Glossary | `glossary \`<term-slug>\`` | `glossary.md` |

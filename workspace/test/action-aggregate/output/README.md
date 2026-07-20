@@ -1,21 +1,21 @@
-# output — the node's produced package (clean-room run, run-06: + distinctness guard)
+# output — the node's produced package (clean-room run, run-07: D2-Assistant completion + calibrated guard)
 
-The Action Aggregate node's **untainted** output after **five** module changes — conformance, depth
-frame, completeness, harness bias, and the **distinctness / de-dup-by-responsibility guard**. Derived by
-a fresh blind agent given only `../environment/` + `../input/`, blind to `../output-example/`,
-`../work/`, `../evaluation/`, `../benchmark_verification/`.
+The Action Aggregate node's **untainted** output after the **fundamentals completion** naming the D2
+Assistant a Human-Position-First position (re-synced into `../environment/constitution/completions.md`)
+plus the **calibrated distinctness guard** — on top of conformance, the depth frame, completeness, and
+the harness bias. Derived by a fresh blind agent given only `../environment/` + `../input/`, blind to
+`../output-example/`, `../work/`, `../evaluation/`, `../benchmark_verification/`.
 
-- `role-action-catalog.md` — 7 roles (`R-00…R-06`), 48 actions (`A-001…A-049`, `A-003` skipped).
+- `role-action-catalog.md` — **8 roles** (`R-00…R-07`, now including the D2 Assistant), 62 actions
+  (`A-001…A-063`, `A-003` skipped). Operational roles walk the depth frame; harness-facing rows `[H]`.
 - `algorithm.md`, `declaration.md` — Step-1 products.
 
-**Scored:** `../evaluation/scorecard-run06-distinctness-guard.md` → conformance clear, composite **≈ 85**.
-**Mixed result:** the guard **fixed the over-elaboration it targeted** (Design Node Builder 14 → 8,
-total 67 → 48, no mechanics-as-actions) but, as written, **over-corrected** — it merged genuinely-distinct
-responsibilities (D1 Designer's monitor cost/health×3 → 1), dropping recall **0.83 → 0.68** and composite
-**89 → 85**. The guard has since been **calibrated** in the module (merge mechanics/rule-restatements
-only; preserve distinctions the fundamentals themselves make, e.g. monitor cost vs health). **This
-run-06 output measured the *pre-calibration* guard**; the calibrated guard is not yet re-measured
-(deferred to a proper re-run, ideally under a multi-run harness).
+**Scored:** `../evaluation/scorecard-run07-d2assistant-completion.md` → **conformance clear, composite ≈ 92
+(best yet), first full 8/8 role coverage.** The D2 Assistant's work (route / answer / present) is now
+**homed** — the orphaned-work gap closed by construction. The calibrated guard hit the sweet spot
+(mechanics merged; monitor cost vs health preserved; 62 clean actions, neither run-05's 67-over nor
+run-06's 48-under). Remaining residual: the genuinely-hard tail (revise-setup-later,
+tune-resolution-depth, notifications, deploy/health) — the lifecycle/intention-lens target.
 
-*Baselines: run-05 (over-elaborated, ≈89) `../work/run05-completeness-harness/`; run-04 `../work/run04-depthcue/`;
-run-03 `../work/run03-conformant/`. Validity controls in `../benchmark_verification/`.*
+*Baselines: run-06 (over-merged, ≈85) `../work/run06-distinctness/`; run-05 (over-elaborated, ≈89)
+`../work/run05-completeness-harness/`; earlier in `../work/`. Validity controls in `../benchmark_verification/`.*
