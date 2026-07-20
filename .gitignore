@@ -8,3 +8,5 @@ Desktop.ini
 *~
 *.tmp
 *.swp
+__pycache__/
+*.pyc
