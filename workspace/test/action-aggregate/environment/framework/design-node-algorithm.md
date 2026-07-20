@@ -9,7 +9,8 @@ it **terminate and reproduce**.*
 *Naming (snapshot): this describes the **module's method** — module = design tree + design node
 module; the run output `algorithm.md` is a *product* of running the module, not this file. Snapshot
 **synced to the current module** — includes conformance (`conformance.md`, this folder), **completeness**
-(step 4), and the **position-derived depth frame** + **harness-richness bias** (step 2).*
++ **work-conservation** (step 4), and the **position-derived depth frame**, **harness-richness bias**, and
+**lifecycle + intention lenses** (step 2).*
 
 ## Q1 — How the Fundamentals node delivers the contract (downward)
 
@@ -50,7 +51,8 @@ traced:
    Item 3** + the layer model (D2→D1→D0)*. The agent **reads Phase 5**, extracts the positions
    (D1 Designer, D0 Operator, …), tags intrinsic/default, cites the Source. → the role table.
 2. **Actions per role.** For each role, spawn an **action** agent, sub-contract: *derive this role's
-   actions from its **job function** and the relevant phase items*. The agent **reads the
+   actions from its **job function**, its **intention** (the *result it is responsible for producing* —
+   Phase 5 §Item 3, the goal-directed basis), and the relevant phase items*. The agent **reads the
    constitution/method for that role** and extracts **what the role does** — for the D1 Designer, it
    walks the method's journey (entry → setup → input → … → checking) and lifts each action; for a
    downstream **operational** role it walks the **position-derived depth frame** (below). It names,
@@ -84,6 +86,21 @@ traced:
    *Guard (Quality over Expediency):* bias ≠ padding — do **not** manufacture a harness the fundamentals
    don't warrant, **nor split one responsibility into mechanical steps**; conformance, completeness, and
    the distinctness guard still gate every row.
+
+   **Lifecycle lens (cross-role, logically forced).** Beyond per-role derivation, derive the actions the
+   **product's end-to-end lifecycle forces**, then attach each to the position that performs it. Walk the
+   necessary transitions the D2→D1→D0 layering implies — *foundational docs → operating framework →
+   implement → test → **package** → install/deploy → **smoke-test** → hand-over → operate →
+   monitor(health) → detect → diagnose → recover/rollback → record → upgrade → re-test → re-deploy* — and
+   read off each **forced action** and each **hand-off** (a produce/receive pair + a verification gate).
+   This is **deductively closed**: you cannot reach "operator running it" from "package produced" without
+   install + smoke-test + hand-over, so these are **unmissable** — unlike a job description, which can omit
+   a *process obligation*. *Grounding:* the D2→D1→D0 layering; glossary `d1` (install / smoke-test /
+   upgrade-records / health-monitoring are wrapper lifecycle actions); Phase 5 Item 1 ("monitoring before
+   usage", "harness before detailed design" — lifecycle orderings). *Guards:* derive from the **actual**
+   lifecycle the fundamentals describe (not a generic SDLC); the distinctness guard merges a lifecycle
+   action that coincides with a job-function one; **every transition must have an owning position — a
+   forced step with no owner means a position is missing** (work-conservation applied to process).
 3. **Aggregate.** Merge the per-role pieces into the table.
 4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
    contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,
@@ -92,7 +109,12 @@ traced:
    the should-exist set from the fundamentals and check each is present.* **Gating** for pieces the
    fundamentals **name or explicitly list** (named enumerations, position-oriented control lists, the
    passive/active journey, the depth-frame facets); a **strong bias** for pieces a competent derivation
-   implies; open-list only at the genuine tail (method §1). **Distinctness guard (Quality over Expediency,
+   implies; open-list only at the genuine tail (method §1). The should-exist set is derived by **four lenses** —
+   job-function, the depth-frame facets, each position's **intention** (the result it must produce,
+   Phase 5 §Item 3), and the **lifecycle** (every logically-necessary process transition — step 2);
+   completeness checks **all four are covered**. **Work-conservation:** every derived action is **owned by
+   some role**, and every **lifecycle transition has an owning position** — a forced step or an action with
+   no home means a role is missing or must be added, never orphaned. **Distinctness guard (Quality over Expediency,
    Phase 5 §Item 4/5):** each row must be a *distinct responsibility the role performs* — **not** a
    mechanical step or a restatement of a governing rule the node merely operates under. **Merge only**
    mechanical steps and rule-restatements; **preserve any distinction the fundamentals themselves make** —

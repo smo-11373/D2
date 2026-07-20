@@ -51,7 +51,11 @@ Roles and actions are **derived from these**, not invented; every row cites wher
   (Harness First, Phase 5 Item 1). Each row must be a **distinct responsibility**, not a mechanical step
   or a restatement of a rule — **de-dup by responsibility** (Quality over Expediency, Phase 5 Item 4/5);
   de-dup **at the fundamentals' own granularity** — preserve distinctions the fundamentals make (e.g.
-  monitor cost vs health); completeness is *distinct responsibilities covered*, not row count.
+  monitor cost vs health); completeness is *distinct responsibilities covered*, not row count. The
+  should-exist set is derived by **four lenses** — job-function, depth-frame, **intention** (the result a
+  position must produce), and **lifecycle** (every logically-necessary process transition) — and
+  **work-conservation** holds: every action owned by a role, every lifecycle transition owned by a
+  position, no orphans.
 - **Coverage.** Every action a competent re-derivation from the inputs would surface is present
   (open-list target — the genuine tail of completeness).
 - **Traceability.** Every row cites a `Source` in the inputs. *(This is why we record Sources: the
