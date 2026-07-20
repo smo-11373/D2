@@ -67,10 +67,13 @@ highest yet.
    (install vs smoke-test vs hand-over vs re-deploy as distinct forced steps) and traceable, not
    run-05's mechanics-as-actions. The calibrated distinctness guard held (it preserved genuine
    distinctions rather than merging them away). Worth watching, not a defect.
-4. **The remaining residual is now the un-derivable floor.** What still misses — chiefly
-   `revise-setup-later` (sourced to Phase 6 Item 1 §8, **not in the sandbox package**) — cannot be
-   derived by any lens because its Source content is absent. The coverage ceiling here is now bounded by
-   **what the in-package fundamentals contain**, not by the module.
+4. **The remaining residual is derivation-difficulty, not an un-derivable floor.** *(Corrected
+   2026-07-19 — see `../scope.md` §"Source floor".)* A check of all 12 example rows citing Phase 6 found
+   every one has an **in-package basis** (node-building → Phase 4 §Item 2 + `RU-*`; setup / revise-later →
+   `method §1` + Phase 5 §Item 2; usage → Phase 5 §Item 3). Nothing is out-of-package; the achievable
+   target is the full 63. What still misses (e.g. `revise-setup-later`) is **derivable-but-hard** — a
+   subtle in-package connection runs make inconsistently — best closed by the **multi-run harness**, not a
+   Source change. Copying Phase 6 in is rejected (it would let the node transcribe, defeating the test).
 
 ## Bottom line
 
