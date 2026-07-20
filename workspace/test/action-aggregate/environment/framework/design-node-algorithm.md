@@ -82,7 +82,8 @@ traced:
    First; monitoring before usage — health status, monitoring behavior, failure visibility), Phase 2
    (Verification Before Realization), glossary `d1` (wrapper health-monitoring, upgrade smoke-tests).
    *Guard (Quality over Expediency):* bias ≠ padding — do **not** manufacture a harness the fundamentals
-   don't warrant; conformance and completeness still gate every row.
+   don't warrant, **nor split one responsibility into mechanical steps**; conformance, completeness, and
+   the distinctness guard still gate every row.
 3. **Aggregate.** Merge the per-role pieces into the table.
 4. **Self-check against acceptance.** Run **conformance first and gating** (the deliverable
    contradicts no governing statement of the inherited fundamentals — a named enumeration, principle,
@@ -91,7 +92,14 @@ traced:
    the should-exist set from the fundamentals and check each is present.* **Gating** for pieces the
    fundamentals **name or explicitly list** (named enumerations, position-oriented control lists, the
    passive/active journey, the depth-frame facets); a **strong bias** for pieces a competent derivation
-   implies; open-list only at the genuine tail (method §1). Then **traceability** (every row
+   implies; open-list only at the genuine tail (method §1). **Distinctness guard (Quality over Expediency,
+   Phase 5 §Item 4/5):** each row must be a *distinct responsibility the role performs* — **not** a
+   mechanical step or a restatement of a governing rule the node merely operates under. **Merge only**
+   mechanical steps and rule-restatements; **preserve any distinction the fundamentals themselves make** —
+   where the fundamentals give two concerns distinct treatment (distinct data, concern, or Source; e.g.
+   monitoring *cost* vs *health*, Phase 4 §Item 3), they are **distinct responsibilities**, not one to be
+   merged on a shared verb. De-duplicate by responsibility **at the fundamentals' own granularity**;
+   completeness is *distinct responsibilities covered*, not row count. Then **traceability** (every row
    Source-cited) and **integrity** (IDs, dedup, map resolves). On a conformance conflict, **revise to
    conform** or **propose up and halt** (`RU-04`/`RU-05`); on a completeness gap, **derive the missing
    piece** (a named/specified omission is a gate failure) — never emit-and-flag. This is the

@@ -1,135 +1,136 @@
-# Role–Action Aggregate Catalog
+# Role–Action Aggregate — the Action-Aggregate node's deliverable (Step 2 result)
 
-*Product 1 of the Action-Aggregate node (contract §1.1). The actions each recognized role performs,
-merged, grouped by role, stable IDs, each row Source-cited, each row substantially described. Target
-= the common, anticipable (open-list) set. Derived from the frozen inputs (constitution Phases 1–5 +
-method §1 + rules `RU-*` + glossary + framework); nothing invented.*
-
-*Notes-column tags: **[P]** passive / **[A]** active (D1 Designer split, method §1); depth-frame facet
-`operate · monitor · configure · view · handle-errors · escalate` (+ `diagnose→fix→recover→record` for
-maintenance) for operational roles; **[H]** = harness facet (Harness First, Phase 5 Item 1 — test /
-monitor / detect-hidden-errors / make-failures-visible). `A-003` retired — skipped.*
+*Authored & owned by the Action node (`A-` table). Roles are read-only input from the Roles child
+(`R-` table). Every row is derived from the frozen inputs (constitution Phases 1–5, method §1, rules
+`RU-*`, glossary, framework) and Source-cited; nothing invented. Open-list target = the common,
+anticipable set. Actions `A-003` retired (skipped).*
 
 ## Roles
 
+Derived from **Phase 5 §Item 3** (Human Position First — the named positions) + the layer model
+**D2 → D1 → D0** (glossary `d2`/`d1`/`d0`, layer-anchoring roles). IDs pinned by the glossary
+(`R-00` D2 Designer, `R-01` D1 Designer, `R-05` D0 Operator, `R-06` D0 Technical Manager) and `RU-01`
+(`R-04` D1 Technical Manager); the remaining two fill Phase 5 Item 3's own ordering. `intrinsic` = fixed
+to the ecosystem; `default` = a D2-provided default the D1 Designer can change at setup (glossary `role`).
+
 | ID | Role | Relationship | Description | Source |
 |---|---|---|---|---|
-| R-00 | D2 Designer | Intrinsic · meta / D2-builder | Builds and maintains the **D2** product (the design system: setup defaults, design tree, design-node modules, tools). Not a user of D2; holds Designer-originated completion/clarification authority over D2's own living working sets. Fixed to the ecosystem. | glossary `d2-designer`; Phase 5 §Item 3; method §1 |
-| R-01 | D1 Designer | Intrinsic · D1 layer (primary user) | The **primary and only user of D2**. Directs the evolution of a Predecessor D1 into a materially revised successor D1; supplies incremental intent, retains effective design authority, and holds scarce attention D2 must conserve. Phase 1's "Designer." | glossary `d1-designer`; Phase 1 §2; Phase 5 §Item 3 |
-| R-02 | Design Node Builder | Intrinsic · D2 design mechanism | The conceptual position (a self-contained agent) that **builds a Design Node** under a governing contract: investigates, designs, checks/tests, submits, enforces its data's rules, and may spawn children. Works largely within its bounded sandbox. | Phase 5 §Item 3; Phase 4 §Item 2; glossary `design-node` |
-| R-03 | D1 Programmer | Default · D1 layer (implementation) | Changes **product code according to implementation specifications**. Ideally implements a completed design without reconstructing the earlier design process. Present by default where the change requires code. | Phase 5 §Item 3 |
-| R-04 | D1 Technical Manager | Default · D1 layer (product maintenance) | **Maintains and upgrades the technical product package within the established design, without changing product code** — governed product parameters, packaging, release. Default position D2 provides; the Designer may reconfigure. | Phase 5 §Item 3; RU-01; glossary `d1` |
-| R-05 | D0 Operator | Default · D0 layer (operation) | **Performs routine operation and routine user-level monitoring** of a running D0 product, within approved operating choices. Default cast member for the distributable product. | Phase 5 §Item 3; glossary `d0`; glossary `user` |
-| R-06 | D0 Technical Manager | Default · D0 layer (deployment) | **Installs and technically maintains a particular D0 deployment**; provides front-line support for it. Default cast member the Designer may reconfigure per project. | Phase 5 §Item 3; glossary `d0`; glossary `d1` |
+| R-00 | D2 Designer | D2 layer · intrinsic | The (human) builder of the D2 product; **not** a user of D2. Authors and maintains D2's governing fundamentals and holds Designer-originated completion/clarification authority over D2's intentionally-open working sets. | glossary `d2-designer`; Phase 5 §Item 2 |
+| R-01 | D1 Designer | D1 layer · intrinsic | The **primary and only user of D2**. Directs the evolution of a Predecessor D1 into a materially revised successor D1, using D2's tools; retains effective design authority while D2 minimizes his attention cost. | glossary `d1-designer`; Phase 1 §2 |
+| R-02 | Design Node Builder | D2-internal / design-work · intrinsic | The position that **builds a single Design Node** — investigates, designs, verifies, justifies, and submits a bounded design result within its governing contract; treated as one agent at its boundary and may spawn children. | Phase 5 §Item 3; Phase 4 §Item 2; glossary `design-node` |
+| R-03 | D1 Programmer | D1 layer · default | Changes product **code** according to the D1 Designer's implementation specification, without reconstructing the earlier design; implements and verifies against the spec's harness. | Phase 5 §Item 3 |
+| R-04 | D1 Technical Manager | D1 layer · default | Maintains and upgrades the technical **product package within the established design without changing product code** — adjusts governed parameters, runs the required harness, manages release. | Phase 5 §Item 3; RU-01 |
+| R-05 | D0 Operator | D0 layer · default | Performs **routine operation and routine user-level monitoring** of a running D0 deployment within approved operating choices; escalates non-routine issues. | Phase 5 §Item 3; glossary `d0` |
+| R-06 | D0 Technical Manager | D0 layer · default | **Installs and technically maintains** a particular D0 deployment and provides front-line support to the D0 Operator; configures, monitors, maintains, and recovers the deployment. | Phase 5 §Item 3; glossary `d0` |
 
-*Intrinsic/default tag (glossary `role`): the two human authorities (D2 Designer, D1 Designer) and
-D2's own design mechanism (Design Node Builder) are **intrinsic** — structurally fixed to the
-ecosystem; the D1/D0 cast (Programmer, D1/D0 Technical Managers, D0 Operator) are **defaults** D2
-provides in the project's role table and the D1 Designer may change/merge/omit/map-to-agents (Phase 5
-Item 3 — "one agent to one position, one agent to several positions"). IDs fixed by the inputs: R-00,
-R-01 (glossary `d2-designer`/`d1-designer`), R-04 (RU-01), R-05, R-06 (glossary `d0`); R-02, R-03
-placed in design→implementation layer order.*
+*(On "D2 Assistant": it appears only in the algorithm's depth-frame scope guard as an internal/meta
+label, is not named in Phase 5 §Item 3, and carries no job function or `R-` id in the frozen inputs.
+Instantiating it would force invention; its interaction-fronting function is a capability concern under
+D2's unified-interaction responsibility (Phase 2 Principle 3), not a distinct action-bearing position.
+See `declaration.md` §self-check. The seven roles above match Phase 5 Item 3's enumeration exactly.)*
 
 ## Actions
+
+Grouped by role. `Notes` records the derivation facet: **[P]** passive / **[A]** active (R-01 only);
+depth-frame facet (operate / monitor / configure / view / handle-errors / escalate; diagnose→fix→
+recover→record); **[H]** = harness-richness facet (test / monitor / detect-hidden-errors / make-visible).
 
 ### R-00 — D2 Designer
 
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-001 | Build and maintain the D2 product — setup defaults, design tree, design-node modules, and other tools the D1 Designer uses to build D1. | glossary `d2`, `d2-designer` | Core function |
-| A-002 | Perform Designer-originated completion / clarification / expansion of D2's intentionally-open living sets (glossary, query catalog, Phase 5 itself). | Phase 5 §Item 2 | Lower-hurdle amendment |
-| A-004 | Author and derive D2's governing rules from the principles ("derived, not invented"; able to explain the quality concern each protects). | rules.md preamble; Phase 5 §Item 4 | — |
-| A-005 | Hold and exercise approval authority over material revision of Designer-governed D2 design. | Phase 5 §Item 2; Phase 4 §Item 2 | Designer-governed node |
-| A-006 | Audit whether D2 designed D1 well — review process cost / time / Designer Attention Cost and adopt candidate D2 improvements (never silent). | Phase 3 §Item 5 | [H] process audit |
+| A-001 | Build and maintain D2's governing fundamentals — the constitution, the method, and the rules that constitute the D2 product. | glossary `d2-designer`; Phase 5 (header) | core function |
+| A-002 | Perform Designer-originated completion, clarification, and expansion of D2's intentionally-open working sets (glossary, query catalog, Phase 5 itself) at the lower amendment hurdle. | Phase 5 §Item 2 | core function |
+| A-004 | Hold acceptance authority over Designer-governed D2 design — approve or reject material revision proposals and prevent lower-level convenience from silently revising higher intent. | Phase 5 §Item 2; RU-02 | [H] governance visibility |
 
 ### R-01 — D1 Designer
 
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-007 | Decide whether to use D2 for the intended D1 upgrade (the entry-point decision). | method §1; Phase 1 §3 | [P] entry |
-| A-008 | Review and confirm the Designer–D2 operating contract — how D2 will seek intervention and how he will observe/intervene; normally accept the provided defaults. | Phase 3 §Item 1 | [P] |
-| A-009 | Establish the initial design input — supply the Predecessor D1 package and the (incremental, loosely-structured) expression of intended change. | Phase 3 §Item 2; Phase 1 §4 | [P] |
-| A-010 | Establish/confirm the roles table (the cast, each intrinsic or a changeable default) and the run's default design posture, in one setup step. | method §1; Phase 3 §Item 1–2 | [P] setup |
-| A-011 | Review the consolidated initial design understanding and proposed direction at the default Review Stop (review now, or continue). | Phase 3 §Item 3 | [P] Review Stop |
-| A-012 | Acknowledge D2's notification that setup is complete and D1 design mode is entered. | Phase 3 §Item 4 | [P] |
-| A-013 | Review and confirm the proposed D1 Design Operating Framework (skeleton, inherited/derived rules, control points) — accept, modify, or discuss. | Phase 4 §Item 1 | [P] |
-| A-014 | Confirm the D1 foundational documents / D1 Constitution at the strongly-encouraged key Review Stop. | method §1; Phase 4 §Item 2 | [P] high node |
-| A-015 | Answer D2's consolidated Clarification Requests — supply the material design judgment D2 cannot resolve by further investigation. | Phase 3 phase-wide rule; Phase 4 §Item 2 | [P] |
-| A-016 | Review Design Node reports at Review Stops, with attention scaled to node height (higher nodes get more). | Phase 4 §Item 2 | [P] |
-| A-017 | Set each node's revision authority — D2-governed vs Designer-governed — by level/class default, attending mainly to recommended exceptions. | Phase 4 §Item 2 | [P] |
-| A-018 | Approve or reject a node's submission package and its justification (submission ≠ acceptance). | RU-02; Phase 4 §Item 2 | [P] |
-| A-019 | Rule on upward revision proposals routed to him for Designer-governed nodes (preventing silent revision, not upward feedback). | Phase 4 §Item 2; RU-04; RU-05 | [P] |
-| A-020 | Inspect / inquire into the emerging D0 design and ongoing D1 process through the unified interaction point — ask, show, trace, drill down, compare — in natural language. | Phase 4 §Item 3; Phase 2 §Principle 3 | [A] |
-| A-021 | Monitor D1 design progress — elapsed time and cost consumed, overall and per node. | Phase 4 §Item 3 | [A] |
-| A-022 | Monitor D1 design-process health and detect abnormal process behavior (design health report; "are any parts behaving abnormally?"). | Phase 4 §Item 3; Phase 2 §3.1 | [A][H] |
-| A-023 | Investigate a suspected design or process problem — move from high-level observation to deeper investigation before deciding whether/how to intervene. | Phase 2 §3.4; Phase 4 §Item 3 | [A][H] |
-| A-024 | Issue Designer directives — impose or revise a rule, reserve approval authority over an object, suspend or stop a branch. | Phase 4 §Item 3 | [A] authority |
-| A-025 | Redirect the design — lay down a high-level governing principle, invariant, or tradeoff that governs many lower decisions. | Phase 1 §2.5; Phase 4 §Item 3; method §1 | [A] |
-| A-026 | Hold D0-user optimization in view as a standing consideration and direct the D1 design toward D0-user priorities / skill level. | method §1 (D0-user throughline); Phase 5 §Item 3 | [A] standing |
-| A-027 | Evaluate a proposed change before formally proposing it — a separate dry-run that commits nothing, probing up and down. | RU-06 | [A] |
-| A-028 | Request an optional D2-level audit of the completed design process (checking how well D2 served him — cost, time, attention). | Phase 3 §Item 5; method §1 | [A][H] |
+| A-005 | Decide whether to use D2 for the project — the entry-point decision, backed by D2 orienting him with the concepts it needs. | method §1 (§2 entry point) | [P] |
+| A-006 | Review and confirm the Designer–D2 operating contract — how D2 will seek intervention and how he intends to observe/intervene; normally accept the defaults. | Phase 3 §Item 1 | [P] |
+| A-007 | Establish and confirm the initial setup — the cast of roles (each intrinsic or a changeable default) and the run's default design posture, in one setup step. | method §1 (§3 setup); Phase 5 §Item 3 | [P] |
+| A-008 | Establish the initial design input — the available Predecessor D1 package and the (incremental) expression of intended change. | Phase 3 §Item 2; Phase 1 §4 | [P] |
+| A-009 | Review and confirm D2's consolidated initial design understanding and recommended direction at the default Review Stop. | Phase 3 §Item 3 | [P] |
+| A-010 | Review and confirm the D1 foundational documents (the D1 Constitution) produced from setup + predecessor + intended change, at the strongly-encouraged key Review Stop. | method §1 (§4 foundational docs) | [P] |
+| A-011 | Review and confirm the D1 Design Operating Framework — the initial design skeleton, inherited/derived design rules, and D1-specific control points. | Phase 4 §Item 1 | [P] |
+| A-012 | Respond to D2's clarification requests — supply the material design judgment D2 cannot reasonably resolve through further investigation. | Phase 3 (interaction classes); Phase 4 §Item 2 | [P] |
+| A-013 | Review node submissions at Review Stops (attention scaled to node height), approve or continue, and set each node's revision authority (Designer- vs D2-governed). | Phase 4 §Item 2 | [P] |
+| A-014 | Monitor the D1 design process — progress, elapsed time, cost/spend, and design health — and notice abnormal process behavior, independently of D2 raising a flag. | Phase 2 Principle 2 (§3.1); Phase 4 §Item 3 | [A][H] monitor |
+| A-015 | Inspect and drill into the emerging D0 design and the ongoing D1 design process through the unified interaction point — ask, show, trace, compare — without naming the internal node. | Phase 4 §Item 3; Phase 2 Principle 3 | [A] |
+| A-016 | Investigate a suspected design or process problem — request critical examination of a possible flaw, hidden assumption, or abnormal branch, and a recommended action. | Phase 4 §Item 3 | [A][H] detect |
+| A-017 | Exercise Designer authority — impose, revise, reserve, or suspend: lay down a rule/invariant, reserve approval authority, or stop a branch (Designer directive / Designer-initiated change). | Phase 4 §Item 3; Phase 5 §Item 3 | [A] |
+| A-018 | Audit how well D2 served him — the optional post-run D2-level process audit of time, cost, attention burden, and D2 improvement points. | Phase 3 §Item 5 | [A][H] make-visible |
 
 ### R-02 — Design Node Builder
 
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-029 | Receive the governing node contract and work within its bounded sandbox (responsibility, inputs, constraints, permitted actions, expected outputs). | Phase 4 §Item 2; Phase 5 §Item 5; RU-04; RU-08 | Strong boundary, local autonomy |
-| A-030 | Investigate autonomously — study the Predecessor D1, provided inputs, and reference material; resolve material uncertainty before escalating. | Phase 4 §Item 2; Phase 2 §2.1 | [H] investigate |
-| A-031 | Develop candidate design(s) through the node's internal design and governance process. | Phase 4 §Item 2 | — |
-| A-032 | Produce the proposed Node Design Specification (or equivalent node result). | Phase 4 §Item 2 | Deliverable |
-| A-033 | Check, test, and verify the node's design internally against its harness before advancing (verification before realization). | Phase 4 §Item 2; Phase 2 §Principle 4; Phase 5 §Item 1 | [H] |
-| A-034 | Enforce the rules its own data specifies (a node holds its data, has authority over it, and enforces its rules). | glossary `design-node`; Phase 4 §Item 2 | — |
-| A-035 | Accumulate high-leverage questions and raise a consolidated Clarification Request when material Designer judgment is needed. | Phase 4 §Item 2; Phase 2 §Principle 1 | [P]-facing |
-| A-036 | Author the node's justification and submit the submission package upward for the parent's acceptance. | RU-02; glossary `submission-package` | — |
-| A-037 | Propose a spawning strategy and spawn child nodes, driven by the relevant Designer's potential actions (passive first, active deferred). | Phase 4 §Item 2; RU-03; RU-10 | — |
-| A-038 | Decompose the work internally to any depth and merge the child pieces into the single contracted aggregate at its boundary. | RU-10 | Aggregate always |
-| A-039 | Run the acceptance self-check on its own deliverable — conformance (gating) then completeness — before spawning dependents. | conformance.md; design-node-algorithm §4 | [H] self-check |
-| A-040 | Propose changes to inherited (ancestor-owned) data upward and stop until resolved (an open upward proposal is a stopping point; no drift). | RU-04; RU-05 | — |
-| A-041 | Communicate only with its immediate parent or child (adjacency); reach farther nodes by relaying level by level. | RU-07 | — |
-| A-042 | Revise the node and re-submit in response to a parent's request-down (the author makes the change). | RU-09; Phase 4 §Item 2 | — |
+| A-019 | Investigate the assigned scope autonomously and develop candidate node designs within the governing contract. | Phase 4 §Item 2 | operate |
+| A-020 | Establish the node's harness and verify/test the design before submission — constrain first, detect deviation early. | Phase 5 §Item 1; Phase 2 Principle 4; Phase 4 §Item 2 | [H] test |
+| A-021 | Produce the Node Design Specification (or equivalent result) together with a Designer-oriented node report. | Phase 4 §Item 2 | operate |
+| A-022 | Self-check the result against the acceptance criteria — conformance first and gating, then completeness, traceability, and integrity — before dependent children are spawned. | framework `conformance`; framework `design-node-algorithm` | [H] detect-hidden-errors |
+| A-023 | Author the node's justification and submit the package upward for the parent's acceptance (submission is not acceptance). | RU-02; glossary `submission-package` | escalate |
+| A-024 | Raise a consolidated Clarification Request when material Designer judgment remains necessary, bundling high-leverage questions. | Phase 4 §Item 2; Phase 3 (clarification class) | escalate |
+| A-025 | Determine children by the relevant Designer actions and propose a spawning strategy — decomposing internally to any depth while returning the contracted aggregate. | RU-03; RU-10; Phase 4 §Item 2 | spawn |
+| A-026 | Propose upward revision to inherited/governing design when warranted, and halt (no spawn, no advance) until the owning node resolves it. | RU-04; RU-05; Phase 4 §Item 2 | escalate |
 
 ### R-03 — D1 Programmer
 
+*(operational position — depth frame applied; only the facets the code-implementation function genuinely implies.)*
+
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-043 | Read and consult the implementation specification and design intent, implementing without reconstructing the earlier design process. | Phase 5 §Item 3 (design-to-programming handoff) | view/consult |
-| A-044 | Implement product code according to the implementation specification (realize the understood design into working D0). | Phase 5 §Item 3; Phase 2 §5.3 | operate/perform |
-| A-045 | Test and verify the implementation against the specification's harness to confirm it satisfies the constrained behavior. | Phase 2 §Principle 4; Phase 5 §Item 1 | monitor · [H] |
-| A-046 | Diagnose and fix implementation defects surfaced by tests (make failures visible, then correct). | Phase 5 §Item 1; Phase 2 §Principle 4 | handle-errors · [H] |
-| A-047 | Raise an upward proposal / clarification when the specification is insufficient or reveals a design defect (lower nodes may challenge higher design). | Phase 4 §Item 2; Phase 2 §2 | escalate |
+| A-027 | Implement the product code according to the D1 Designer's implementation specification, without reconstructing the earlier design process. | Phase 5 §Item 3 | operate |
+| A-028 | Implement and run verification/tests of the code against the specification's harness, moving deviation discovery early. | Phase 2 Principle 4; Phase 5 §Item 1 | [H] test |
+| A-029 | Diagnose and fix implementation defects surfaced by verification, without sacrificing correctness for expediency. | Phase 2 Principle 4; Phase 5 §Item 4 | handle-errors |
+| A-030 | Escalate specification ambiguities or defects back to the D1 Designer (propose-up) when the spec is insufficient to implement. | Phase 4 §Item 2; RU-04; Phase 5 §Item 3 | escalate |
 
 ### R-04 — D1 Technical Manager
 
+*(operational/maintenance position — depth frame + diagnose→fix→recover→record applied.)*
+
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-048 | Diagnose whether a required change is governable at the product-parameter level within the established design (perform at the lowest position with the authority). | Phase 5 §Item 3 (position hierarchy) | diagnose |
-| A-049 | Upgrade the D0 product package within the established design without changing product code. | Phase 5 §Item 3 | operate/perform |
-| A-050 | Adjust governed product parameters — product/provider defaults, retry policy within accepted ranges, feature-policy choices, resource profiles, release/packaging parameters. | Phase 5 §Item 3; RU-01 | configure |
-| A-051 | Run the required validation / regression harness (the D1 wrapper's upgrade smoke-test suite) after a change — "no code change does not mean no harness." | Phase 5 §Item 3; RU-01; glossary `d1` | monitor/verify · [H] |
-| A-052 | Update release state, repackage, and distribute the upgraded product. | Phase 5 §Item 3 | apply-fix |
-| A-053 | Maintain upgrade records for the package. | glossary `d1` | record |
-| A-054 | Recover / roll back from a failed upgrade (restore prior release state when the regression harness fails). | Phase 5 §Item 3; RU-01 | recover · [H] |
-| A-055 | Escalate to the D1 Programmer / Designer when a required change needs code change or substantive redesign (beyond the established design). | Phase 5 §Item 3 (position hierarchy) | escalate |
+| A-031 | Adjust governed product parameters/defaults within authorized ranges — the maintenance change, made without touching product code. | Phase 5 §Item 3; RU-01 | configure / fix |
+| A-032 | Run the required validation/regression (upgrade smoke-test) harness after a change — "no code change does not mean no harness." | RU-01; Phase 5 §Item 3; glossary `d1` | [H] test |
+| A-033 | Recover from a failed upgrade or parameter change — roll back / restore the package to a known-good state. | Phase 5 §Item 1 (failure visibility); glossary `d1` | recover |
+| A-034 | Update release state, maintain upgrade records, and repackage/distribute the product. | Phase 5 §Item 3; glossary `d1` | record |
+| A-035 | Monitor the upgrade-relevant technical health of the product package. | Phase 5 §Item 1; glossary `d1` | [H] monitor |
+| A-036 | Escalate to the D1 Designer/Programmer when a change exceeds the no-code-change / authorized-parameter boundary. | Phase 5 §Item 3; RU-04 | escalate |
 
 ### R-05 — D0 Operator
 
+*(operational position — depth frame applied; routine operation implies no maintenance cycle, it escalates.)*
+
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-056 | Perform routine operation of the running D0 product within approved operating choices. | Phase 5 §Item 3 | operate/perform |
-| A-057 | Perform routine user-level monitoring of D0 health and status. | Phase 5 §Item 3; glossary `user` | monitor · [H] |
-| A-058 | Set approved operating choices — daily spending limits, routine scheduling, collection scope. | Phase 5 §Item 3 | configure |
-| A-059 | View the D0 health report as represented at the operator's level ("what will the D0 health report look like to the user?"). | Phase 4 §Item 3; Phase 5 §Item 3 | view · [H] |
-| A-060 | Handle routine operational errors within the approved operating choices. | Phase 5 §Item 3 | handle-errors · [H] |
-| A-061 | Escalate a fault beyond routine operation to the D0 Technical Manager (front-line support). | Phase 5 §Item 3; glossary `d0` | escalate |
+| A-037 | Perform routine operation of the running D0 product. | Phase 5 §Item 3 | operate |
+| A-038 | Perform routine user-level monitoring of D0 health/status via the operator-level report. | Phase 5 §Item 3; Phase 4 §Item 3; Phase 5 §Item 1 | [H] monitor / view |
+| A-039 | Set approved operating choices within authorized bounds — daily spending limits, routine scheduling, collection scope. | Phase 5 §Item 3 | configure |
+| A-040 | Handle routine operational conditions/errors at the user level. | Phase 5 §Item 3 | handle-errors |
+| A-041 | Escalate non-routine issues to the D0 Technical Manager (front-line support). | Phase 5 §Item 3; glossary `d0` | escalate |
 
 ### R-06 — D0 Technical Manager
 
+*(operational/maintenance/support position — depth frame + diagnose→fix→recover→record applied.)*
+
 | ID | Action | Source | Notes |
 |---|---|---|---|
-| A-062 | Install and deploy a particular D0 deployment into production (an IT manager may deploy just D0, retaining D1 to manage it). | Phase 5 §Item 3; glossary `d1` | operate/perform |
-| A-063 | Configure the deployment — deployment paths, storage endpoints, service configuration, resource limits, credential integration, deployment health settings. | Phase 5 §Item 3 | configure |
-| A-064 | Monitor deployment health per the deployment-health settings, including D0-crash detection. | Phase 5 §Item 3; glossary `d1` | monitor · [H] |
-| A-065 | View the specific deployment's health/status surface (the same event represented for this position). | Phase 5 §Item 3; Phase 4 §Item 3 | view · [H] |
-| A-066 | Technically maintain the deployment — diagnose and resolve deployment faults as front-line support. | Phase 5 §Item 3; glossary `d0` | diagnose/fix · [H] |
-| A-067 | Recover the deployment from a failure (e.g. crash recovery flagged by crash detection). | glossary `d1`; Phase 5 §Item 3 | recover · [H] |
-| A-068 | Escalate a fault requiring product-level change or upgrade to the D1 Technical Manager (position hierarchy). | Phase 5 §Item 3 | escalate |
+| A-042 | Install and deploy a particular D0 deployment. | Phase 5 §Item 3 | operate |
+| A-043 | Configure deployment settings within authorized bounds — deployment paths, storage endpoints, service config, resource limits, credential integration, deployment health settings. | Phase 5 §Item 3 | configure |
+| A-044 | Monitor deployment health. | Phase 5 §Item 3; Phase 5 §Item 1 | [H] monitor |
+| A-045 | Provide front-line support — receive and handle escalations from the D0 Operator. | glossary `d0`; Phase 5 §Item 3 | handle / support |
+| A-046 | Diagnose and apply technical maintenance/fixes to the deployment. | Phase 5 §Item 3 | diagnose / fix |
+| A-047 | Recover the deployment from a failed change — restore to a known-good state. | Phase 5 §Item 3; Phase 5 §Item 1 (failure visibility) | recover |
+| A-048 | Record the maintenance/change performed on the deployment. | Phase 5 §Item 3 | record |
+| A-049 | Escalate to the D1 Technical Manager/Designer when the issue exceeds deployment-level authority (needs a product-level parameter change, redesign, or code). | Phase 5 §Item 3; RU-04 | escalate |
+
+---
+
+*Aggregate: 7 roles, 48 actions (`A-001…A-049`, `A-003` retired). Coverage target is the common,
+anticipable open-list set; the genuine tail is left for D2 to interpret (method §1). This completed
+`A-` table is the read-only driver for the Capability node — every action maps to ≥1 capability
+(`RU-11`).*
+</content>
+</invoke>

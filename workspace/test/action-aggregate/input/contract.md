@@ -48,7 +48,10 @@ Roles and actions are **derived from these**, not invented; every row cites wher
   for pieces the fundamentals name or explicitly list, a strong bias for what they imply. The mirror of
   conformance (don't omit vs don't contradict); it also carries the **harness-richness** emphasis —
   preferentially surface each position's testing / monitoring / error-detection / health-visibility
-  (Harness First, Phase 5 Item 1).
+  (Harness First, Phase 5 Item 1). Each row must be a **distinct responsibility**, not a mechanical step
+  or a restatement of a rule — **de-dup by responsibility** (Quality over Expediency, Phase 5 Item 4/5);
+  de-dup **at the fundamentals' own granularity** — preserve distinctions the fundamentals make (e.g.
+  monitor cost vs health); completeness is *distinct responsibilities covered*, not row count.
 - **Coverage.** Every action a competent re-derivation from the inputs would surface is present
   (open-list target — the genuine tail of completeness).
 - **Traceability.** Every row cites a `Source` in the inputs. *(This is why we record Sources: the

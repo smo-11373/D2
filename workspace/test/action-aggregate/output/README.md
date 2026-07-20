@@ -1,23 +1,21 @@
-# output — the node's produced package (clean-room run, run-05: conformance + depth-cue + completeness + harness bias)
+# output — the node's produced package (clean-room run, run-06: + distinctness guard)
 
-The Action Aggregate node's **untainted** output from the module after **four** improvements —
-conformance, the position-derived depth frame, **completeness**, and the **harness-richness bias** —
-synced into `../environment/framework/` + `../input/contract.md`. Derived by a fresh blind agent given
-only `../environment/` + `../input/`, with no sight of `../output-example/`, `../work/`, `../evaluation/`,
-or `../benchmark_verification/`.
+The Action Aggregate node's **untainted** output after **five** module changes — conformance, depth
+frame, completeness, harness bias, and the **distinctness / de-dup-by-responsibility guard**. Derived by
+a fresh blind agent given only `../environment/` + `../input/`, blind to `../output-example/`,
+`../work/`, `../evaluation/`, `../benchmark_verification/`.
 
-- `role-action-catalog.md` — **Step-2 result**: 7 roles (`R-00…R-06`), 67 actions (`A-001…A-068`,
-  `A-003` retired/skipped). Operational roles walk the depth frame; harness-facing actions tagged `[H]`.
-- `algorithm.md` — **Step-1**: the procedure the node ran.
-- `declaration.md` — **Step-1**: the node's manifest / downstream interface.
+- `role-action-catalog.md` — 7 roles (`R-00…R-06`), 48 actions (`A-001…A-049`, `A-003` skipped).
+- `algorithm.md`, `declaration.md` — Step-1 products.
 
-**Scored:** `../evaluation/scorecard-run05-completeness-harness.md` → **conformance gate CLEAR**, composite
-**≈ 89** (best yet). Recall jumped **0.68 → 0.83** — completeness recovered the D1-Designer journey and
-the maintenance cycles; the harness bias surfaced testing/monitoring/recovery across every role. Caveat:
-mild **over-elaboration** (67 > the example's 63 actions; the Design Node Builder inflated with a few
-governance mechanics-as-actions) — a Quality-over-Expediency guard to tighten next. Completeness
-correctly **declined to manufacture** a D2 Assistant (not fundamentals-grounded), confirming that gap as
-a modelling question, not a completeness failure.
+**Scored:** `../evaluation/scorecard-run06-distinctness-guard.md` → conformance clear, composite **≈ 85**.
+**Mixed result:** the guard **fixed the over-elaboration it targeted** (Design Node Builder 14 → 8,
+total 67 → 48, no mechanics-as-actions) but, as written, **over-corrected** — it merged genuinely-distinct
+responsibilities (D1 Designer's monitor cost/health×3 → 1), dropping recall **0.83 → 0.68** and composite
+**89 → 85**. The guard has since been **calibrated** in the module (merge mechanics/rule-restatements
+only; preserve distinctions the fundamentals themselves make, e.g. monitor cost vs health). **This
+run-06 output measured the *pre-calibration* guard**; the calibrated guard is not yet re-measured
+(deferred to a proper re-run, ideally under a multi-run harness).
 
-*Baselines archived: run-04 (depth-cue, ≈85) `../work/run04-depthcue/`; run-03 (conformant, ≈84)
-`../work/run03-conformant/`. Benchmark-validity controls (unaffected) in `../benchmark_verification/`.*
+*Baselines: run-05 (over-elaborated, ≈89) `../work/run05-completeness-harness/`; run-04 `../work/run04-depthcue/`;
+run-03 `../work/run03-conformant/`. Validity controls in `../benchmark_verification/`.*
