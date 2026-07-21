@@ -13,6 +13,13 @@ target `../output-example/`. This is the spec; `structural_check.py` implements 
 - **Bar:** `input/contract.md` §3 — **same roles**, **substantially the same actions** modulo
   naming / granularity / open-list, with **traceability** and **integrity**.
 
+**Objective — recall-first (bias to more).** The example is a **floor to clear, not a bullseye to
+match**. A **missed** example action is a missing capability downstream (`RU-11`); an **extra** is cheap
+and pruned later. So scoring rewards **recall** (cover the floor) and is **neutral-to-positive on
+justified extras** — a run is **never** penalized for surfacing *more* traceable, conformant actions.
+Precision against the example's row count is **not** an objective; only *inventing* (untraceable extras)
+and *missing* (uncovered floor) cost.
+
 Because the deliverable is an **open list** with free IDs and naming, success is *substantial match*,
 not identity. That single fact forces the harness into **two layers**.
 
@@ -69,9 +76,13 @@ the layer model). Example set = R-00…R-07 (8 roles).
 For each example action the judge assigns: `matched` = 1.0, `partial` (right idea, weaker/narrower, or
 only one side of a split) = 0.5, `missing` = 0.
 `coverage = Σ(match_value) / total_example_actions`. Example set ≈ 63 actions.
-**Open-list rule:** output actions with **no** example counterpart are **not** counted against
-coverage *if* the judge marks them `extra-justified` (traceable, plausible). Only `spurious`
-(untraceable/invented) extras cost — via the traceability dimension, not coverage.
+**Open-list rule (recall-first):** output actions with **no** example counterpart are **not** counted
+against coverage *if* the judge marks them `extra-justified` (traceable, plausible) — and they are
+reported as a **justified-extras count**, a *positive* completeness-richness signal (candidate
+capabilities beyond the floor), not a deduction. Only `spurious` (untraceable/invented) extras cost —
+via traceability, not coverage. **Across N runs, the headline coverage figure is the UNION recall**
+(fraction of the floor covered by ≥1 run — see `multi-run-method.md`), since more-is-better rewards
+cumulative coverage.
 
 **3. Traceability (15).** `traceability = sourced_rows / total_rows`, from Layer A (0/1 per row).
 Layer B spot-checks that cited Sources actually support the row (a citation to a real but irrelevant
@@ -83,7 +94,9 @@ Note the hard ones are already gates (G1); this dimension rewards the softer int
 
 **5. Substance (15).** Two parts, averaged: (a) Layer-A screen — fraction of rows above the thin
 threshold; (b) Layer-B quality — sampled judgment that descriptions say *what the action/role is*,
-not merely restate the name. `substance = 0.5·screen + 0.5·quality`.
+not merely restate the name. `substance = 0.5·screen + 0.5·quality`. **Substance scores per-row
+description quality only — it is never reduced by a high row count.** Abundance is not a substance
+penalty (recall-first).
 
 ## Verdict
 
@@ -99,6 +112,12 @@ The threshold is deliberately not 100: naming, granularity, which position-deriv
 elaborated, and the open-list tail are *expected* variation (§5). The report must always accompany
 the number with the **gap list** (missing + partial example actions) and the **extras list**
 (output actions to classify) — the number without the lists is not a usable result.
+
+**Recall-first reading.** The composite's mover is the **coverage term = recall against the floor**;
+extras appear in the **extras list as a richness signal, never as a deduction**. For a multi-run
+measurement, report **UNION recall** as the headline (it is the more-is-better figure), with the per-run
+mean ± spread for attribution (`multi-run-method.md`). A run that clears the floor with many justified
+extras is a **better** result than one that matches the count exactly, not a worse one.
 
 ## Reproducibility of the evaluation itself
 

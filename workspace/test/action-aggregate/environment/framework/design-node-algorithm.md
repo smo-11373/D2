@@ -85,7 +85,7 @@ traced:
    (Verification Before Realization), glossary `d1` (wrapper health-monitoring, upgrade smoke-tests).
    *Guard (Quality over Expediency):* bias ≠ padding — do **not** manufacture a harness the fundamentals
    don't warrant, **nor split one responsibility into mechanical steps**; conformance, completeness, and
-   the distinctness guard still gate every row.
+   the inclusion guard (dedup + rule-restatement removal only) still gate every row.
 
    **Lifecycle lens (cross-role, logically forced).** Beyond per-role derivation, derive the actions the
    **product's end-to-end lifecycle forces**, then attach each to the position that performs it. Walk the
@@ -114,14 +114,15 @@ traced:
    Phase 5 §Item 3), and the **lifecycle** (every logically-necessary process transition — step 2);
    completeness checks **all four are covered**. **Work-conservation:** every derived action is **owned by
    some role**, and every **lifecycle transition has an owning position** — a forced step or an action with
-   no home means a role is missing or must be added, never orphaned. **Distinctness guard (Quality over Expediency,
-   Phase 5 §Item 4/5):** each row must be a *distinct responsibility the role performs* — **not** a
-   mechanical step or a restatement of a governing rule the node merely operates under. **Merge only**
-   mechanical steps and rule-restatements; **preserve any distinction the fundamentals themselves make** —
-   where the fundamentals give two concerns distinct treatment (distinct data, concern, or Source; e.g.
-   monitoring *cost* vs *health*, Phase 4 §Item 3), they are **distinct responsibilities**, not one to be
-   merged on a shared verb. De-duplicate by responsibility **at the fundamentals' own granularity**;
-   completeness is *distinct responsibilities covered*, not row count. Then **traceability** (every row
+   no home means a role is missing or must be added, never orphaned. **Inclusion guard (recall-first — bias to
+   more).** Keep **every plausible, traceable, distinct action** — a missed action is a missed capability
+   (`RU-11`), an extra is cheap and pruned downstream. The **only** removals: (a) **literal duplicates**
+   (the same responsibility stated twice), and (b) **rule-restatements / mechanics** — a governing rule
+   the node merely operates under (adjacency, decompose) is a *constraint*, not an action; fold it into
+   the action it governs or omit it. **Do NOT merge distinct responsibilities to reduce count** —
+   granularity is welcome; when in doubt, **keep**. *(Quality over Expediency here means avoid
+   **inventing**, not avoid **abundance**; the fundamentals' own distinctions — e.g. monitor cost vs
+   health — are of course kept.)* Then **traceability** (every row
    Source-cited) and **integrity** (IDs, dedup, map resolves). On a conformance conflict, **revise to
    conform** or **propose up and halt** (`RU-04`/`RU-05`); on a completeness gap, **derive the missing
    piece** (a named/specified omission is a gate failure) — never emit-and-flag. This is the

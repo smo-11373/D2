@@ -50,6 +50,8 @@ fills the **scorecard template**. Exit code: `0` if Layer A passes, `1` if it fa
 `overall = 0.25·role + 0.35·coverage + 0.15·traceability + 0.10·integrity + 0.15·substance` (×100),
 behind gates G1–G3 (integrity / traceability / roles-complete). **≥ 85 = substantially the same.**
 The number always ships with a **gap list** and **extras list** — see `scoring-method.md` §Verdict.
+**Recall-first (bias to more):** the example is a **floor**, not a bullseye — justified extras are a
+richness signal, never a penalty; across N runs the headline is **union recall** (`multi-run-method.md`).
 
 ## Self-test (Verification Before Realization)
 

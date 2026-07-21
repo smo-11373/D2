@@ -48,10 +48,11 @@ Roles and actions are **derived from these**, not invented; every row cites wher
   for pieces the fundamentals name or explicitly list, a strong bias for what they imply. The mirror of
   conformance (don't omit vs don't contradict); it also carries the **harness-richness** emphasis —
   preferentially surface each position's testing / monitoring / error-detection / health-visibility
-  (Harness First, Phase 5 Item 1). Each row must be a **distinct responsibility**, not a mechanical step
-  or a restatement of a rule — **de-dup by responsibility** (Quality over Expediency, Phase 5 Item 4/5);
-  de-dup **at the fundamentals' own granularity** — preserve distinctions the fundamentals make (e.g.
-  monitor cost vs health); completeness is *distinct responsibilities covered*, not row count. The
+  (Harness First, Phase 5 Item 1). **Bias to more (recall-first):** keep every
+  plausible, traceable, distinct action — a missed action is a missed capability (`RU-11`), an extra is
+  cheap and pruned downstream. The only removals are **literal duplicates** and **rule-restatements** (a
+  governing rule restated as an action). **Do not merge distinct responsibilities to reduce count**; when
+  in doubt, keep. **Extras beyond the example floor are welcome, not penalized.** The
   should-exist set is derived by **four lenses** — job-function, depth-frame, **intention** (the result a
   position must produce), and **lifecycle** (every logically-necessary process transition) — and
   **work-conservation** holds: every action owned by a role, every lifecycle transition owned by a
