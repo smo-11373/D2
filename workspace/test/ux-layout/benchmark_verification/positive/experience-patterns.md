@@ -1,37 +1,74 @@
-# Positive pole (ceiling) — good Designer experience, v0
+# Positive pole (ceiling) — good Designer/operator experience, **v1**
 
-*The **ceiling**: the experience of three canonical interaction forms done *well*, per the fundamentals.
-A blind run's UX layout is scored by **proximity to this**. Deliberately modest — this is v0, meant to be
-**raised** as we learn (see `../README.md`). Anchored to the inherited action aggregate
-(`../../environment/action-aggregate/role-action-catalog.md`); action IDs are that catalog's.*
+*Raised from v0 (2026-07-21) after run-01 cleared the modest v0 bar. **v1** (a) tightens the Review Stop,
+(b) promotes the whole-layout qualities run-01 revealed as achievable-and-fundamentals-grounded into
+**required** properties, and (c) adds the **D0-operator experience** as a pole (the D0-user throughline v0
+left implicit). Pitched at "excellent per the fundamentals," above what a single blind run reaches by
+default. Every dimension still traces to a fundamental — the bar rises toward the constitution, not taste.
+See `../README.md` for the versioning discipline; changelog at the bottom.*
 
-## Pattern 1 — Review Stop (`A-013` review a node / `A-010` confirm the D1 Constitution)
+---
 
-D2 (through the Assistant) brings **one screen**: a plain-language summary of what was decided, **what
-changed since he last looked**, and the **1–3 items most worth his judgment** (leverage-ranked), with a
-**default "Continue."** Everything is in *his* terms — no node IDs, no capability refs. Each item
-**expands on request** (the "why" — which fundamentals/rules drove it — is one click, never forced). He
-approves in **one action**, or drills into exactly the one thing he cares about. He is stopped here only
-because it is a **Constitution-level** node (high leverage); low nodes don't interrupt him.
+## A. The three Designer interaction forms
 
-*Anchors: attention cost (P1 §2.3); asked-only-when-worth-it (P2 §Principle 1); human-framing + drill-down (P1 §2.4; P2 §3.2/3.4).*
+### Pattern 1 — Review Stop (`A-013` / `A-010`) — *tightened*
 
-## Pattern 2 — Monitoring (`A-016/017/018` monitor progress / cost / health)
+D2 (through the Assistant) brings **one screen** that **leads with what changed since he last looked** and
+the **1–3 items most worth his judgment, leverage-ranked** — so he can act on the ranking *without reading
+the rest*. In his terms (no node IDs). Default **"Continue"**; each item **expands on request** (the "why"
+is one click). Stopped here only for a **high-leverage / high-node** (the Constitution earns a stop; low
+nodes proceed with autonomy).
 
-A **standing, glanceable view** he can pull up anytime: **progress** (phase / where the design is),
-**spend** (time + cost, cumulative & per-node), and **health** (normal by default; anomalies flagged) —
-**cost and health kept distinct**, not blended. Routine status is **pull** (his initiative); D2 only
-**pushes** when something *abnormal* is worth his attention. One click deeper: "which nodes cost most /
-what's abnormal."
+*Raise vs v0: "what changed + leverage-ranked 1–3" is now **required up front**, not deferred to drill-down.*
 
-*Anchors: observability / deviation-visible (P5 Item 1; P2 §Principle 2); pull-vs-push; distinctness (cost ≠ health); attention cost.*
+### Pattern 2 — Monitoring (`A-016/017/018`)
 
-## Pattern 3 — Clarification Request (`A-012` answer a clarification)
+A **standing, glanceable view** he pulls up anytime: **progress**, **spend** (time + cost), **health**
+(normal by default; anomalies flagged) — **cost and health kept distinct**. Routine = **pull**; D2 **pushes
+only on anomaly**. One click deeper: "which nodes cost most / what's abnormal." The view is the *entry to
+investigation*, not a dead end.
 
-D2 asks **only when it genuinely can't resolve by investigation**, and **consolidates** related questions
-into **one** high-leverage decision. The ask is **framed for a decision**: the specific judgment needed,
-the options, **D2's recommendation + why**, and each option's consequence — so he decides fast, and can
-just **accept the recommendation** (cheap default). The investigation D2 already did is there if he wants
-to check its work; context is preserved.
+### Pattern 3 — Clarification Request (`A-012`)
 
-*Anchors: asked-only-when-worth-it + consolidation (P2 §Principle 1); decision-framing; attention cost; D2 owns the burden (P2 §Principle 3).*
+Asked **only when D2 genuinely can't resolve by investigation**, **consolidated into one** request, and
+**pitched at the highest governing level** — ask for the *principle / invariant / tradeoff* that settles
+many lower questions, not the many questions. Framed for a decision: options, **recommendation + why**,
+consequences; **accept-the-recommendation** is the cheap default; the investigation is available to check.
+
+*Raise vs v0: "pitched at the governing level" is now **required**.*
+
+## B. Whole-layout qualities — *new in v1* (properties of the layout, not one pattern)
+
+1. **Attention legible.** The layout makes the **total** Designer attention cost **explicit** — a
+   concentration map: where the budget goes, how much is pull vs push vs optional, and that **most actions
+   cost him nothing**. *You cannot optimise attention (the D2 priority) if it isn't legible.* (Phase 1 §2.3.)
+2. **Surfaces separated.** Cleanly separate **(i)** the Designer's experience of D2 — delivered **only**
+   through the single Assistant, never a direct node/service interface; **(ii)** the product experienced by
+   downstream positions; **(iii)** the Designer-invisible internal work. The single-interaction-point
+   invariant is **structural**, not incidental. (Phase 2 §Principle 3.)
+3. **One archetype, position-shaped views.** The same underlying event/form **recurs across positions at
+   different altitudes** — one monitoring form → Designer progress, operator health-light, tech-manager
+   dashboard — *not* bespoke per-position designs. (Phase 5 §Item 3, "same event, different position.")
+4. **Consistent patterns.** A given form behaves the **same way everywhere** (a Review Stop is always
+   accept/continue-with-drill-down; monitoring is always pull-with-anomaly-push) — the Designer **learns the
+   surface once.**
+
+## C. The product experience — *new pole in v1* (Human Position First for D0)
+
+### D0-Operator Console (`A-034` operate / `A-044` results / `A-035` health / `A-046/048` errors→support)
+
+The D0 Operator (**normally low technical understanding**) gets a **simple, non-technical** surface: common
+operations one gesture away, advanced tucked behind; a plain **"healthy?"** indicator; **results in his
+terms**; a single **"get help"** escape hatch that routes up the position hierarchy. **D1 is built for the
+operator's convenience first** (the primary-user principle at the D0 layer). He is **never shown** deployment
+internals, credentials, or technical health — those belong to the technical managers. *(Human Position First:
+each position sees exactly what its responsibility needs, Phase 5 §Item 3.)*
+
+---
+
+## Changelog
+
+- **v0 → v1** (2026-07-21): tightened Review Stop (what-changed + ranked-1–3 up front); required governing-level
+  Clarification; added §B whole-layout qualities (attention-legible · surfaces-separated · one-archetype-many-views ·
+  consistent-patterns); added §C the D0-operator pole. Rubric gains dimensions 9–11. Prior version in git history;
+  run-01 was scored at **v0**.

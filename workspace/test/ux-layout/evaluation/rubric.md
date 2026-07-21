@@ -15,7 +15,10 @@ positive shows each dimension satisfied, the negative shows it failed. A run is 
 | 6 | **Distinctness** | cost vs health separate | conflated | matches the action set's own distinctions |
 | 7 | **Pull/push discipline** | routine = pull; only anomalies push | pushes routine | asked-when-worth-it; attention cost |
 | 8 | **Consolidation** | related asks → one decision | a stream of pings | consolidation (P2 §Principle 1) |
+| 9 | **Attention legibility** *(whole-layout)* | total budget mapped & optimisable | implicit / unaccounted | reduce *total* burden (P1 §2.3) |
+| 10 | **Surface separation** | Designer / product / internal cleanly separated; single interaction point | conflated (shown internals) | single interaction point (P2 §Principle 3) |
+| 11 | **Cross-position reuse & consistency** | one archetype, position-shaped views; behaves the same everywhere | bespoke per position / inconsistent | same event, different position (P5 §Item 3); learnability |
 
-**Bar-raising note.** These eight are the v0 axes; raising the bar may **add** dimensions (e.g. cross-pattern
-consistency, error-recovery experience, the D0-user experience) or **tighten** the positive on an existing
-one. Each such change is a **versioned** bar-raise (see `../benchmark_verification/README.md`).
+**Versions.** Dimensions **1–8** are the v0 axes; **9–11** were added in **v1** (2026-07-21). Scores are
+comparable only **within a pair version** — record the version with every scorecard. A bar-raise (tighten a
+positive, add a dimension, add a pole) is a **versioned** event (see `../benchmark_verification/README.md`).
