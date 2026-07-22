@@ -1,14 +1,14 @@
-# output — the Experience node's produced UX layout (run-01)
+# output — the Experience node's produced UX layout (run-02, by-action)
 
-`ux-layout.md` — the first **blind clean-room** run of the Experience node: it read the fundamentals +
-module + the inherited action aggregate, and derived a UX layout — **~22 interaction patterns across 3
-surfaces** (the Designer's experience of D2 via the Assistant; the Designer-invisible builder sandbox; the
-product experienced by the downstream cast), with all **63/63 actions mapped** and an explicit
-**attention-concentration map**.
+`ux-layout.md` — the blind re-derivation after the contract §1 change to **by-action**. It emits an 18-pattern
+shared **vocabulary**, then **one experience surface per action** (63 surfaces, grouped by role), each with its
+interaction spec (position · pattern · trigger · presented · default · drill-down · attention · direction ·
+derivable/`‹slot›`), then the attention accounting. Actions that share a pattern still get **distinct** surfaces.
 
-**Scored:** `../evaluation/scorecard-run01.md` (pair version **v0**) → **coverage CLEAR (63/63)**,
-**quality near-positive on all 8 rubric dimensions** — it **reached / exceeded the v0 ceiling**. The
-actionable result is a **bar-raise to v1** (seeded by run-01's strengths: surface separation, the attention
-map, cross-position archetype reuse), not a module change.
+**Scored:** `../evaluation/scorecard-run02.md` (pair version **v1**) → **by-action confirmed** (contract-driven,
+nothing hand-authored), **coverage CLEAR (63/63 own surfaces)**, **quality near-positive on 10/11 v1 dimensions**
+(incl. the new whole-layout qualities + an excellent D0-operator pole). The one gap: the **v1-tightened Review
+Stop** ("lead with what-changed + ranked 1–3") is only partial — the discrimination v1 was raised to provide.
 
-Blind runs must not read `../benchmark_verification/` or `../evaluation/`. (run-01 stayed blind.)
+Blind runs must not read `../benchmark_verification/` or `../evaluation/`. (run-02 stayed blind.) Prior
+run (pattern-indexed, v0): `../work/run01-pattern-indexed/`.
