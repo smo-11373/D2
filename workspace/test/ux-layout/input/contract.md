@@ -5,13 +5,25 @@ template** — the same shape the action-aggregate contract used (`design-node-a
 *fill the template → attach owned data → hand down*), not authored freehand. The parent fills it with the
 Experience node's specifics.*
 
-## 1. Deliverable (binding)
+## 1. Deliverable (binding) — indexed **by action**
 
-A **UX layout** for the inherited action aggregate: for **every action**, the **interaction pattern** it is
-experienced through (e.g. Review Stop, Monitoring view, Clarification Request, directive, report), **per
-position**, with the **attention cost** made explicit. Common experience **forms are abstracted** (method §1:
-passive actions take "a few static, near-universal forms") — the layout is *patterns + the mapping of
-actions onto them*, not a bespoke screen per action. Delivered across the **two-step submission** (§5).
+A UX layout **indexed by action**: for **each** inherited action, **its own experience surface** — how that
+action is experienced by its position, specified as far as the fundamentals allow. **One surface per action**
+(not patterns-with-a-mapping — the *surface* is the deliverable, per action, because `RU-11` runs per action:
+each action's surface drives that action's capabilities). Each surface names:
+
+- the **position** whose experience it is;
+- the **interaction pattern** it instantiates — patterns are the reusable **vocabulary** (Review Stop,
+  Monitoring view, Clarification Request, Console, Report, …) so surfaces **share forms** rather than being
+  bespoke, yet the surface is still specified **per action**;
+- its **interaction spec**: *trigger · what is presented · low-cost default · drill-down · attention cost ·
+  direction (pull/push)*.
+
+Because the **D1/D0 project is unknown**, each surface specifies the **derivable form + qualities now** and
+leaves **product-specific content as a named slot** (e.g. *what* the results are, *what* a job is). The
+deliverable is thus **one surface per action** + the shared **pattern definitions** (the vocabulary) + the
+**attention accounting** rolled up across the per-action surfaces. Delivered across the **two-step
+submission** (§5).
 
 ## 2. Derivation inputs — the source of truth (binding, read-only)
 

@@ -17,8 +17,12 @@ not recall of a fixed set.
 
 ## Deliberately not addressed yet (open)
 
-1. **The UX layout's output format is fluid.** v0 pins only the *substance* (patterns × actions × attention),
-   not a fixed schema. Layer-A structural checking waits until the format is pinned (`evaluation/scoring-method.md`).
+1. **Output structure — pinned by-action; rendering still fluid.** The layout is **indexed by action** — one
+   experience surface per action (contract §1), drawing on shared patterns as vocabulary, with the
+   interaction-spec fields, and product-specific content as a named slot (D1/D0 unknown). *Still fluid:* the
+   exact rendering form of an individual surface. Layer-A structural checking (every action has a surface
+   carrying its fields; no orphan) can now be built. **The surfaces are derivations — driven only by the
+   contract; never hand-authored** (same discipline as the action-aggregate test).
 2. **Spawning / submission machinery — defined, not exercised.** This test isolates the *derivation*. The
    **Action → Experience** cascade — *when* the parent spawns the child (after Step-2 acceptance of the
    aggregate, `RU-11`), the **contract instantiated from the standard template**, and the **two-step
